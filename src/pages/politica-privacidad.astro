@@ -1,0 +1,65 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Política de Privacidad | ${SITE_TITLE}`} description="Política de privacidad y protección de datos de Capitalia." />
+		<style>
+			body {
+				font-family: system-ui, -apple-system, sans-serif;
+				color: #222;
+				background-color: #f9f9f9;
+				margin: 0;
+			}
+			main {
+				max-width: 800px;
+				margin: 3rem auto;
+				padding: 2rem;
+				background: white;
+				border-radius: 8px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+			}
+			h1 {
+				color: #0b4f6c;
+				border-bottom: 2px solid #ddd;
+				padding-bottom: 0.5rem;
+			}
+			h2 {
+				color: #0b4f6c;
+				margin-top: 2rem;
+			}
+			p, li {
+				line-height: 1.6;
+				color: #444;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Política de Privacidad</h1>
+			<p>Última actualización: 1 de septiembre de 2026</p>
+
+			<h2>1. Datos del Responsable</h2>
+			<p>En cumplimiento de la normativa de protección de datos, se informa que <strong>Capitalia</strong> es un sitio web especializado en finanzas personales, educación económica y gestión de patrimonio.</p>
+
+			<h2>2. Recopilación de Información</h2>
+			<p>Recopilamos información cuando el usuario interactúa voluntariamente con la web, como al rellenar formularios de contacto o suscribirse a listas de correo. También se recopilan datos técnicos de navegación de forma automática mediante el uso de cookies.</p>
+
+			<h2>3. Cookies y Publicidad de Google AdSense</h2>
+			<p>Este sitio web utiliza cookies propias y de terceros para gestionar el funcionamiento del portal y analizar el tráfico web. Además, utilizamos servicios de terceros como <strong>Google AdSense</strong> para mostrar anuncios personalizados. Google utiliza cookies para publicar anuncios basados en las visitas anteriores de los usuarios a esta web u otros sitios de internet. Los usuarios pueden inhabilitar el uso de publicidad personalizada accediendo a la configuración de anuncios de Google.</p>
+
+			<h2>4. Finalidad del Tratamiento</h2>
+			<p>Los datos facilitados se utilizan exclusivamente para gestionar las consultas de los usuarios, mejorar la experiencia de navegación en el blog y cumplir con los requisitos legales exigidos para la monetización del contenido.</p>
+
+			<h2>5. Derechos del Usuario</h2>
+			<p>El usuario tiene el derecho absoluto a acceder, rectificar o solicitar la supresión de sus datos personales en cualquier momento escribiendo a través de nuestros canales oficiales de contacto.</p>
+		</main>
+		<Footer />
+	</body>
+</html>

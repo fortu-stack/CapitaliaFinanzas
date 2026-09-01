@@ -1,0 +1,133 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			:root {
+				--primary-blue: #0b4f6c;
+				--accent-blue: #01baef;
+				--dark-text: #222;
+			}
+			body {
+				margin: 0;
+				font-family: system-ui, -apple-system, sans-serif;
+				color: var(--dark-text);
+				background-color: #f9f9f9;
+			}
+			.hero-section {
+				background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%);
+				color: white;
+				padding: 5rem 2rem;
+				text-align: left;
+			}
+			.hero-container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+			.hero-subtitle {
+				font-size: 1rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				opacity: 0.85;
+				margin-bottom: 1rem;
+			}
+			.hero-section h1 {
+				font-size: 2.8rem;
+				max-width: 700px;
+				line-height: 1.2;
+				margin-bottom: 1.5rem;
+			}
+			.hero-cta {
+				display: inline-block;
+				border: 2px solid white;
+				color: white;
+				padding: 0.75rem 1.5rem;
+				text-decoration: none;
+				font-weight: 600;
+				border-radius: 4px;
+				transition: background 0.3s;
+			}
+			.hero-cta:hover {
+				background: white;
+				color: var(--primary-blue);
+			}
+			.content-container {
+				max-width: 1200px;
+				margin: 3rem auto;
+				padding: 0 2rem;
+			}
+			.content-container h2 {
+				font-size: 2rem;
+				margin-bottom: 2rem;
+				border-bottom: 2px solid #ddd;
+				padding-bottom: 0.5rem;
+			}
+			.posts-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				list-style: none;
+				padding: 0;
+			}
+			.post-card {
+				background: white;
+				padding: 1.5rem;
+				border-radius: 8px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+				transition: transform 0.2s;
+			}
+			.post-card:hover {
+				transform: translateY(-4px);
+			}
+			.post-card a {
+				text-decoration: none;
+				color: inherit;
+			}
+			.post-card h3 {
+				margin-top: 0;
+				color: var(--primary-blue);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		
+		<section class="hero-section">
+			<div class="hero-container">
+				<div class="hero-subtitle">Tu portal de referencia en economía y gestión</div>
+				<h1>Construye tu libertad financiera con estrategias probadas</h1>
+				<a href="/blog" class="hero-cta">Explorar todas las guías</a>
+			</div>
+		</section>
+
+		<main class="content-container">
+			<h2>Últimas publicaciones y análisis</h2>
+			<ul class="posts-grid">
+				{
+					posts.map((post) => (
+						<li class="post-card">
+							<a href={`/blog/${post.id}/`}>
+								<h3>{post.data.title}</h3>
+								<p>{post.data.description}</p>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</main>
+
+		<Footer />
+	</body>
+</html>
