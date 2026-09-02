@@ -14,113 +14,42 @@ const posts = (await getCollection('blog')).sort(
 <html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			:root {
-				--primary-blue: #0b4f6c;
-				--accent-blue: #01baef;
-				--dark-text: #222;
-			}
-			body {
-				margin: 0;
-				font-family: system-ui, -apple-system, sans-serif;
-				color: var(--dark-text);
-				background-color: #f9f9f9;
-			}
-			.hero-section {
-				background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%);
-				color: white;
-				padding: 5rem 2rem;
-				text-align: left;
-			}
-			.hero-container {
-				max-width: 1200px;
-				margin: 0 auto;
-			}
-			.hero-subtitle {
-				font-size: 1rem;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-				opacity: 0.85;
-				margin-bottom: 1rem;
-			}
-			.hero-section h1 {
-				font-size: 2.8rem;
-				max-width: 700px;
-				line-height: 1.2;
-				margin-bottom: 1.5rem;
-			}
-			.hero-cta {
-				display: inline-block;
-				border: 2px solid white;
-				color: white;
-				padding: 0.75rem 1.5rem;
-				text-decoration: none;
-				font-weight: 600;
-				border-radius: 4px;
-				transition: background 0.3s;
-			}
-			.hero-cta:hover {
-				background: white;
-				color: var(--primary-blue);
-			}
-			.content-container {
-				max-width: 1200px;
-				margin: 3rem auto;
-				padding: 0 2rem;
-			}
-			.content-container h2 {
-				font-size: 2rem;
-				margin-bottom: 2rem;
-				border-bottom: 2px solid #ddd;
-				padding-bottom: 0.5rem;
-			}
-			.posts-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-				gap: 2rem;
-				list-style: none;
-				padding: 0;
-			}
-			.post-card {
-				background: white;
-				padding: 1.5rem;
-				border-radius: 8px;
-				box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-				transition: transform 0.2s;
-			}
-			.post-card:hover {
-				transform: translateY(-4px);
-			}
-			.post-card a {
-				text-decoration: none;
-				color: inherit;
-			}
-			.post-card h3 {
-				margin-top: 0;
-				color: var(--primary-blue);
-			}
-		</style>
 	</head>
-	<body>
+	<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 		<Header />
 		
-		<section class="hero-section">
-			<div class="hero-container">
-				<div class="hero-subtitle">Tu portal de referencia en economía y gestión</div>
-				<h1>Construye tu libertad financiera con estrategias probadas</h1>
-				<a href="/blog" class="hero-cta">Explorar todas las guías</a>
+		<section class="bg-gradient-to-br from-[#053856] to-[#0b4f6c] text-white py-20 px-4">
+			<div class="max-w-4xl mx-auto">
+				<p class="text-xs md:text-sm uppercase tracking-widest opacity-85 mb-4 font-semibold">
+					Tu portal de referencia en economía y gestión
+				</p>
+				<h1 class="text-3xl md:text-5xl font-bold max-w-2xl leading-tight mb-6">
+					Construye tu libertad financiera con estrategias probadas
+				</h1>
+				<a href="/blog" class="inline-block border-2 border-white text-white px-6 py-3 font-semibold rounded-lg hover:bg-white hover:text-[#0b4f6c] transition-colors">
+					Explorar todas las guías
+				</a>
 			</div>
 		</section>
 
-		<main class="content-container">
-			<h2>Últimas publicaciones y análisis</h2>
-			<ul class="posts-grid">
+		<main class="max-w-4xl mx-auto px-4 py-12 flex-grow w-full">
+			<h2 class="text-2xl font-bold text-slate-900 mb-8 border-b border-slate-200 pb-3">
+				Últimas publicaciones y análisis
+			</h2>
+			<ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0 m-0">
 				{
 					posts.map((post) => (
-						<li class="post-card">
-							<a href={`/blog/${post.id}/`}>
-								<h3>{post.data.title}</h3>
-								<p>{post.data.description}</p>
+						<li class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+							<a href={`/blog/${post.id}/`} class="p-6 block h-full no-underline text-inherit group">
+								<h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors mb-2">
+									{post.data.title}
+								</h3>
+								<p class="text-slate-600 text-sm leading-relaxed mb-4">
+									{post.data.description}
+								</p>
+								<span class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-1">
+									Leer artículo &rarr;
+								</span>
 							</a>
 						</li>
 					))
