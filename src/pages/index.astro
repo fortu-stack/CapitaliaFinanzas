@@ -15,46 +15,50 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+	<body style="background-color: #f8fafc; color: #1e293b; font-family: system-ui, sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh;">
 		<Header />
 		
-		<section class="bg-gradient-to-br from-[#053856] to-[#0b4f6c] text-white py-20 px-4">
-			<div class="max-w-4xl mx-auto">
-				<p class="text-xs md:text-sm uppercase tracking-widest opacity-85 mb-4 font-semibold">
+		<!-- Sección Hero Institucional -->
+		<section style="background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%); color: white; padding: 5rem 1rem;">
+			<div style="max-width: 72rem; margin: 0 auto;">
+				<p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 1rem; font-weight: 600;">
 					Tu portal de referencia en economía y gestión
 				</p>
-				<h1 class="text-3xl md:text-5xl font-bold max-w-2xl leading-tight mb-6">
+				<h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; max-width: 48rem; line-height: 1.2; margin-bottom: 1.5rem;">
 					Construye tu libertad financiera con estrategias probadas
 				</h1>
-				<a href="/blog" class="inline-block border-2 border-white text-white px-6 py-3 font-semibold rounded-lg hover:bg-white hover:text-[#0b4f6c] transition-colors">
-					Explorar todas las guías
+				<a href="/blog" style="display: inline-block; border: 2px solid white; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 0.5rem; text-decoration: none;">
+					Explorar todas las guías &rarr;
 				</a>
 			</div>
 		</section>
 
-		<main class="max-w-4xl mx-auto px-4 py-12 flex-grow w-full">
-			<h2 class="text-2xl font-bold text-slate-900 mb-8 border-b border-slate-200 pb-3">
+		<!-- Listado de Artículos -->
+		<main style="max-width: 72rem; margin: 0 auto; padding: 3rem 1rem; flex-grow: 1; width: 100%; box-sizing: border-box;">
+			<h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem;">
 				Últimas publicaciones y análisis
 			</h2>
-			<ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0 m-0">
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
 				{
 					posts.map((post) => (
-						<li class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-							<a href={`/blog/${post.id}/`} class="p-6 block h-full no-underline text-inherit group">
-								<h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors mb-2">
-									{post.data.title}
+						<div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+							<div>
+								<h3 style="font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.4;">
+									<a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">
+										{post.data.title}
+									</a>
 								</h3>
-								<p class="text-slate-600 text-sm leading-relaxed mb-4">
+								<p style="font-size: 0.875rem; color: #475569; margin-bottom: 1.5rem; line-height: 1.5;">
 									{post.data.description}
 								</p>
-								<span class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-1">
-									Leer artículo &rarr;
-								</span>
+							</div>
+							<a href={`/blog/${post.id}/`} style="font-size: 0.875rem; font-weight: 600; color: #059669; text-decoration: none;">
+								Leer artículo &rarr;
 							</a>
-						</li>
+						</div>
 					))
 				}
-			</ul>
+			</div>
 		</main>
 
 		<Footer />
