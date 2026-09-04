@@ -2,10 +2,11 @@
 title: "Qué son los gastos hormiga y cómo están vaciando tu cuenta sin que te des cuenta"
 description: "Descubre qué son los gastos hormiga, por qué son el mayor enemigo silencioso de tus ahorros y cómo eliminarlos con un método práctico."
 pubDate: "2026-05-15"
-heroImage: "./gastos-hormiga.jpg"
 ---
 
 A primera hora de la mañana un café para llevar, al mediodía una suscripción digital que apenas usas, por la tarde un antojo en la aplicación de comida a domicilio. Pequeños desembolsos cotidianos que parecen inofensivos, pero que al cabo de los meses se acumulan y le dan una sorpresa amarga al final de año. Si esta situación te resulta familiar, es muy probable que no tengas un problema de ingresos, sino de gastos hormiga.
+
+![Ilustración explicativa sobre los gastos hormiga y micro-pagos](./gastos-hormiga.jpg)
 
 ## Qué son exactamente los gastos hormiga
 
