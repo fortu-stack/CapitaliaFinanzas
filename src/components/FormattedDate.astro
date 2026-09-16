@@ -1,17 +1,19 @@
 ---
-interface Props {
-	date: Date;
-}
-
+// src/components/FormattedDate.astro
 const { date } = Astro.props;
+
+// Si no hay fecha (como en la calculadora), no pinta nada o evita el error
+if (!date) {
+  return null;
+}
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+  {
+    date.toLocaleDateString('en-us', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    })
+  }
 </time>

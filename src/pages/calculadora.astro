@@ -1,0 +1,36 @@
+---
+// src/pages/calculadora.astro
+import BlogPost from '../layouts/BlogPost.astro';
+import CalculadoraDeudas from '../components/CalculadoraDeudas.astro';
+---
+
+<BlogPost title="Calculadora de Deudas: Método Bola de Nieve vs Avalancha" description="Simula y compara qué estrategia te ayuda a salir de deudas más rápido y ahorrando en intereses.">
+  <main class="py-6 px-2 max-w-5xl mx-auto">
+    <!-- Cabecera -->
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Herramienta Gratuita</span>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">
+        Simulador de Amortización de Deudas
+      </h1>
+      <p class="text-slate-600 text-base md:text-lg">
+        Introduce tus pasivos, añade tu capacidad de ahorro mensual y descubre al instante qué estrategia (Bola de Nieve o Avalancha) te ahorrará más dinero y tiempo.
+      </p>
+    </div>
+
+    <!-- Componente de la calculadora -->
+    <CalculadoraDeudas />
+
+    <!-- Texto SEO inferior -->
+    <section class="mt-16 bg-white p-8 rounded-2xl border border-slate-100 shadow-sm max-w-4xl mx-auto">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">¿Cómo funciona esta calculadora financiera?</h2>
+      <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
+        <p>
+          Salir de las deudas de alta rotación (como tarjetas de crédito o préstamos al consumo) puede parecer un laberinto. Este simulador calcula de forma matemática mes a mes el impacto de los intereses compuestos sobre tus pasivos actuales.
+        </p>
+        <p>
+          Mientras que el <strong>Método Bola de Nieve</strong> prioriza el factor psicológico liquidando primero las deudas más pequeñas, el <strong>Método Avalancha</strong> optimiza cada euro centrándose en los tipos de interés más altos para minimizar el coste total de la deuda.
+        </p>
+      </div>
+    </section>
+  </main>
+</BlogPost>

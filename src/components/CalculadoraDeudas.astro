@@ -1,0 +1,609 @@
+---
+// src/components/CalculadoraDeudas.astro
+---
+
+<div class="calc-container">
+  <!-- Título con barra vertical de acento -->
+  <div class="calc-header">
+    <h2>Calculadora de Deudas</h2>
+    <p>Introduce tus pasivos y compara qué método te ayuda a liquidarlos antes.</p>
+  </div>
+
+  <!-- Contenedor del Formulario -->
+  <div class="calc-form-space">
+    <div id="lista-deudas" class="lista-deudas">
+      
+      <!-- Fila de deuda inicial -->
+      <div class="deuda-row">
+        <div class="deuda-row-top">
+          <span class="deuda-label-num">DEUDA 1</span>
+          <button type="button" class="btn-eliminar eliminar-deuda">Eliminar</button>
+        </div>
+
+        <div class="deuda-grid">
+          <!-- Nombre -->
+          <div class="field-group">
+            <label>Nombre:</label>
+            <input type="text" value="Tarjeta Visa" class="input-field nombre-input" required />
+          </div>
+
+          <!-- Importe con bloque € -->
+          <div class="field-group">
+            <label>Ahorros / Importe:</label>
+            <div class="input-with-addon">
+              <input type="number" value="3000" class="input-field saldo-input" required />
+              <span class="addon">€</span>
+            </div>
+          </div>
+
+          <!-- TAE con bloque % -->
+          <div class="field-group">
+            <label>Interés (TAE):</label>
+            <div class="input-with-addon">
+              <input type="number" value="18" step="0.1" class="input-field tae-input" required />
+              <span class="addon">%</span>
+            </div>
+          </div>
+
+          <!-- Cuota mínima con bloque € -->
+          <div class="field-group">
+            <label>Cuota mínima:</label>
+            <div class="input-with-addon">
+              <input type="number" value="100" class="input-field cuota-input" required />
+              <span class="addon">€</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles secundarios -->
+    <div class="calc-controls-row">
+      <button type="button" id="add-deuda-btn" class="btn-secondary">
+        + Añadir otra deuda
+      </button>
+
+      <div class="extra-money-wrapper">
+        <label>Dinero extra mensual:</label>
+        <div class="input-with-addon input-addon-sm">
+          <input type="number" id="extra-money" value="200" class="input-field text-right" />
+          <span class="addon">€</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de Acción -->
+    <div class="calc-actions">
+      <button type="button" id="reset-btn" class="btn-teal-light">
+        Nueva simulación
+      </button>
+      <button type="button" id="calcular-btn" class="btn-primary">
+        Calcular
+      </button>
+    </div>
+  </div>
+
+  <!-- Resultados (Ocultos al inicio) -->
+  <div id="resultados-container" class="resultados-container hidden">
+    <h3>Resultados de la Simulación</h3>
+    
+    <div class="resultados-grid">
+      <!-- Tarjeta Bola de Nieve -->
+      <div class="res-card nieve-card">
+        <h4>Método Bola de Nieve</h4>
+        <p>Prioriza el menor importe total para ganar motivación.</p>
+        <div class="res-box">
+          <p><span>Tiempo total:</span> <strong id="nieve-meses">0 meses</strong></p>
+          <p><span>Intereses totales:</span> <strong id="nieve-intereses">0 €</strong></p>
+        </div>
+      </div>
+
+      <!-- Tarjeta Avalancha -->
+      <div class="res-card avalancha-card">
+        <h4>Método Avalancha</h4>
+        <p>Prioriza el mayor tipo de interés (TAE) para ahorrar más.</p>
+        <div class="res-box">
+          <p><span>Tiempo total:</span> <strong id="avalancha-meses">0 meses</strong></p>
+          <p><span>Intereses totales:</span> <strong id="avalancha-intereses">0 €</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner de Ahorro Destacado -->
+    <div id="banner-ahorro" class="banner-ahorro"></div>
+  </div>
+</div>
+
+<style>
+  .calc-container {
+    max-width: 52rem;
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    padding: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .calc-header {
+    border-left: 4px solid #0d9488;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .calc-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .calc-header p {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin: 0;
+  }
+
+  .calc-form-space {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .lista-deudas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .deuda-row {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .deuda-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .deuda-label-num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-eliminar {
+    background-color: #fff1f2;
+    color: #e11d48;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-eliminar:hover {
+    background-color: #ffe4e6;
+  }
+
+  .deuda-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .deuda-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .field-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.35rem;
+  }
+
+  .input-field {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: #1e293b;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .input-field:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.2);
+  }
+
+  .input-with-addon {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .input-with-addon .input-field {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+
+  .addon {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .calc-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .calc-controls-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .btn-secondary {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background-color: #334155;
+  }
+
+  .extra-money-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .extra-money-wrapper label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #334155;
+  }
+
+  .input-addon-sm {
+    width: 9rem;
+  }
+
+  .calc-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-teal-light {
+    background-color: #14b8a6;
+    color: #ffffff;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+  }
+
+  .btn-teal-light:hover {
+    background-color: #0d9488;
+  }
+
+  .btn-primary {
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(13, 148, 136, 0.2);
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0f766e;
+  }
+
+  .resultados-container {
+    margin-top: 2.5rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 2rem;
+  }
+
+  .resultados-container h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .resultados-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .resultados-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .res-card {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .nieve-card {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+  .nieve-card h4 { color: #166534; }
+  .nieve-card p { color: #15803d; }
+
+  .avalancha-card {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+  }
+  .avalancha-card h4 { color: #0369a1; }
+  .avalancha-card p { color: #0284c7; }
+
+  .res-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .res-card p {
+    font-size: 0.75rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .res-box {
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .res-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #334155;
+    margin: 0;
+  }
+
+  .res-box strong {
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .banner-ahorro {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fef3c7;
+    border: 1px solid #fde68a;
+    border-radius: 0.75rem;
+    text-align: center;
+    color: #78350f;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  let contadorDeudas = 1;
+  const listaDeudas = document.getElementById('lista-deudas');
+  const addDeudaBtn = document.getElementById('add-deuda-btn');
+  const calcularBtn = document.getElementById('calcular-btn');
+  const resetBtn = document.getElementById('reset-btn');
+  const resultadosContainer = document.getElementById('resultados-container');
+
+  addDeudaBtn?.addEventListener('click', () => {
+    contadorDeudas++;
+    const row = document.createElement('div');
+    row.className = 'deuda-row';
+    row.innerHTML = `
+      <div class="deuda-row-top">
+        <span class="deuda-label-num">DEUDA ${contadorDeudas}</span>
+        <button type="button" class="btn-eliminar eliminar-deuda">Eliminar</button>
+      </div>
+      <div class="deuda-grid">
+        <div class="field-group">
+          <label>Nombre:</label>
+          <input type="text" placeholder="Ej. Préstamo" class="input-field nombre-input" required />
+        </div>
+        <div class="field-group">
+          <label>Ahorros / Importe:</label>
+          <div class="input-with-addon">
+            <input type="number" placeholder="1500" class="input-field saldo-input" required />
+            <span class="addon">€</span>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>Interés (TAE):</label>
+          <div class="input-with-addon">
+            <input type="number" placeholder="8.5" step="0.1" class="input-field tae-input" required />
+            <span class="addon">%</span>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>Cuota mínima:</label>
+          <div class="input-with-addon">
+            <input type="number" placeholder="50" class="input-field cuota-input" required />
+            <span class="addon">€</span>
+          </div>
+        </div>
+      </div>
+    `;
+    listaDeudas?.appendChild(row);
+  });
+
+  listaDeudas?.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (target && target.classList.contains('eliminar-deuda')) {
+      const row = target.closest('.deuda-row');
+      if (listaDeudas.children.length > 1) {
+        row?.remove();
+      } else {
+        alert('Debes mantener al menos una deuda.');
+      }
+    }
+  });
+
+  resetBtn?.addEventListener('click', () => {
+    location.reload();
+  });
+
+  function simularMetodo(deudasOriginales: any[], extraMensual: number, tipoOrden: 'nieve' | 'avalancha') {
+    let deudas = deudasOriginales.map(d => ({ ...d }));
+    let meses = 0;
+    let interesesTotales = 0;
+
+    if (tipoOrden === 'nieve') {
+      deudas.sort((a, b) => a.saldo - b.saldo);
+    } else {
+      deudas.sort((a, b) => b.tae - a.tae);
+    }
+
+    while (deudas.some(d => d.saldo > 0) && meses < 600) {
+      meses++;
+      let remanenteExtra = extraMensual;
+
+      for (let deuda of deudas) {
+        if (deuda.saldo <= 0) continue;
+        
+        let interesMes = deuda.saldo * (deuda.tae / 100 / 12);
+        interesesTotales += interesMes;
+        deuda.saldo += interesMes;
+
+        let pago = Math.min(deuda.cuota, deuda.saldo);
+        deuda.saldo -= pago;
+
+        let sobranteCuota = deuda.cuota - pago;
+        if (sobranteCuota > 0) {
+          remanenteExtra += sobranteCuota;
+        }
+      }
+
+      for (let deuda of deudas) {
+        if (deuda.saldo > 0 && remanenteExtra > 0) {
+          let pagoExtra = Math.min(remanenteExtra, deuda.saldo);
+          deuda.saldo -= pagoExtra;
+          remanenteExtra -= pagoExtra;
+        }
+      }
+    }
+
+    return { meses, intereses: Math.round(interesesTotales) };
+  }
+
+  calcularBtn?.addEventListener('click', () => {
+    const rows = document.querySelectorAll('.deuda-row');
+    const extraInput = document.getElementById('extra-money') as HTMLInputElement;
+    const extraMensual = parseFloat(extraInput?.value) || 0;
+
+    const deudas: any[] = [];
+    rows.forEach(row => {
+      const saldo = parseFloat((row.querySelector('.saldo-input') as HTMLInputElement)?.value) || 0;
+      const tae = parseFloat((row.querySelector('.tae-input') as HTMLInputElement)?.value) || 0;
+      const cuota = parseFloat((row.querySelector('.cuota-input') as HTMLInputElement)?.value) || 0;
+      if (saldo > 0) {
+        deudas.push({ saldo, tae, cuota });
+      }
+    });
+
+    if (deudas.length === 0) {
+      alert('Por favor, introduce al menos una deuda con importe válido.');
+      return;
+    }
+
+    const resNieve = simularMetodo(deudas, extraMensual, 'nieve');
+    const resAvalancha = simularMetodo(deudas, extraMensual, 'avalancha');
+
+    const nieveMesesEl = document.getElementById('nieve-meses');
+    const nieveInteresesEl = document.getElementById('nieve-intereses');
+    const avalanchaMesesEl = document.getElementById('avalancha-meses');
+    const avalanchaInteresesEl = document.getElementById('avalancha-intereses');
+    const bannerAhorro = document.getElementById('banner-ahorro');
+
+    if (nieveMesesEl) nieveMesesEl.textContent = `${resNieve.meses} meses (${(resNieve.meses / 12).toFixed(1)} años)`;
+    if (nieveInteresesEl) nieveInteresesEl.textContent = `${resNieve.intereses.toLocaleString()} €`;
+    
+    if (avalanchaMesesEl) avalanchaMesesEl.textContent = `${resAvalancha.meses} meses (${(resAvalancha.meses / 12).toFixed(1)} años)`;
+    if (avalanchaInteresesEl) avalanchaInteresesEl.textContent = `${resAvalancha.intereses.toLocaleString()} €`;
+
+    const diferenciaIntereses = resNieve.intereses - resAvalancha.intereses;
+    if (bannerAhorro) {
+      if (diferenciaIntereses > 0) {
+        bannerAhorro.innerHTML = `💡 Con el <strong>Método Avalancha</strong> te ahorras <strong>${diferenciaIntereses.toLocaleString()} €</strong> en intereses frente al método de la bola de nieve.`;
+      } else {
+        bannerAhorro.innerHTML = `💡 Con tus datos actuales, ambos métodos tienen un coste muy similar en intereses. ¡Elige el que prefieras!`;
+      }
+    }
+
+    resultadosContainer?.classList.remove('hidden');
+    resultadosContainer?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+</script>
