@@ -1,7 +1,7 @@
 ---
 title: "El error de repartir tu dinero a partes iguales entre tus deudas (y por qué te mantiene atrapado)"
 description: "Descubre por qué pagar un poco de cada deuda es una trampa que frena tu progreso, por qué fallan los planes de pago y cómo aplicar una estrategia de concentración efectiva."
-date: "2026-09-17"
+pubDate: 2026-09-17
 slug: "error-repartir-deudas-partes-iguales"
 ---
 
