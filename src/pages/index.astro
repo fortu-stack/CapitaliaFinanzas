@@ -1,66 +1,60 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
+import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
-<!doctype html>
-<html lang="es">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body style="background-color: #f8fafc; color: #1e293b; font-family: system-ui, sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh;">
-		<Header />
-		
-		<!-- Sección Hero Institucional -->
-		<section style="background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%); color: white; padding: 5rem 1rem;">
-			<div style="max-width: 72rem; margin: 0 auto;">
-				<p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 1rem; font-weight: 600;">
-					Tu portal de referencia en economía y gestión
-				</p>
-				<h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; max-width: 48rem; line-height: 1.2; margin-bottom: 1.5rem;">
-					Construye tu libertad financiera con estrategias probadas
-				</h1>
-				<a href="/blog" style="display: inline-block; border: 2px solid white; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 0.5rem; text-decoration: none;">
-					Explorar todas las guías &rarr;
-				</a>
-			</div>
-		</section>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <Header />
+    
+    <!-- Sección Hero Institucional -->
+    <section style="background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%); color: white; padding: 5rem 1rem;">
+        <div style="max-width: 72rem; margin: 0 auto;">
+            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 1rem; font-weight: 600;">
+                Tu portal de referencia en economía y gestión
+            </p>
+            <h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; max-width: 48rem; line-height: 1.2; margin-bottom: 1.5rem;">
+                Construye tu libertad financiera con estrategias probadas
+            </h1>
+            <a href="/blog" style="display: inline-block; border: 2px solid white; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 0.5rem; text-decoration: none;">
+                Explorar todas las guías &rarr;
+            </a>
+        </div>
+    </section>
 
-		<!-- Listado de Artículos -->
-		<main style="max-width: 72rem; margin: 0 auto; padding: 3rem 1rem; flex-grow: 1; width: 100%; box-sizing: border-box;">
-			<h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem;">
-				Últimas publicaciones y análisis
-			</h2>
-			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-				{
-					posts.map((post) => (
-						<div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-							<div>
-								<h3 style="font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.4;">
-									<a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">
-										{post.data.title}
-									</a>
-								</h3>
-								<p style="font-size: 0.875rem; color: #475569; margin-bottom: 1.5rem; line-height: 1.5;">
-									{post.data.description}
-								</p>
-							</div>
-							<a href={`/blog/${post.id}/`} style="font-size: 0.875rem; font-weight: 600; color: #059669; text-decoration: none;">
-								Leer artículo &rarr;
-							</a>
-						</div>
-					))
-				}
-			</div>
-		</main>
+    <!-- Listado de Artículos -->
+    <main style="max-width: 72rem; margin: 0 auto; padding: 3rem 1rem; flex-grow: 1; width: 100%; box-sizing: border-box;">
+        <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem;">
+            Últimas publicaciones y análisis
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+            {
+                posts.map((post) => (
+                    <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+                        <div>
+                            <h3 style="font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.4;">
+                                <a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">
+                                    {post.data.title}
+                                </a>
+                            </h3>
+                            <p style="font-size: 0.875rem; color: #475569; margin-bottom: 1.5rem; line-height: 1.5;">
+                                {post.data.description}
+                            </p>
+                        </div>
+                        <a href={`/blog/${post.id}/`} style="font-size: 0.875rem; font-weight: 600; color: #059669; text-decoration: none;">
+                            Leer artículo &rarr;
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
+    </main>
 
-		<Footer />
-	</body>
-</html>
+    <Footer />
+</Layout>
