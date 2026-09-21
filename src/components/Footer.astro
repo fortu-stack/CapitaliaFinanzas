@@ -3,9 +3,11 @@ const today = new Date();
 ---
 
 <footer>
-    &copy; {today.getFullYear()} Capitalia. Todos los derechos reservados.
+    &copy; {today.getFullYear()} Capitalia Finanzas. Todos los derechos reservados.
     <div class="footer-links">
-        <a href="/politica-privacidad">Política de Privacidad</a>
+        <a href="/privacidad">Política de Privacidad</a>
+        <span class="separator">·</span>
+        <a href="/cookies">Política de Cookies</a>
     </div>
 </footer>
 
@@ -20,6 +22,10 @@ const today = new Date();
     }
     .footer-links {
         margin-top: 0.75rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
     }
     .footer-links a {
         color: #0b4f6c;
@@ -29,5 +35,8 @@ const today = new Date();
     }
     .footer-links a:hover {
         text-decoration: underline;
+    }
+    .separator {
+        color: #ccc;
     }
 </style>
