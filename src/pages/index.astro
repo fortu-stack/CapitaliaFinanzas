@@ -1,60 +1,66 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 
+// Obtenemos y ordenamos los artículos del blog
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-    <Header />
-    
-    <!-- Sección Hero Institucional -->
-    <section style="background: linear-gradient(135deg, #053856 0%, #0b4f6c 100%); color: white; padding: 5rem 1rem;">
-        <div style="max-width: 72rem; margin: 0 auto;">
-            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 1rem; font-weight: 600;">
-                Tu portal de referencia en economía y gestión
-            </p>
-            <h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; max-width: 48rem; line-height: 1.2; margin-bottom: 1.5rem;">
+<Layout title="Capitalia Finanzas - Tu portal de economía y gestión">
+    <!-- Hero Principal más visual y dinámico -->
+    <section class="bg-gradient-to-r from-slate-900 to-blue-950 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-blue-600 text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full">Portal Profesional YMYL</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-6 mb-4 leading-tight">
                 Construye tu libertad financiera con estrategias probadas
             </h1>
-            <a href="/blog" style="display: inline-block; border: 2px solid white; color: white; padding: 0.75rem 1.5rem; font-weight: 600; border-radius: 0.5rem; text-decoration: none;">
-                Explorar todas las guías &rarr;
-            </a>
+            <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+                Guías prácticas, análisis del mercado en España y herramientas interactivas diseñadas para blindar tu patrimonio.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/calculadora" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-lg">
+                    Probar Calculadoras Interactivas &rarr;
+                </a>
+                <a href="#articulos" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3.5 rounded-xl transition backdrop-blur-sm">
+                    Ver Guías Recientes
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Listado de Artículos -->
-    <main style="max-width: 72rem; margin: 0 auto; padding: 3rem 1rem; flex-grow: 1; width: 100%; box-sizing: border-box;">
-        <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem;">
-            Últimas publicaciones y análisis
-        </h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+    <!-- Cuadrícula de Artículos Moderna y Visual -->
+    <section id="articulos" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 border-l-4 border-blue-600 pl-3">
+                Últimas Guías y Análisis
+            </h2>
+        </div>
+        
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {
                 posts.map((post) => (
-                    <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+                    <article class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
                         <div>
-                            <h3 style="font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.4;">
-                                <a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">
-                                    {post.data.title}
-                                </a>
-                            </h3>
-                            <p style="font-size: 0.875rem; color: #475569; margin-bottom: 1.5rem; line-height: 1.5;">
-                                {post.data.description}
-                            </p>
+                            {post.data.heroImage && (
+                                <img src={post.data.heroImage.src} alt={post.data.title} class="w-full h-48 object-cover" />
+                            )}
+                            <div class="p-6">
+                                <h3 class="font-bold text-lg text-gray-900 mb-2 leading-snug hover:text-blue-600 transition">
+                                    <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+                                </h3>
+                                <p class="text-gray-600 text-sm line-clamp-3 mb-4">{post.data.description}</p>
+                            </div>
                         </div>
-                        <a href={`/blog/${post.id}/`} style="font-size: 0.875rem; font-weight: 600; color: #059669; text-decoration: none;">
-                            Leer artículo &rarr;
-                        </a>
-                    </div>
+                        <div class="px-6 pb-6 pt-0">
+                            <a href={`/blog/${post.id}/`} class="inline-flex items-center text-blue-600 font-semibold text-sm hover:underline">
+                                Leer artículo completo &rarr;
+                            </a>
+                        </div>
+                    </article>
                 ))
             }
         </div>
-    </main>
-
-    <Footer />
+    </section>
 </Layout>
