@@ -8,23 +8,62 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <Layout title="Capitalia Finanzas - Tu portal de economía y gestión">
-    <!-- Hero Principal -->
+    
+    <!-- 1. BANNER / NOTICIA DESTACADA DE ÚLTIMA HORA -->
+    <div class="news-ticker">
+        <span class="ticker-badge">Actualidad</span>
+        <p>📢 <strong>Última hora:</strong> Nuevas directrices fiscales y tipos de interés en España. <a href="/blog/como-negociar-con-tu-banco">&rarr; Leer análisis</a></p>
+    </div>
+
+    <!-- 2. HERO PRINCIPAL -->
     <section class="hero">
         <div class="hero-content">
-            <span class="badge">Portal Profesional YMYL</span>
-            <h1>Construye tu libertad financiera con estrategias probadas</h1>
-            <p>Guías prácticas, análisis del mercado en España y herramientas interactivas diseñadas para blindar tu patrimonio.</p>
+            <span class="tag">Portal Profesional YMYL</span>
+            <h1>Toma el control de tu dinero con estrategia y rigor</h1>
+            <p>Análisis financieros independientes, fiscalidad adaptada a España y herramientas interactivas para blindar tu patrimonio a largo plazo.</p>
             <div class="hero-buttons">
-                <a href="/calculadora" class="btn-primary">Probar Calculadoras Interactivas &rarr;</a>
-                <a href="#articulos" class="btn-secondary">Ver Guías Recientes</a>
+                <a href="#calculadoras" class="btn-primary">Descubrir Herramientas &rarr;</a>
+                <a href="#articulos" class="btn-secondary">Explorar Guías</a>
             </div>
         </div>
     </section>
 
-    <!-- Cuadrícula de Artículos -->
+    <!-- 3. SECCIÓN EXPLICATIVA DE LAS HERRAMIENTAS Y CALCULADORAS -->
+    <section id="calculadoras" class="calculators-intro">
+        <div class="section-container">
+            <div class="section-title-center">
+                <h2>Herramientas Financieras de Precisión</h2>
+                <p>No hagas cuentas a ciegas. Utiliza nuestras calculadoras optimizadas para tomar decisiones reales.</p>
+            </div>
+            
+            <div class="calc-grid">
+                <div class="calc-card">
+                    <div class="calc-icon">📈</div>
+                    <h3>Interés Compuesto</h3>
+                    <p>Calcula cómo crece tu capital a largo plazo combinando aportaciones periódicas y rentabilidad estimada.</p>
+                    <a href="/calculadora" class="calc-link">Calcular ahora &rarr;</a>
+                </div>
+                <div class="calc-card">
+                    <div class="calc-icon">⚖️</div>
+                    <h3>Gestión de Deudas</h3>
+                    <p>Compara estrategias de amortización (Bola de nieve vs. Avalancha) para liquidar pasivos de forma eficiente.</p>
+                    <a href="/calculadora" class="calc-link">Probar herramienta &rarr;</a>
+                </div>
+                <div class="calc-card">
+                    <div class="calc-icon">🛡️</div>
+                    <h3>Colchón de Emergencia</h3>
+                    <p>Determina exactamente cuántos meses de gastos fijos necesitas ahorrar según tu perfil de riesgo en España.</p>
+                    <a href="/calculadora" class="calc-link">Calcular colchón &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ÚLTIMAS GUÍAS Y ARTÍCULOS -->
     <section id="articulos" class="articles-section">
         <div class="section-header">
-            <h2>Últimas Guías y Análisis</h2>
+            <h2>Últimas Guías y Análisis Publicados</h2>
+            <p>Contenido riguroso y actualizado paso a paso.</p>
         </div>
         
         <div class="articles-grid">
@@ -50,6 +89,33 @@ const posts = (await getCollection('blog')).sort(
     </section>
 
     <style>
+        /* Ticker de Noticias */
+        .news-ticker {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            text-align: center;
+        }
+        .ticker-badge {
+            background-color: #2563eb;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .news-ticker a {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        /* Hero */
         .hero {
             background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
             color: white;
@@ -60,9 +126,10 @@ const posts = (await getCollection('blog')).sort(
             max-width: 800px;
             margin: 0 auto;
         }
-        .badge {
-            background-color: #2563eb;
-            color: white;
+        .tag {
+            background-color: rgba(37, 99, 235, 0.3);
+            border: 1px solid rgba(147, 197, 253, 0.3);
+            color: #93c5fd;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -112,10 +179,82 @@ const posts = (await getCollection('blog')).sort(
         .btn-secondary:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
+
+        /* Sección Calculadoras Explicativas */
+        .calculators-intro {
+            background-color: #f8fafc;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title-center {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+        .section-title-center h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        .section-title-center p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .calc-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s;
+        }
+        .calc-card:hover {
+            transform: translateY(-4px);
+            border-color: #93c5fd;
+        }
+        .calc-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .calc-card h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        .calc-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+        .calc-link {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .calc-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección Artículos */
         .articles-section {
             max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 1rem;
+        }
+        .section-header {
+            margin-bottom: 2.5rem;
         }
         .section-header h2 {
             font-size: 1.75rem;
@@ -123,7 +262,12 @@ const posts = (await getCollection('blog')).sort(
             color: #111827;
             border-left: 4px solid #2563eb;
             padding-left: 0.75rem;
-            margin-bottom: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .section-header p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            padding-left: 1rem;
         }
         .articles-grid {
             display: grid;
