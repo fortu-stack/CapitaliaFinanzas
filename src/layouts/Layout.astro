@@ -1,6 +1,4 @@
 ---
-import '../styles/global.css';
-
 interface Props {
   title: string;
   description?: string;
@@ -17,23 +15,34 @@ const { title, description = "Capitalia Finanzas - Supervivencia y gestión fina
     <title>{title}</title>
     <meta name="description" content={description} />
   </head>
-  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between">
+  <body style="background-color: #f8fafc; color: #1e293b; font-family: system-ui, sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh;">
     
-    <!-- El contenido de cada página se inyecta directamente aquí de forma limpia -->
+    <!-- Contenido principal de la web -->
     <slot />
 
-    <!-- Banner de Cookies integrado globalmente con sus estilos correctos -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 md:p-6 z-50 shadow-2xl border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm hidden">
-      <div class="max-w-4xl">
-        <p class="leading-relaxed">
-          En <strong>Capitalia Finanzas</strong> utilizamos cookies propias y de terceros para garantizar la navegación y analizar el tráfico. Tienes más detalles en nuestra 
-          <a href="/cookies" class="underline text-blue-400 hover:text-blue-300 font-medium">Política de Cookies</a> y la 
-          <a href="/privacidad" class="underline text-blue-400 hover:text-blue-300 font-medium">Política de Privacidad</a>.
+    <!-- Banner de Cookies Estilo Institucional -->
+    <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background-color: #ffffff; color: #1e293b; padding: 1.5rem 2rem; z-index: 9999; box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.12); border-top: 1px solid #e2e8f0; flex-direction: row; justify-content: space-between; align-items: center; gap: 2rem; box-sizing: border-box;">
+      
+      <!-- Texto explicativo a la izquierda -->
+      <div style="max-width: 55rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #0f172a;">Esta página web usa cookies</h3>
+        <p style="font-size: 0.875rem; line-height: 1.5; margin: 0; color: #475569;">
+          Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Tienes más detalles en nuestra 
+          <a href="/cookies" style="text-decoration: underline; color: #2563eb; font-weight: 500;">Política de Cookies</a> y la 
+          <a href="/privacidad" style="text-decoration: underline; color: #2563eb; font-weight: 500;">Política de Privacidad</a>.
         </p>
       </div>
-      <div class="flex items-center gap-3 shrink-0">
-        <button id="accept-cookies" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors cursor-pointer shadow-sm">
-          Aceptar y continuar
+
+      <!-- Botones a la derecha -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; min-width: 170px;">
+        <button id="accept-all-cookies" style="background-color: #000000; color: white; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: none; cursor: pointer; text-align: center;">
+          Permitir todas
+        </button>
+        <button id="customize-cookies" style="background-color: #ffffff; color: #000000; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: 1px solid #d1d5db; cursor: pointer; text-align: center;">
+          Personalizar &gt;
+        </button>
+        <button id="deny-cookies" style="background-color: #ffffff; color: #000000; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: 1px solid #d1d5db; cursor: pointer; text-align: center;">
+          Denegar
         </button>
       </div>
     </div>
@@ -41,15 +50,30 @@ const { title, description = "Capitalia Finanzas - Supervivencia y gestión fina
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const banner = document.getElementById('cookie-banner');
-        const acceptBtn = document.getElementById('accept-cookies');
+        const acceptAllBtn = document.getElementById('accept-all-cookies');
+        const denyBtn = document.getElementById('deny-cookies');
 
-        if (!localStorage.getItem('capitalia_cookies_accepted')) {
-          banner?.classList.remove('hidden');
+        // Mostrar el banner si no hay una elección guardada previa
+        if (!localStorage.getItem('capitalia_cookie_choice')) {
+          if (banner) {
+            banner.style.display = 'flex';
+          }
         }
 
-        acceptBtn?.addEventListener('click', () => {
-          localStorage.setItem('capitalia_cookies_accepted', 'true');
-          banner?.classList.add('hidden');
+        // Botón Permitir todas
+        acceptAllBtn?.addEventListener('click', () => {
+          localStorage.setItem('capitalia_cookie_choice', 'all');
+          if (banner) {
+            banner.style.display = 'none';
+          }
+        });
+
+        // Botón Denegar
+        denyBtn?.addEventListener('click', () => {
+          localStorage.setItem('capitalia_cookie_choice', 'denied');
+          if (banner) {
+            banner.style.display = 'none';
+          }
         });
       });
     </script>
