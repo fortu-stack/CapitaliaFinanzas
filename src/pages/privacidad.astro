@@ -1,23 +1,35 @@
 ---
-layout: '../layouts/Layout.astro'
-title: "Política de Privacidad | Capitalia Finanzas"
-description: "Política de privacidad de Capitalia Finanzas. Información sobre el tratamiento de datos personales."
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<main class="max-w-3xl mx-auto px-4 py-12 text-slate-800">
-  <h1 class="text-3xl font-bold mb-6">Política de Privacidad</h1>
-  
-  <p class="mb-4">En <strong>Capitalia Finanzas</strong> respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica cómo recopilamos y usamos tu información.</p>
+<Layout title="Política de Privacidad - Capitalia Finanzas">
+    <Header />
+    
+    <main style="max-width: 56rem; margin: 0 auto; padding: 3rem 1rem; flex-grow: 1; box-sizing: border-box;">
+        <h1 style="font-size: 2rem; font-weight: 800; color: #0f172a; margin-bottom: 1.5rem;">Política de Privacidad</h1>
+        
+        <p style="color: #475569; line-height: 1.6; margin-bottom: 1.5rem;">
+            En <strong>Capitalia Finanzas</strong> respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica cómo recopilamos y usamos tu información.
+        </p>
 
-  <h2 class="text-xl font-semibold mt-6 mb-2">1. Responsable del tratamiento</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li><strong>Sitio web:</strong> https://capitaliafinanzas.com</li>
-    <li><strong>Finalidad:</strong> Ofrecer contenidos de educación financiera, guías de gestión de deudas y herramientas de cálculo.</li>
-  </ul>
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-top: 2rem; margin-bottom: 0.75rem;">1. Responsable del tratamiento</h2>
+        <ul style="color: #475569; line-height: 1.6; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.5rem;"><strong>Sitio web:</strong> https://capitaliafinanzas.com</li>
+            <li><strong>Finalidad:</strong> Ofrecer contenidos de educación financiera, guías de gestión de deudas y herramientas de cálculo.</li>
+        </ul>
 
-  <h2 class="text-xl font-semibold mt-6 mb-2">2. Qué datos recopilamos y por qué</h2>
-  <p class="mb-4">Este sitio web recopila datos de forma automática a través de cookies técnicas y de análisis (como Google Analytics) para medir el rendimiento de los artículos y mejorar la experiencia de navegación.</p>
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-top: 2rem; margin-bottom: 0.75rem;">2. Qué datos recopilamos y por qué</h2>
+        <p style="color: #475569; line-height: 1.6; margin-bottom: 1.5rem;">
+            Este sitio web recopila datos de forma automática a través de cookies técnicas y de análisis (como Google Analytics) para medir el rendimiento de los artículos y mejorar la experiencia de navegación.
+        </p>
 
-  <h2 class="text-xl font-semibold mt-6 mb-2">3. Tus derechos</h2>
-  <p>Tienes derecho a acceder, rectificar y suprimir tus datos conforme a la normativa europea (RGPD). Puedes contactar a través de nuestros canales habituales.</p>
-</main>
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-top: 2rem; margin-bottom: 0.75rem;">3. Tus derechos</h2>
+        <p style="color: #475569; line-height: 1.6;">
+            Tienes derecho a acceder, rectificar y suprimir tus datos conforme a la normativa europea (RGPD). Puedes contactar a través de nuestros canales habituales.
+        </p>
+    </main>
+
+    <Footer />
+</Layout>
