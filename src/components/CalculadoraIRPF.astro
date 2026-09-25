@@ -1,0 +1,128 @@
+---
+// src/components/CalculadoraIRPF.astro
+---
+
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-100 my-8 max-w-2xl mx-auto">
+  <div class="border-b border-slate-100 pb-4 mb-6">
+    <span class="text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-full">Herramienta Fiscal AEAT</span>
+    <h3 class="text-2xl font-extrabold text-slate-900 mt-2">Calculadora de Compensación de Pérdidas y Ganancias</h3>
+    <p class="text-sm text-slate-600 mt-1">Simula de forma orientativa cómo puedes compensar tus saldos negativos en la Base Imponible del Ahorro del IRPF.</p>
+  </div>
+
+  <div class="space-y-4 mb-6">
+    <div>
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+        1. Ganancias Patrimoniales (Acciones, Fondos, Criptos, Inmuebles)
+      </label>
+      <div class="relative">
+        <input 
+          type="number" 
+          id="ganancias" 
+          placeholder="Ej: 3000" 
+          class="w-full pl-4 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none transition-all text-slate-800 text-sm font-medium"
+        />
+        <span class="absolute right-3 top-3 text-slate-400 text-sm">€</span>
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+        2. Pérdidas Patrimoniales del Ejercicio
+      </label>
+      <div class="relative">
+        <input 
+          type="number" 
+          id="perdidas" 
+          placeholder="Ej: 5000" 
+          class="w-full pl-4 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none transition-all text-slate-800 text-sm font-medium"
+        />
+        <span class="absolute right-3 top-3 text-slate-400 text-sm">€</span>
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">
+        3. Rendimientos del Capital Mobiliario (Dividendos, Intereses)
+      </label>
+      <div class="relative">
+        <input 
+          type="number" 
+          id="mobiliario" 
+          placeholder="Ej: 2000" 
+          class="w-full pl-4 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:bg-white outline-none transition-all text-slate-800 text-sm font-medium"
+        />
+        <span class="absolute right-3 top-3 text-slate-400 text-sm">€</span>
+      </div>
+    </div>
+  </div>
+
+  <button 
+    id="calcularBtn" 
+    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg shadow-blue-600/20 cursor-pointer text-sm"
+  >
+    Calcular Compensación Fiscal
+  </button>
+
+  <!-- Contenedor de Resultados -->
+  <div id="resultado" class="mt-6 hidden p-5 bg-slate-50 rounded-xl border border-slate-200/80 space-y-3 animate-fadeIn">
+    <h4 class="font-bold text-slate-900 text-base border-b border-slate-200 pb-2">Desglose de la Simulación:</h4>
+    <ul class="space-y-2 text-sm text-slate-700">
+      <li id="resPatrimonial" class="flex justify-between items-center"></li>
+      <li id="resMobiliario" class="flex justify-between items-center"></li>
+      <li id="resRemanente" class="flex justify-between items-center font-semibold text-blue-700"></li>
+    </ul>
+    <p class="text-[11px] text-slate-400 mt-4 pt-2 border-t border-slate-200 italic leading-relaxed">
+      *Aviso legal: Esta calculadora es una simulación orientativa basada en la normativa general del IRPF (Ley 35/2006). No constituye asesoramiento fiscal vinculante. Verifique siempre su borrador de la AEAT.
+    </p>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('calcularBtn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const g = parseFloat((document.getElementById('ganancias') as HTMLInputElement).value) || 0;
+      const p = parseFloat((document.getElementById('perdidas') as HTMLInputElement).value) || 0;
+      const m = parseFloat((document.getElementById('mobiliario') as HTMLInputElement).value) || 0;
+
+      const saldoPatrimonial = g - p;
+      const resDiv = document.getElementById('resultado');
+      const resPatrimonial = document.getElementById('resPatrimonial');
+      const resMobiliario = document.getElementById('resMobiliario');
+      const resRemanente = document.getElementById('resRemanente');
+
+      let htmlPatrimonial = '';
+      let htmlMobiliario = '';
+      let htmlRemanente = '';
+
+      if (saldoPatrimonial >= 0) {
+        htmlPatrimonial = `<span>Saldo Neto Patrimonial:</span> <strong class="text-slate-900">+${saldoPatrimonial.toLocaleString()} €</strong>`;
+        htmlMobiliario = `<span>Compensación con Mobiliario:</span> <strong class="text-slate-900">No aplica (hay ganancia neta)</strong>`;
+        htmlRemanente = `<span>Resultado Global del Ahorro:</span> <span>Sujeto a gravamen en la base del ahorro</span>`;
+      } else {
+        const perdidaNeta = Math.abs(saldoPatrimonial);
+        const limite25 = m * 0.25;
+        let compensadoMob = 0;
+        let remanente = 0;
+
+        if (perdidaNeta <= limite25) {
+          compensadoMob = perdidaNeta;
+          remanente = 0;
+        } else {
+          compensadoMob = limite25;
+          remanente = perdidaNeta - limite25;
+        }
+
+        htmlPatrimonial = `<span>Pérdida Neta Patrimonial:</span> <strong class="text-red-600">-${perdidaNeta.toLocaleString()} €</strong>`;
+        htmlMobiliario = `<span>Compensación Capital Mobiliario (Límite 25%):</span> <strong class="text-emerald-600">-${compensadoMob.toLocaleString()} €</strong>`;
+        htmlRemanente = `<span>Remanente para próximos 4 años:</span> <strong class="text-blue-700">${remanente.toLocaleString()} €</strong>`;
+      }
+
+      if (resPatrimonial) resPatrimonial.innerHTML = htmlPatrimonial;
+      if (resMobiliario) resMobiliario.innerHTML = htmlMobiliario;
+      if (resRemanente) resRemanente.innerHTML = htmlRemanente;
+
+      if (resDiv) resDiv.classList.remove('hidden');
+    });
+  }
+</script>
