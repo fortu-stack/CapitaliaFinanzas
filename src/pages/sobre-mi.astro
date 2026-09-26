@@ -1,0 +1,173 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sobre mí - Capitalia Finanzas">
+    <main class="about-container">
+        <header class="about-header">
+            <span class="tag">Transparencia y Rigor</span>
+            <h1>Sobre el autor y el proyecto</h1>
+            <p class="subtitle">Educación financiera práctica, fiscalidad adaptada a España y herramientas basadas en datos reales.</p>
+        </header>
+
+        <section class="about-content">
+            <div class="bio-card">
+                <div class="bio-text">
+                    <h2>Hola, soy el creador de Capitalia Finanzas</h2>
+                    <p>
+                        Siempre me ha fascinado cómo la gestión del dinero y la fiscalidad condicionan nuestras decisiones vitales. Mi andadura en este mundo comenzó formándome como <strong>Término/Técnico Superior en Administración y Finanzas</strong>, y actualmente sigo ampliando mi visión técnica y económica cursando el <strong>Grado en Economía</strong>.
+                    </p>
+                    <p>
+                        Creé <em>Capitalia Finanzas</em> porque estaba cansado de buscar información económica en internet y encontrarme con dos extremos: o bien artículos hiperbólicos y genéricos creados por la inteligencia artificial sin ningún rigor, o bien textos farragosos de grandes corporaciones bancarias llenos de letra pequeña y conflictos de interés.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h3>¿Qué encontrarás (y qué no encontrarás) en esta web?</h3>
+                <div class="mission-grid">
+                    <div class="mission-box success">
+                        <h4>Lo que sí hacemos</h4>
+                        <ul>
+                            <li><strong>Herramientas interactivas:</strong> Calculadoras de IRPF e interés compuesto para simular números reales.</li>
+                            <li><strong>Fuentes primarias:</strong> Referencias directas al BOE, AEAT y organismos oficiales.</li>
+                            <li><strong>Enfoque práctico:</strong> Contenido pensado para la realidad fiscal y económica de España.</li>
+                        </ul>
+                    </div>
+                    <div class="mission-box warning">
+                        <h4>Lo que no hacemos</h4>
+                        <ul>
+                            <li><strong>Cero recomendaciones de inversión ocultas:</strong> No cobramos comisiones de ningún banco por recomendar productos milagrosos.</li>
+                            <li><strong>Cero fórmulas mágicas:</strong> Las finanzas personales requieren estrategia, constancia y matemáticas, no atajos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>¿Hablamos o tienes alguna duda?</h3>
+                <p>Este proyecto está en constante evolución gracias a las aportaciones de los lectores. Si encuentras algún error o quieres proponer el cálculo de una nueva herramienta, puedes explorar nuestras guías o probar las calculadoras.</p>
+                <a href="/calculadora" class="btn-primary">Ir a las Herramientas &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .tag {
+            background-color: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border-radius: 9999px;
+            letter-spacing: 0.05em;
+        }
+        .about-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #111827;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #4b5563;
+            font-size: 1.1rem;
+        }
+        .bio-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            margin-bottom: 3rem;
+        }
+        .bio-text h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        .bio-text p {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .mission-section {
+            margin-bottom: 3rem;
+        }
+        .mission-section h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .mission-box {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+        .mission-box h4 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .mission-box.success h4 { color: #16a34a; }
+        .mission-box.warning h4 { color: #dc2626; }
+        .mission-box ul {
+            list-style: disc;
+            padding-left: 1.25rem;
+            color: #4b5563;
+        }
+        .mission-box li {
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .cta-box p {
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</Layout>
