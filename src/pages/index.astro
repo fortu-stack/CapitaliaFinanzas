@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import CalculadoraIRPF from '../components/CalculadoraIRPF.astro';
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -10,7 +9,7 @@ const posts = (await getCollection('blog')).sort(
 
 <Layout title="Capitalia Finanzas - Tu portal de economía y gestión">
     
-    <!-- 1. BANNER / NOTICIA DESTACADA DE ÚLTIMA HORA -->
+    <!-- 1. BANNER / NOTICIA DESTACADA -->
     <div class="news-ticker">
         <span class="ticker-badge">Actualidad</span>
         <p>📢 <strong>Última hora:</strong> Nuevas directrices fiscales y tipos de interés en España. <a href="/blog/como-negociar-con-tu-banco">&rarr; Leer análisis</a></p>
@@ -29,7 +28,7 @@ const posts = (await getCollection('blog')).sort(
         </div>
     </section>
 
-    <!-- 3. SECCIÓN DE CALCULADORAS (Agrupando tarjetas y la calculadora de IRPF interactiva) -->
+    <!-- 3. SECCIÓN DE CALCULADORAS (Solo tarjetas informativas) -->
     <section id="calculadoras" class="calculators-intro">
         <div class="section-container">
             <div class="section-title-center">
@@ -55,17 +54,6 @@ const posts = (await getCollection('blog')).sort(
                     <h3>Colchón de Emergencia</h3>
                     <p>Determina exactamente cuántos meses de gastos fijos necesitas ahorrar según tu perfil de riesgo en España.</p>
                     <a href="/calculadora" class="calc-link">Calcular colchón &rarr;</a>
-                </div>
-            </div>
-
-            <!-- Calculadora IRPF Interactiva integrada dentro de la sección de calculadoras -->
-            <div class="irpf-live-container">
-                <div class="section-title-center" style="margin-top: 4rem; margin-bottom: 2rem;">
-                    <h3>Calculadora de IRPF en Directo</h3>
-                    <p>Estima tus tramos y retenciones fiscales actualizadas para España de forma inmediata.</p>
-                </div>
-                <div class="irpf-wrapper">
-                    <CalculadoraIRPF />
                 </div>
             </div>
         </div>
@@ -213,12 +201,6 @@ const posts = (await getCollection('blog')).sort(
             color: #111827;
             margin-bottom: 0.5rem;
         }
-        .section-title-center h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
         .section-title-center p {
             color: #4b5563;
             font-size: 0.95rem;
@@ -263,17 +245,6 @@ const posts = (await getCollection('blog')).sort(
         }
         .calc-link:hover {
             text-decoration: underline;
-        }
-
-        /* Envoltorio de la Calculadora IRPF en Directo */
-        .irpf-wrapper {
-            background: #ffffff;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-            max-width: 900px;
-            margin: 0 auto;
         }
 
         /* Sección Artículos */
