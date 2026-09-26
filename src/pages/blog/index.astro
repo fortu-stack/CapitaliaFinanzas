@@ -1,114 +1,359 @@
 ---
-import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import CalculadoraIRPF from '../components/CalculadoraIRPF.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Capitalia Finanzas - Tu portal de economía y gestión">
+    
+    <!-- 1. BANNER / NOTICIA DESTACADA DE ÚLTIMA HORA -->
+    <div class="news-ticker">
+        <span class="ticker-badge">Actualidad</span>
+        <p>📢 <strong>Última hora:</strong> Nuevas directrices fiscales y tipos de interés en España. <a href="/blog/como-negociar-con-tu-banco">&rarr; Leer análisis</a></p>
+    </div>
+
+    <!-- 2. HERO PRINCIPAL -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">Portal Profesional YMYL</span>
+            <h1>Toma el control de tu dinero con estrategia y rigor</h1>
+            <p>Análisis financieros independientes, fiscalidad adaptada a España y herramientas interactivas para blindar tu patrimonio a largo plazo.</p>
+            <div class="hero-buttons">
+                <a href="#calculadoras" class="btn-primary">Descubrir Herramientas &rarr;</a>
+                <a href="#articulos" class="btn-secondary">Explorar Guías</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN EXPLICATIVA DE LAS HERRAMIENTAS Y CALCULADORAS -->
+    <section id="calculadoras" class="calculators-intro">
+        <div class="section-container">
+            <div class="section-title-center">
+                <h2>Herramientas Financieras de Precisión</h2>
+                <p>No hagas cuentas a ciegas. Utiliza nuestras calculadoras optimizadas para tomar decisiones reales.</p>
+            </div>
+            
+            <div class="calc-grid">
+                <div class="calc-card">
+                    <div class="calc-icon">📈</div>
+                    <h3>Interés Compuesto</h3>
+                    <p>Calcula cómo crece tu capital a largo plazo combinando aportaciones periódicas y rentabilidad estimada.</p>
+                    <a href="/calculadora" class="calc-link">Calcular ahora &rarr;</a>
+                </div>
+                <div class="calc-card">
+                    <div class="calc-icon">⚖️</div>
+                    <h3>Gestión de Deudas</h3>
+                    <p>Compara estrategias de amortización (Bola de nieve vs. Avalancha) para liquidar pasivos de forma eficiente.</p>
+                    <a href="/calculadora" class="calc-link">Probar herramienta &rarr;</a>
+                </div>
+                <div class="calc-card">
+                    <div class="calc-icon">🛡️</div>
+                    <h3>Colchón de Emergencia</h3>
+                    <p>Determina exactamente cuántos meses de gastos fijos necesitas ahorrar según tu perfil de riesgo en España.</p>
+                    <a href="/calculadora" class="calc-link">Calcular colchón &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA: CALCULADORA IRPF EN DIRECTO -->
+    <section class="irpf-live-section">
+        <div class="section-container">
+            <div class="section-title-center">
+                <h2>Calculadora de IRPF en Directo</h2>
+                <p>Estima tus tramos y retenciones fiscales actualizadas para España de forma inmediata.</p>
+            </div>
+            <div class="irpf-wrapper">
+                <CalculadoraIRPF />
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ÚLTIMAS GUÍAS Y ARTÍCULOS -->
+    <section id="articulos" class="articles-section">
+        <div class="section-header">
+            <h2>Últimas Guías y Análisis Publicados</h2>
+            <p>Contenido riguroso y actualizado paso a paso.</p>
+        </div>
+        
+        <div class="articles-grid">
+            {
+                posts.map((post) => (
+                    <article class="article-card">
+                        {post.data.heroImage && (
+                            <img src={post.data.heroImage.src} alt={post.data.title} />
+                        )}
+                        <div class="card-content">
+                            <h3>
+                                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+                            </h3>
+                            <p>{post.data.description}</p>
+                            <a href={`/blog/${post.id}/`} class="read-more">
+                                Leer artículo completo &rarr;
+                            </a>
+                        </div>
+                    </article>
+                ))
+            }
+        </div>
+    </section>
+
+    <style>
+        /* Ticker de Noticias */
+        .news-ticker {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            text-align: center;
+        }
+        .ticker-badge {
+            background-color: #2563eb;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .news-ticker a {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: white;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .tag {
+            background-color: rgba(37, 99, 235, 0.3);
+            border: 1px solid rgba(147, 197, 253, 0.3);
+            color: #93c5fd;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border-radius: 9999px;
+            letter-spacing: 0.05em;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            backdrop-filter: blur(4px);
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sección Calculadoras Explicativas */
+        .calculators-intro {
+            background-color: #f8fafc;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title-center {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+        .section-title-center h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        .section-title-center p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .calc-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s;
+        }
+        .calc-card:hover {
+            transform: translateY(-4px);
+            border-color: #93c5fd;
+        }
+        .calc-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .calc-card h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        .calc-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+        .calc-link {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .calc-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección Calculadora IRPF Interactiva en Portada */
+        .irpf-live-section {
+            background-color: #ffffff;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .irpf-wrapper {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Sección Artículos */
+        .articles-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .section-header {
+            margin-bottom: 2.5rem;
+        }
+        .section-header h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #111827;
+            border-left: 4px solid #2563eb;
+            padding-left: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+        .section-header p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            padding-left: 1rem;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .article-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .card-content h3 a {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #111827;
+            text-decoration: none;
+            line-height: 1.4;
+        }
+        .card-content h3 a:hover {
+            color: #2563eb;
+        }
+        .card-content p {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin: 0.75rem 0 1.5rem 0;
+        }
+        .read-more {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</Layout>
