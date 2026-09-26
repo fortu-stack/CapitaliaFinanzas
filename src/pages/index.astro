@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import CalculadoraIRPF from '../components/CalculadoraIRPF.astro';
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -55,6 +56,19 @@ const posts = (await getCollection('blog')).sort(
                     <p>Determina exactamente cuántos meses de gastos fijos necesitas ahorrar según tu perfil de riesgo en España.</p>
                     <a href="/calculadora" class="calc-link">Calcular colchón &rarr;</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA: CALCULADORA IRPF EN DIRECTO -->
+    <section class="irpf-live-section">
+        <div class="section-container">
+            <div class="section-title-center">
+                <h2>Calculadora de IRPF en Directo</h2>
+                <p>Estima tus tramos y retenciones fiscales actualizadas para España de forma inmediata.</p>
+            </div>
+            <div class="irpf-wrapper">
+                <CalculadoraIRPF />
             </div>
         </div>
     </section>
@@ -245,6 +259,22 @@ const posts = (await getCollection('blog')).sort(
         }
         .calc-link:hover {
             text-decoration: underline;
+        }
+
+        /* Sección Calculadora IRPF Interactiva en Portada */
+        .irpf-live-section {
+            background-color: #ffffff;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .irpf-wrapper {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         /* Sección Artículos */
