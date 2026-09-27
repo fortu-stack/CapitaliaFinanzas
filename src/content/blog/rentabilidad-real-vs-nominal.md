@@ -2,7 +2,7 @@
 title: "Rentabilidad real vs. rentabilidad nominal: cómo descontar la inflación (y no perder dinero sin darte cuenta)"
 description: "Aprende a calcular la rentabilidad real de tus inversiones descontando la inflación y el IPC. Protege tu poder adquisitivo a largo plazo con este análisis financiero."
 pubDate: "Sep 28 2026"
-heroImage: "/blog-placeholder-about.jpg"
+heroImage: "/logo.jpg"
 ---
 
 Imagina que este año tu cuenta remunerada o tu fondo de inversión te ha dado un 3% de rentabilidad. A primera vista, parece una buena noticia: tu dinero ha crecido. Pero si la inflación de ese mismo año ha sido del 3,5%, la realidad es justo la contraria: has perdido poder adquisitivo, aunque el número en tu extracto bancario haya subido. Este es, probablemente, el error de cálculo más extendido y más silencioso entre los ahorradores: celebrar una rentabilidad nominal positiva sin comprobar antes qué parte de esa ganancia se ha comido el IPC.
