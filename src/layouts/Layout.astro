@@ -20,6 +20,17 @@ const { title, description = "Capitalia Finanzas - Supervivencia y gestión fina
     <!-- Contenido principal de la web -->
     <slot />
 
+    <!-- Pie de página institucional / Enlaces corporativos -->
+    <footer style="margin-top: auto; padding: 1.5rem 2rem; border-top: 1px solid #e2e8f0; background-color: #ffffff; text-align: center; font-size: 0.875rem; color: #64748b;">
+      <div style="max-width: 70rem; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;">
+        <span>&copy; 2026 Capitalia Finanzas</span>
+        <a href="/sobre-mi" style="color: #2563eb; text-decoration: none; font-weight: 500;">Sobre mí</a>
+        <a href="/politica-editorial" style="color: #2563eb; text-decoration: none; font-weight: 500;">Política Editorial</a>
+        <a href="/privacidad" style="color: #2563eb; text-decoration: none; font-weight: 500;">Privacidad</a>
+        <a href="/cookies" style="color: #2563eb; text-decoration: none; font-weight: 500;">Cookies</a>
+      </div>
+    </footer>
+
     <!-- Banner de Cookies Estilo Institucional -->
     <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background-color: #ffffff; color: #1e293b; padding: 1.5rem 2rem; z-index: 9999; box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.12); border-top: 1px solid #e2e8f0; flex-direction: row; justify-content: space-between; align-items: center; gap: 2rem; box-sizing: border-box;">
       
