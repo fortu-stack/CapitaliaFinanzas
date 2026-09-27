@@ -6,7 +6,7 @@
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+*/
 
 :root {
     --accent: #2563eb; /* Azul moderno tipo fintech */
@@ -21,6 +21,15 @@
         0 16px 32px rgba(var(--gray), 33%);
 }
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     margin: 0;
@@ -33,6 +42,7 @@ body {
     color: rgb(var(--gray-dark));
     font-size: 18px;
     line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
 }
 
 main {
@@ -78,6 +88,7 @@ b {
 a {
     color: var(--accent);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 a:hover {
     text-decoration: underline;
@@ -100,8 +111,16 @@ input {
     font-size: 16px;
 }
 
+/* Contenedor responsivo para tablas (evita que rompan el diseño en móviles) */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 img {
@@ -120,6 +139,7 @@ code {
 pre {
     padding: 1.5em;
     border-radius: 8px;
+    overflow-x: auto;
 }
 
 pre > code {
@@ -141,12 +161,26 @@ hr {
     margin: 2rem 0;
 }
 
-@media (max-width: 720px) {
+/* Ajustes específicos para móviles y pantallas pequeñas */
+@media (max-width: 768px) {
     body {
         font-size: 16px;
+        background-size: 100% 400px;
     }
     main {
-        padding: 1em;
+        padding: 1.5rem 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    /* Las tablas en móvil permiten desplazamiento horizontal fluido */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
 
