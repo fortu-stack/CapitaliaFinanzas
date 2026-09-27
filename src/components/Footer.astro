@@ -3,40 +3,91 @@ const today = new Date();
 ---
 
 <footer>
-    &copy; {today.getFullYear()} Capitalia Finanzas. Todos los derechos reservados.
-    <div class="footer-links">
-        <a href="/privacidad">Política de Privacidad</a>
-        <span class="separator">·</span>
-        <a href="/cookies">Política de Cookies</a>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <span class="brand-name">Capitalia Finanzas</span>
+            <p class="brand-desc">Portal independiente de información económica, finanzas personales y herramientas de precisión para la toma de decisiones.</p>
+        </div>
+        
+        <div class="footer-links">
+            <a href="/">Inicio</a>
+            <a href="/calculadora">Calculadoras</a>
+            <a href="/blog">Blog</a>
+            <a href="/privacidad">Política de Privacidad</a>
+            <a href="/cookies">Política de Cookies</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; {today.getFullYear()} Capitalia Finanzas. Todos los derechos reservados.</p>
+        <p class="disclaimer">⚠️ El contenido de este portal tiene fines estrictamente informativos y educativos, y no constituye en ningún caso asesoramiento financiero o de inversión personalizado.</p>
     </div>
 </footer>
 
 <style>
     footer {
-        padding: 2.5rem 2rem;
-        text-align: center;
+        padding: 3rem 2rem 2rem 2rem;
         background: #ffffff;
-        color: #555;
-        border-top: 1px solid #eaeaea;
+        color: #475569;
+        border-top: 1px solid #e2e8f0;
         margin-top: 4rem;
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+    .footer-content {
+        max-width: 72rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer-brand {
+        max-width: 350px;
+    }
+    .brand-name {
+        font-weight: 700;
+        color: #0f172a;
+        font-size: 1.1rem;
+    }
+    .brand-desc {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: #64748b;
+        line-height: 1.5;
     }
     .footer-links {
-        margin-top: 0.75rem;
         display: flex;
-        justify-content: center;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 1.5rem;
         align-items: center;
     }
     .footer-links a {
-        color: #0b4f6c;
+        color: #334155;
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 500;
+        transition: color 0.2s ease;
     }
     .footer-links a:hover {
+        color: #2563eb;
         text-decoration: underline;
     }
-    .separator {
-        color: #ccc;
+    .footer-bottom {
+        max-width: 72rem;
+        margin: 0 auto;
+        border-top: 1px solid #f1f5f9;
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        color: #64748b;
+        text-align: center;
+    }
+    .disclaimer {
+        font-size: 0.75rem;
+        color: #94a3b8;
     }
 </style>
