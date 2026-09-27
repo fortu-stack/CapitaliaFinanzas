@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -10,10 +11,10 @@ const posts = (await getCollection('blog')).sort(
 <Layout title="Capitalia Finanzas - Tu portal de economía y gestión">
     
     <!-- 1. BANNER / NOTICIA DESTACADA -->
-    <div class="news-ticker">
+    <aside class="news-ticker" aria-label="Actualidad financiera">
         <span class="ticker-badge">Actualidad</span>
         <p>📢 <strong>Última hora:</strong> Nuevas directrices fiscales y tipos de interés en España. <a href="/blog/como-negociar-con-tu-banco">&rarr; Leer análisis</a></p>
-    </div>
+    </aside>
 
     <!-- 2. HERO PRINCIPAL -->
     <section class="hero">
@@ -28,7 +29,7 @@ const posts = (await getCollection('blog')).sort(
         </div>
     </section>
 
-    <!-- 3. SECCIÓN DE CALCULADORAS (Solo tarjetas informativas) -->
+    <!-- 3. SECCIÓN DE CALCULADORAS -->
     <section id="calculadoras" class="calculators-intro">
         <div class="section-container">
             <div class="section-title-center">
@@ -38,19 +39,19 @@ const posts = (await getCollection('blog')).sort(
             
             <div class="calc-grid">
                 <div class="calc-card">
-                    <div class="calc-icon">📈</div>
+                    <div class="calc-icon" aria-hidden="true">📈</div>
                     <h3>Interés Compuesto</h3>
                     <p>Calcula cómo crece tu capital a largo plazo combinando aportaciones periódicas y rentabilidad estimada.</p>
                     <a href="/calculadora" class="calc-link">Calcular ahora &rarr;</a>
                 </div>
                 <div class="calc-card">
-                    <div class="calc-icon">⚖️</div>
+                    <div class="calc-icon" aria-hidden="true">⚖️</div>
                     <h3>Gestión de Deudas</h3>
                     <p>Compara estrategias de amortización (Bola de nieve vs. Avalancha) para liquidar pasivos de forma eficiente.</p>
                     <a href="/calculadora" class="calc-link">Probar herramienta &rarr;</a>
                 </div>
                 <div class="calc-card">
-                    <div class="calc-icon">🛡️</div>
+                    <div class="calc-icon" aria-hidden="true">🛡️</div>
                     <h3>Colchón de Emergencia</h3>
                     <p>Determina exactamente cuántos meses de gastos fijos necesitas ahorrar según tu perfil de riesgo en España.</p>
                     <a href="/calculadora" class="calc-link">Calcular colchón &rarr;</a>
@@ -71,13 +72,20 @@ const posts = (await getCollection('blog')).sort(
                 posts.map((post) => (
                     <article class="article-card">
                         {post.data.heroImage && (
-                            <img src={post.data.heroImage.src} alt={post.data.title} />
+                            <div class="image-wrapper">
+                                <img src={post.data.heroImage.src} alt={post.data.title} loading="lazy" />
+                            </div>
                         )}
                         <div class="card-content">
-                            <h3>
-                                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-                            </h3>
-                            <p>{post.data.description}</p>
+                            <div>
+                                <div class="article-meta">
+                                    <FormattedDate date={post.data.pubDate} />
+                                </div>
+                                <h3>
+                                    <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+                                </h3>
+                                <p>{post.data.description}</p>
+                            </div>
                             <a href={`/blog/${post.id}/`} class="read-more">
                                 Leer artículo completo &rarr;
                             </a>
@@ -109,6 +117,10 @@ const posts = (await getCollection('blog')).sort(
             padding: 0.2rem 0.6rem;
             border-radius: 4px;
             text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .news-ticker p {
+            margin: 0;
         }
         .news-ticker a {
             color: #93c5fd;
@@ -138,7 +150,7 @@ const posts = (await getCollection('blog')).sort(
             letter-spacing: 0.05em;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 5vw, 2.75rem);
             font-weight: 800;
             margin-top: 1.5rem;
             margin-bottom: 1rem;
@@ -148,6 +160,7 @@ const posts = (await getCollection('blog')).sort(
             font-size: 1.1rem;
             color: #cbd5e1;
             margin-bottom: 2rem;
+            line-height: 1.6;
         }
         .hero-buttons {
             display: flex;
@@ -162,7 +175,7 @@ const posts = (await getCollection('blog')).sort(
             padding: 0.75rem 1.5rem;
             border-radius: 0.75rem;
             text-decoration: none;
-            transition: background 0.2s;
+            transition: background-color 0.2s ease;
         }
         .btn-primary:hover {
             background-color: #1d4ed8;
@@ -175,6 +188,7 @@ const posts = (await getCollection('blog')).sort(
             border-radius: 0.75rem;
             text-decoration: none;
             backdrop-filter: blur(4px);
+            transition: background-color 0.2s ease;
         }
         .btn-secondary:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -204,6 +218,7 @@ const posts = (await getCollection('blog')).sort(
         .section-title-center p {
             color: #4b5563;
             font-size: 0.95rem;
+            margin: 0;
         }
         .calc-grid {
             display: grid;
@@ -216,7 +231,7 @@ const posts = (await getCollection('blog')).sort(
             border-radius: 1rem;
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
-            transition: transform 0.2s;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
         .calc-card:hover {
             transform: translateY(-4px);
@@ -236,6 +251,7 @@ const posts = (await getCollection('blog')).sort(
             font-size: 0.9rem;
             color: #64748b;
             margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
         .calc-link {
             color: #2563eb;
@@ -268,6 +284,7 @@ const posts = (await getCollection('blog')).sort(
             color: #6b7280;
             font-size: 0.95rem;
             padding-left: 1rem;
+            margin: 0;
         }
         .articles-grid {
             display: grid;
@@ -283,16 +300,25 @@ const posts = (await getCollection('blog')).sort(
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .article-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
-        .article-card img {
+        .image-wrapper {
             width: 100%;
             height: 200px;
+            overflow: hidden;
+        }
+        .article-card img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .article-card:hover img {
+            transform: scale(1.03);
         }
         .card-content {
             padding: 1.5rem;
@@ -300,6 +326,12 @@ const posts = (await getCollection('blog')).sort(
             flex-direction: column;
             flex-grow: 1;
             justify-content: space-between;
+        }
+        .article-meta {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         .card-content h3 a {
             font-size: 1.15rem;
@@ -315,6 +347,7 @@ const posts = (await getCollection('blog')).sort(
             font-size: 0.95rem;
             color: #4b5563;
             margin: 0.75rem 0 1.5rem 0;
+            line-height: 1.5;
         }
         .read-more {
             color: #2563eb;
