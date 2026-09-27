@@ -1,10 +1,393 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
-import CalculadoraDeudas from '../components/CalculadoraDeudas.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Calculadora de Deudas - Capitalia Finanzas">
-  <main>
-    <CalculadoraDeudas />
-  </main>
+<Layout title="Herramientas y Calculadoras Financieras - Capitalia Finanzas" description="Calculadoras interactivas de interés compuesto, colchón de emergencia y gestión de deudas para optimizar tu economía personal.">
+    <main class="calculator-hub">
+        <div class="hub-header">
+            <span class="tag">Suite Financiera</span>
+            <h1>Herramientas de Precisión</h1>
+            <p>Toma decisiones informadas con nuestras calculadoras diseñadas para la gestión patrimonial en España.</p>
+        </div>
+
+        {/* Pestañas de Navegación entre Herramientas */}
+        <div class="calc-tabs">
+            <button class="tab-btn active" data-target="interes">📈 Interés Compuesto</button>
+            <button class="tab-btn" data-target="colchon">🛡️ Colchón de Emergencia</button>
+            <button class="tab-btn" data-target="deudas">⚖️ Amortización de Deudas</button>
+        </div>
+
+        {/* HERRAMIENTA 1: INTERÉS COMPUESTO */}
+        <div id="interes" class="calc-panel active">
+            <div class="calculator-container">
+                <div class="calc-form-card">
+                    <h2>Simulador de Interés Compuesto</h2>
+                    <div class="input-group">
+                        <label for="ic-initial">Capital inicial (€)</label>
+                        <input type="number" id="ic-initial" value="5000" min="0" step="100">
+                    </div>
+                    <div class="input-group">
+                        <label for="ic-monthly">Aportación mensual (€)</label>
+                        <input type="number" id="ic-monthly" value="200" min="0" step="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="ic-rate">Rentabilidad anual estimada (%)</label>
+                        <input type="number" id="ic-rate" value="7" min="0" max="50" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="ic-years">Plazo (años)</label>
+                        <input type="number" id="ic-years" value="20" min="1" max="50" step="1">
+                    </div>
+                    <button id="ic-btn" class="btn-primary">Calcular Crecimiento</button>
+                </div>
+                <div class="calc-results-card">
+                    <h2>Proyección a Largo Plazo</h2>
+                    <div class="result-item">
+                        <span class="result-label">Capital Total Final</span>
+                        <span class="result-value" id="ic-total">0 €</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Aportado (Tus ahorros)</span>
+                        <span class="result-value" id="ic-aportado">0 €</span>
+                    </div>
+                    <div class="result-item highlight">
+                        <span class="result-label">Intereses Generados (Beneficio)</span>
+                        <span class="result-value" id="ic-beneficio">0 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* HERRAMIENTA 2: COLCHÓN DE EMERGENCIA */}
+        <div id="colchon" class="calc-panel">
+            <div class="calculator-container">
+                <div class="calc-form-card">
+                    <h2>Calculadora de Colchón de Emergencia</h2>
+                    <div class="input-group">
+                        <label for="ce-expenses">Gastos mensuales fijos (alquiler, comida, facturas...) (€)</label>
+                        <input type="number" id="ce-expenses" value="1200" min="0" step="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="ce-months">Meses de cobertura recomendados</label>
+                        <select id="ce-months" class="select-input">
+                            <option value="3">3 meses (Estabilidad laboral alta)</option>
+                            <option value="6" selected>6 meses (Estándar recomendado en España)</option>
+                            <option value="9">9 meses (Autónomos / Alta incertidumbre)</option>
+                            <option value="12">12 meses (Máxima seguridad patrimonial)</option>
+                        </select>
+                    </div>
+                    <button id="ce-btn" class="btn-primary">Calcular Colchón</button>
+                </div>
+                <div class="calc-results-card">
+                    <h2>Fondo de Seguridad Necesario</h2>
+                    <div class="result-item highlight large">
+                        <span class="result-label">Capital Objetivo en Líquido</span>
+                        <span class="result-value" id="ce-total">0 €</span>
+                    </div>
+                    <p class="calc-tip">💡 <em>Consejo: Este dinero debe estar guardado en productos seguros y accesibles de forma inmediata (cuentas remuneradas o fondos monetarios).</em></p>
+                </div>
+            </div>
+        </div>
+
+        {/* HERRAMIENTA 3: GESTIÓN DE DEUDAS */}
+        <div id="deudas" class="calc-panel">
+            <div class="calculator-container">
+                <div class="calc-form-card">
+                    <h2>Simulador de Amortización de Deuda</h2>
+                    <div class="input-group">
+                        <label for="deb-amount">Capital pendiente de la deuda (€)</label>
+                        <input type="number" id="deb-amount" value="10000" min="0" step="500">
+                    </div>
+                    <div class="input-group">
+                        <label for="deb-rate">Tipo de interés anual (TAE/TIN %)</label>
+                        <input type="number" id="deb-rate" value="8.5" min="0" max="50" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="deb-monthly">Cuota mensual que puedes aportar (€)</label>
+                        <input type="number" id="deb-monthly" value="300" min="0" step="50">
+                    </div>
+                    <button id="deb-btn" class="btn-primary">Calcular Plazo de Liquidación</button>
+                </div>
+                <div class="calc-results-card">
+                    <h2>Tiempo para la Libertad Financiera</h2>
+                    <div class="result-item">
+                        <span class="result-label">Tiempo estimado para liquidarla</span>
+                        <span class="result-value" id="deb-time">0 meses</span>
+                    </div>
+                    <div class="result-item highlight">
+                        <span class="result-label">Total de intereses a pagar al banco</span>
+                        <span class="result-value" id="deb-interest">0 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .calculator-hub {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .hub-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .tag {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.35rem 0.8rem;
+            border-radius: 9999px;
+            letter-spacing: 0.05em;
+        }
+        .hub-header h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .hub-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        /* Pestañas */
+        .calc-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background-color: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-weight: 600;
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+        .tab-btn:hover {
+            background-color: #e2e8f0;
+            color: #0f172a;
+        }
+        .tab-btn.active {
+            background-color: #2563eb;
+            color: white;
+            border-color: #2563eb;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Paneles */
+        .calc-panel {
+            display: none;
+        }
+        .calc-panel.active {
+            display: block;
+        }
+
+        .calculator-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .calculator-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .calc-form-card, .calc-results-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+        .calc-form-card h2, .calc-results-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.5rem;
+        }
+        .input-group {
+            margin-bottom: 1.25rem;
+        }
+        .input-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 0.5rem;
+        }
+        .input-group input, .select-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #0f172a;
+            background-color: #f8fafc;
+        }
+        .input-group input:focus, .select-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            background-color: #fff;
+        }
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            padding: 0.85rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .result-item.highlight {
+            border-bottom: none;
+            background-color: #eff6ff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        .result-label {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .result-item.highlight .result-label {
+            color: #1e40af;
+            font-weight: 600;
+        }
+        .result-value {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #0f172a;
+        }
+        .result-item.highlight .result-value {
+            color: #2563eb;
+            font-size: 1.4rem;
+        }
+        .calc-tip {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+    </style>
+
+    <script>
+        const currencyFormat = new Intl.NumberFormat('es-ES', {
+            style: 'currency',
+            currency: 'EUR',
+            maximumFractionDigits: 0
+        });
+
+        // 1. Interés Compuesto
+        function calcInteres() {
+            const P = parseFloat((document.getElementById('ic-initial') as HTMLInputElement).value) || 0;
+            const PMT = parseFloat((document.getElementById('ic-monthly') as HTMLInputElement).value) || 0;
+            const r = (parseFloat((document.getElementById('ic-rate') as HTMLInputElement).value) || 0) / 100;
+            const t = parseInt((document.getElementById('ic-years') as HTMLInputElement).value) || 0;
+            const n = 12;
+            let total = P;
+            let totalAportado = P;
+
+            for (let i = 0; i < t * n; i++) {
+                total = (total + PMT) * (1 + r / n);
+                totalAportado += PMT;
+            }
+            document.getElementById('ic-total')!.innerText = currencyFormat.format(total);
+            document.getElementById('ic-aportado')!.innerText = currencyFormat.format(totalAportado);
+            document.getElementById('ic-beneficio')!.innerText = currencyFormat.format(total - totalAportado);
+        }
+
+        // 2. Colchón de Emergencia
+        function calcColchon() {
+            const expenses = parseFloat((document.getElementById('ce-expenses') as HTMLInputElement).value) || 0;
+            const months = parseInt((document.getElementById('ce-months') as HTMLSelectElement).value) || 6;
+            const total = expenses * months;
+            document.getElementById('ce-total')!.innerText = currencyFormat.format(total);
+        }
+
+        // 3. Gestión de Deudas
+        function calcDeudas() {
+            const P = parseFloat((document.getElementById('deb-amount') as HTMLInputElement).value) || 0;
+            const r = (parseFloat((document.getElementById('deb-rate') as HTMLInputElement).value) || 0) / 100 / 12;
+            const PMT = parseFloat((document.getElementById('deb-monthly') as HTMLInputElement).value) || 0;
+
+            if (PMT <= P * r) {
+                document.getElementById('deb-time')!.innerText = 'Imposible (Cuota menor que los intereses)';
+                document.getElementById('deb-interest')!.innerText = '-';
+                return;
+            }
+
+            const months = -Math.log(1 - (P * r) / PMT) / Math.log(1 + r);
+            const totalPaid = months * PMT;
+            const totalInterest = totalPaid - P;
+
+            const anos = Math.floor(months / 12);
+            const mesesRestantes = Math.round(months % 12);
+            let tiempoTexto = '';
+            if (anos > 0) tiempoTexto += `${anos} años y `;
+            tiempoTexto += `${mesesRestantes} meses`;
+
+            document.getElementById('deb-time')!.innerText = tiempoTexto;
+            document.getElementById('deb-interest')!.innerText = currencyFormat.format(totalInterest);
+        }
+
+        // Sistema de Pestañas y Eventos
+        document.addEventListener('DOMContentLoaded', () => {
+            // Calcular valores iniciales
+            calcInteres();
+            calcColchon();
+            calcDeudas();
+
+            // Listeners de botones
+            document.getElementById('ic-btn')?.addEventListener('click', calcInteres);
+            document.getElementById('ce-btn')?.addEventListener('click', calcColchon);
+            document.getElementById('deb-btn')?.addEventListener('click', calcDeudas);
+
+            // Control de pestañas
+            const tabs = document.querySelectorAll('.tab-btn');
+            const panels = document.querySelectorAll('.calc-panel');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    panels.forEach(p => p.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    const target = tab.getAttribute('data-target');
+                    document.getElementById(target!)?.classList.add('active');
+                });
+            });
+        });
+    </script>
 </Layout>
