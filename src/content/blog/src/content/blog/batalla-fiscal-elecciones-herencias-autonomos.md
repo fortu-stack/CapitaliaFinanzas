@@ -20,8 +20,8 @@ La tarifa del IRPF está construida por tramos: cuanto más ganas, mayor es el p
 ### Un ejemplo sencillo
 Imagina un salario bruto de 30.000 € con un tipo medio del 18% y un tipo marginal del 30% (cifras ilustrativas y simplificadas). Con una inflación del 3%, el sueldo sube a 30.900 € para conservar su valor. 
 
-* Antes pagabas unos 5.400 € de IRPF y quedaban 24.600 € netos.
-* Ahora pagas 5.400 € más el 30% de los 900 € adicionales (270 €), es decir, 5.670 €, y te quedan 25.230 €. 
+- Antes pagabas unos 5.400 € de IRPF y quedaban 24.600 € netos.
+- Ahora pagas 5.400 € más el 30% de los 900 € adicionales (270 €), es decir, 5.670 €, y te quedan 25.230 €. 
 
 Tu sueldo neto ha subido un 2,56%, pero los precios han subido un 3%: **has perdido cerca de un 0,4% de poder adquisitivo** (unos 100 € al año) sin que nadie haya tocado un solo tipo impositivo.
 
@@ -68,9 +68,9 @@ Hay además un argumento sobre incentivos: los límites de facturación funciona
 
 ### Qué responden quienes piensan lo contrario
 Un análisis honesto debe recoger los argumentos de la otra parte:
-* **Sobre la deflactación:** Una deflactación íntegra de la tarifa beneficia más en euros a quienes tienen rentas más altas, por lo que algunos analistas prefieren medidas selectivas para rentas bajas y medias. Además, esa recaudación financia gasto público y los compromisos de déficit asumidos con la Comisión Europea; renunciar a ella exigiría compensarla con otros ingresos o recortes.
-* **Sobre Sucesiones:** Quienes defienden el impuesto sostienen que grava una riqueza recibida sin esfuerzo propio, que es progresivo y que reduce la desigualdad de oportunidades. Varios expertos piden además armonizar las bonificaciones para evitar que la competencia entre comunidades erosione los ingresos autonómicos, mientras que los defensores de la autonomía fiscal argumentan que esa competencia es legítima y limita la presión tributaria.
-* **Sobre módulos:** Quienes proponen eliminarlos subrayan que tributar por el beneficio real es más justo y dificulta el fraude, y que la estimación directa simplificada ya ofrece una alternativa con menos carga administrativa.
+- **Sobre la deflactación:** Una deflactación íntegra de la tarifa beneficia más en euros a quienes tienen rentas más altas, por lo que algunos analistas prefieren medidas selectivas para rentas bajas y medias. Además, esa recaudación financia gasto público y los compromisos de déficit asumidos con la Comisión Europea; renunciar a ella exigiría compensarla con otros ingresos o recortes.
+- **Sobre Sucesiones:** Quienes defienden el impuesto sostienen que grava una riqueza recibida sin esfuerzo propio, que es progresivo y que reduce la desigualdad de oportunidades. Varios expertos piden además armonizar las bonificaciones para evitar que la competencia entre comunidades erosione los ingresos autonómicos, mientras que los defensores de la autonomía fiscal argumentan que esa competencia es legítima y limita la presión tributaria.
+- **Sobre módulos:** Quienes proponen eliminarlos subrayan que tributar por el beneficio real es más justo y dificulta el fraude, y que la estimación directa simplificada ya ofrece una alternativa con menos carga administrativa.
 
 En definitiva, ninguno de los tres debates es trivial. La cuestión que planteamos aquí es de proporciones: los dos que más ruido electoral generan afectan a colectivos concretos, mientras que la **progresividad en frío afecta, en mayor o menor medida, a casi todos los contribuyentes y apenas se discute**.
 
@@ -96,6 +96,39 @@ Es el régimen de estimación objetiva del IRPF, en el que ciertos autónomos tr
 ### ¿Qué comunidad aplica el Impuesto de Sucesiones?
 En términos generales, la del lugar de residencia habitual del fallecido, con matices según los bienes y los años de residencia. Por eso el impuesto puede variar mucho entre comunidades para una herencia idéntica.
 
+<!-- 1. FIN DEL ARTÍCULO (Caja Interactiva) -->
+<div class="calculator-box">
+  <h3>Calcula tu tramo real de IRPF</h3>
+  <p>Descubre cuánto de tu sueldo se va realmente en impuestos y cómo te afecta la inflación.</p>
+  <a href="/calculadora">&rarr; Usar la Calculadora de IRPF</a>
+</div>
+
 ---
 
+<!-- 2. BLOQUE DE ENLAZADO INTERNO -->
+<section class="related-posts">
+  <h3>Sigue leyendo sobre economía y fiscalidad</h3>
+  <ul>
+    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir precios</a></li>
+    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
+    <li><a href="/blog/crisis-vivienda-espana-raiz-espana-vaciada">&rarr; Por qué la crisis de la vivienda no se soluciona en las ciudades</a></li>
+  </ul>
+</section>
+
+---
+
+<!-- 3. SOBRE EL AUTOR Y METODOLOGÍA -->
+### ✍️ Sobre el autor y metodología
+
+**Capitalia Finanzas — Análisis independiente y rigor fiscal**
+
+Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
+
+* 📊 **Fuentes consultadas:** Datos oficiales de la Agencia Tributaria (AEAT), Registro de Economistas Asesores Fiscales (REAF), Autoridad Independiente de Responsabilidad Fiscal (AIReF) y Banco de España.
+* 🔄 **Última revisión:** Octubre de 2026.
+* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+
+---
+
+<!-- 4. AVISO LEGAL -->
 > ⚠️ **Aviso legal:** *Este artículo ofrece un análisis económico y de opinión elaborado a partir de datos públicos (AEAT, REAF, AIReF, Banco de España, normativa vigente y prensa económica) disponibles en la fecha de publicación. No constituye asesoramiento fiscal, financiero ni jurídico, ni una posición política partidista. La normativa fiscal cambia con frecuencia y varía según la comunidad autónoma; las cifras de los ejemplos son ilustrativas. Consulta tu caso concreto con un asesor fiscal colegiado antes de tomar decisiones.*
