@@ -21,10 +21,10 @@ Por eso los topes tienen un atractivo político evidente: su beneficio es visibl
 Buena parte del parque de alquiler en España está en manos de pequeños propietarios particulares, no de grandes fondos: personas que alquilan un piso heredado o comprado como complemento de la jubilación. Cuando ese propietario percibe que la rentabilidad queda limitada y que el marco regulatorio es incierto, tiene varias alternativas a mantener el piso en alquiler de larga duración: venderlo, dedicarlo al alquiler de temporada o por habitaciones, o dejarlo fuera del mercado residencial. El resultado es un bumerán: la medida pensada para ayudar al inquilino reduce las opciones entre las que puede elegir.
 
 Los datos disponibles apuntan en esa dirección:
-* **Fedea** analizó las zonas tensionadas y concluyó que los precios medios se han moderado, pero que la oferta de anuncios de alquiler ha caído con intensidad donde se aplica la ley: un **22,2% en Barcelona** y un **20,5% en Cataluña**, frente a un aumento del 3,9% en Madrid y una caída del 7% en el resto de España sin contar Cataluña.
-* Según el **Observatorio del Alquiler**, la oferta en Cataluña ha pasado de unas 154.000 viviendas en 2023 a menos de 97.000 a comienzos de 2026.
-* Un informe de la **Cátedra UNESCO de Vivienda de la URV** recoge que, en Barcelona, el número de interesados por un piso a los diez días de publicarse pasó de 101 a 437 en apenas un año, mientras aumentaban las compraventas un 23,1% en Cataluña y caían los visados de nuevas promociones.
-* El desvío hacia otras fórmulas es visible: Cataluña ha tenido que ampliar la regulación al alquiler de temporada y al de habitaciones, y diversos análisis apuntan a que en las zonas reguladas se alquilan pisos más pequeños.
+- **Fedea** analizó las zonas tensionadas y concluyó que los precios medios se han moderado, pero que la oferta de anuncios de alquiler ha caído con intensidad donde se aplica la ley: un **22,2% en Barcelona** y un **20,5% en Cataluña**, frente a un aumento del 3,9% en Madrid y una caída del 7% en el resto de España sin contar Cataluña.
+- Según el **Observatorio del Alquiler**, la oferta en Cataluña ha pasado de unas 154.000 viviendas en 2023 a menos de 97.000 a comienzos de 2026.
+- Un informe de la **Cátedra UNESCO de Vivienda de la URV** recoge que, en Barcelona, el número de interesados por un piso a los diez días de publicarse pasó de 101 a 437 en apenas un año, mientras aumentaban las compraventas un 23,1% en Cataluña y caían los visados de nuevas promociones.
+- El desvío hacia otras fórmulas es visible: Cataluña ha tenido que ampliar la regulación al alquiler de temporada y al de habitaciones, y diversos análisis apuntan a que en las zonas reguladas se alquilan pisos más pequeños.
 
 El efecto final recae sobre quien menos margen tiene: el joven que busca su primer alquiler. Con menos pisos y cientos de candidatos por anuncio, el precio máximo legal deja de ser el factor decisivo; lo es el perfil que el propietario prefiere elegir: nómina fija, contrato indefinido, avales. Es decir, lo que un joven atrapado en el *mileurismo ilustrado* tiene más difícil acreditar.
 
@@ -43,10 +43,10 @@ Si el diagnóstico es de escasez, la respuesta estructural pasa por tres palanca
 ## Qué responden los defensores de los topes
 
 Un análisis honesto exige recoger el otro lado, que cuenta con argumentos sólidos:
-* **Los precios sí se han moderado:** Incluso Fedea reconoce esta moderación en las zonas reguladas, y para el inquilino que ya vive en esa zona, el alivio económico es real.
-* **Es difícil aislar el efecto único:** La oferta también ha caído fuera de las zonas reguladas por otros factores concurrentes (auge de compraventas, turismo, incertidumbre). Atribuir todo a la ley puede ser una simplificación.
-* **Son una medida de transición:** Se defienden como un cortafuegos necesario mientras la oferta estructural tarda años en materializarse, acompañado de planes de vivienda pública.
-* **El horizonte de evaluación es corto:** Con las primeras declaraciones desde 2024, dos años es un margen breve para juzgar el calado definitivo de una política que sigue debatida incluso en el marco de la futura ley europea de vivienda.
+- **Los precios sí se han moderado:** Incluso Fedea reconoce esta moderación en las zonas reguladas, y para el inquilino que ya vive en esa zona, el alivio económico es real.
+- **Es difícil aislar el efecto único:** La oferta también ha caído fuera de las zonas reguladas por otros factores concurrentes (auge de compraventas, turismo, incertidumbre). Atribuir todo a la ley puede ser una simplificación.
+- **Son una medida de transición:** Se defienden como un cortafuegos necesario mientras la oferta estructural tarda años en materializarse, acompañado de planes de vivienda pública.
+- **El horizonte de evaluación es corto:** Con las primeras declaraciones desde 2024, dos años es un margen breve para juzgar el calado definitivo de una política que sigue debatida incluso en el marco de la futura ley europea de vivienda.
 
 ---
 
@@ -73,10 +73,6 @@ Según Fedea, los precios se han moderado pero la oferta de anuncios ha caído d
 ### ¿Cuántas viviendas faltan en España según el Banco de España?
 El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre 2021 y 2025, provocado porque la creación de hogares supera holgura el volumen de obra nueva terminada.
 
----
-
-> ⚠️ **Aviso legal informativo:** *Este artículo ofrece un análisis económico y de opinión elaborado a partir de datos y estudios públicos (Banco de España, Fedea, Observatorio del Alquiler, Cátedra UNESCO de Vivienda de la URV) disponibles en la fecha de publicación. No constituye asesoramiento financiero, jurídico ni inmobiliario, ni una posición política partidista. Las cifras proceden de las fuentes citadas y pueden haber sido actualizadas posteriormente; el debate sobre la eficacia de los topes continúa abierto.*
-
 <!-- BLOQUE DIFERENCIAL: Caja Interactiva -->
 <div class="calculator-box">
   <h3>Calcula tu capacidad real de ahorro</h3>
@@ -84,7 +80,9 @@ El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre
   <a href="/calculadora">Ir a la Herramienta &rarr;</a>
 </div>
 
-<!-- BLOQUE DE ENLAZADO INTERNO -->
+---
+
+<!-- 2. BLOQUE DE ENLAZADO INTERNO -->
 <section class="related-posts">
   <h3>Sigue leyendo sobre economía y vivienda</h3>
   <ul>
@@ -93,3 +91,21 @@ El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre
     <li><a href="/blog/comprar-vs-alquilar">&rarr; Comprar vs. alquilar vivienda en España: los números reales</a></li>
   </ul>
 </section>
+
+---
+
+<!-- 3. SOBRE EL AUTOR -->
+### ✍️ Sobre el autor y metodología
+
+**Capitalia Finanzas — Análisis independiente y rigor fiscal**
+
+Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
+
+* 📊 **Fuentes consultadas:** Datos oficiales del Banco de España, Fedea, Observatorio del Alquiler y la Cátedra UNESCO de Vivienda de la URV.
+* 🔄 **Última revisión:** Octubre de 2026.
+* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+
+---
+
+<!-- 4. AVISO LEGAL -->
+> ⚠️ **Aviso legal informativo:** *Este artículo ofrece un análisis económico y de opinión elaborado a partir de datos y estudios públicos (Banco de España, Fedea, Observatorio del Alquiler, Cátedra UNESCO de Vivienda de la URV) disponibles en la fecha de publicación. No constituye asesoramiento financiero, jurídico ni inmobiliario, ni una posición política partidista. Las cifras proceden de las fuentes citadas y pueden haber sido actualizadas posteriormente; el debate sobre la eficacia de los topes continúa abierto.*
