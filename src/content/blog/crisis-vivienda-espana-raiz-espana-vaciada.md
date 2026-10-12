@@ -24,8 +24,8 @@ Algo parecido ocurre con el recargo del Impuesto sobre Bienes Inmuebles (IBI) a 
 
 Si el problema real es la concentración excesiva de población y empleo en media docena de polos económicos, la solución estructural pasa necesariamente por revertir esa concentración, no solo por intervenir el precio donde ya se ha producido:
 
-* **Descentralización económica real:** Incentivos fiscales efectivos —no simbólicos— para que empresas y autónomos trasladen o inicien actividad en el mundo rural: reducciones sustanciales en el Impuesto de Sociedades o en las cotizaciones sociales durante los primeros años de actividad en municipios en riesgo de despoblación.
-* **Inversión masiva en conectividad:** La fibra óptica de alta velocidad y un transporte de media distancia razonable no son un lujo accesorio, sino la condición mínima para que el teletrabajo y la vida profesional moderna sean viables fuera de las grandes capitales. Sin esa infraestructura, ningún incentivo fiscal logrará que una empresa de servicios digitales se plantee instalarse en un pueblo de 2.000 habitantes.
+- **Descentralización económica real:** Incentivos fiscales efectivos —no simbólicos— para que empresas y autónomos trasladen o inicien actividad en el mundo rural: reducciones sustanciales en el Impuesto de Sociedades o en las cotizaciones sociales durante los primeros años de actividad en municipios en riesgo de despoblación.
+- **Inversión masiva en conectividad:** La fibra óptica de alta velocidad y un transporte de media distancia razonable no son un lujo accesorio, sino la condición mínima para que el teletrabajo y la vida profesional moderna sean viables fuera de las grandes capitales. Sin esa infraestructura, ningún incentivo fiscal logrará que una empresa de servicios digitales se plantee instalarse en un pueblo de 2.000 habitantes.
 
 El efecto, si se ejecuta con suficiente ambición, sería doble: cada familia o empresa que se asiente en el territorio despoblado reduce, en la misma proporción, la presión demográfica y de precios sobre las grandes ciudades, sin necesidad de imponer ningún tope artificial. Es una solución orgánica a un problema que, hoy, se sigue intentando resolver de forma artificial.
 
@@ -46,23 +46,39 @@ Es el nombre popularizado para referirse al amplio territorio del interior penin
 ### ¿Sirven los topes al precio del alquiler para solucionar la crisis de vivienda?
 Pueden aliviar a corto plazo la cuota de inquilinos concretos en zonas tensionadas, pero no actúan sobre la causa de fondo: la concentración de demanda en un número limitado de ciudades. La mayoría de los análisis económicos coinciden en que, sin medidas estructurales de descentralización, su efecto sobre el problema global es muy limitado.
 
----
-
-> ⚠️ **Aviso legal informativo:** *Este contenido ofrece un análisis económico y de opinión elaborado a partir de datos públicos del Instituto Nacional de Estadística (INE) y de la normativa vigente en la fecha de publicación. No constituye asesoramiento financiero, inmobiliario ni una posición política partidista, y las cifras citadas pueden haber sido actualizadas posteriormente por las fuentes originales.*
-
-<!-- BLOQUE DIFERENCIAL: Caja de Calculadora Interactiva (YMYL) -->
+<!-- 1. FIN DEL ARTÍCULO (Caja Interactiva) -->
 <div class="calculator-box">
   <h3>Evalúa tu escenario inmobiliario</h3>
   <p>Compara los números reales de comprar frente a alquilar antes de tomar una decisión.</p>
   <a href="/calculadora">Ir a la Calculadora &rarr;</a>
 </div>
 
-<!-- BLOQUE DE ENLAZADO INTERNO -->
+---
+
+<!-- 2. BLOQUE DE ENLAZADO INTERNO -->
 <section class="related-posts">
   <h3>Sigue leyendo sobre finanzas y vivienda</h3>
   <ul>
     <li><a href="/blog/comprar-vs-alquilar">&rarr; Comprar vs. alquilar vivienda en España: los números reales</a></li>
-    <li><a href="/blog/errores-financieros-30-anos">&rarr; Los 5 errores financieros más comunes al cumplir 30 años</a></li>
-    <li><a href="/blog/como-declarar-inversiones-hacienda">&rarr; Cómo declarar tus inversiones a Hacienda: guía práctica</a></li>
+    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir los precios</a></li>
+    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
   </ul>
 </section>
+
+---
+
+<!-- 3. SOBRE EL AUTOR Y METODOLOGÍA -->
+### ✍️ Sobre el autor y metodología
+
+**Capitalia Finanzas — Análisis independiente y rigor fiscal**
+
+Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
+
+* 📊 **Fuentes consultadas:** Datos oficiales del Instituto Nacional de Estadística (INE), Ministerio de Vivienda y Agenda Urbana y Banco de España.
+* 🔄 **Última revisión:** Octubre de 2026.
+* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+
+---
+
+<!-- 4. AVISO LEGAL -->
+> ⚠️ **Aviso legal informativo:** *Este contenido ofrece un análisis económico y de opinión elaborado a partir de datos públicos del Instituto Nacional de Estadística (INE) y de la normativa vigente en la fecha de publicación. No constituye asesoramiento financiero, inmobiliario ni una posición política partidista, y las cifras citadas pueden haber sido actualizadas posteriormente por las fuentes originales.*
