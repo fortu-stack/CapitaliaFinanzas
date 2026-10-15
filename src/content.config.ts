@@ -14,6 +14,9 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
+			// Nuevos campos para categorizar y dividir en Artículos, Calculadoras y FAQs
+			category: z.enum(['vivienda', 'fiscalidad', 'inversion']).default('vivienda'),
+			type: z.enum(['article', 'calculator', 'faq']).default('article'),
 		}),
 });
 
