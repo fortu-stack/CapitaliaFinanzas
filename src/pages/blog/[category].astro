@@ -1,1 +1,42 @@
+---
+import { SITE_TITLE } from '../consts';
 
+// Detectar la ruta actual para marcar el enlace activo automáticamente
+const pathname = Astro.url.pathname;
+---
+
+<header style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 50; font-family: 'Inter', system-ui, sans-serif;">
+    <!-- Fila superior -->
+    <div style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; height: 5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f1f5f9;">
+        <a href="/" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="/logo.jpg" alt={SITE_TITLE} style="height: 45px; width: auto;" />
+        </a>
+        <div style="font-size: 0.875rem; color: #475569; font-weight: 500;">
+            Portal Profesional
+        </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0;">
+        <nav style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 2rem; height: 3rem; font-size: 0.875rem; font-weight: 600; color: #334155; overflow-x: auto; whitespace: nowrap;">
+            <a href="/" style={`color: ${pathname === '/' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Inicio
+            </a>
+            <a href="/blog/vivienda" style={`color: ${pathname.includes('/blog/vivienda') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/vivienda') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Vivienda
+            </a>
+            <a href="/blog/fiscalidad" style={`color: ${pathname.includes('/blog/fiscalidad') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/fiscalidad') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Fiscalidad
+            </a>
+            <a href="/blog/inversion" style={`color: ${pathname.includes('/blog/inversion') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/inversion') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Inversión
+            </a>
+            <a href="/calculadora" style={`color: ${pathname.includes('/calculadora') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/calculadora') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Calculadoras
+            </a>
+            <a href="/blog" style={`color: ${pathname === '/blog' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/blog' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
+                Todos los Artículos
+            </a>
+        </nav>
+    </div>
+</header>
