@@ -1,42 +1,118 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
 
-// Detectar la ruta actual para marcar el enlace activo automáticamente
-const pathname = Astro.url.pathname;
+export async function getStaticPaths() {
+  const categories = [
+    { id: 'vivienda', label: 'Vivienda y Alquiler', description: 'Análisis del mercado inmobiliario, hipotecas y estrategias de compra.' },
+    { id: 'fiscalidad', label: 'Fiscalidad e Impuestos', description: 'Optimización de impuestos, ITP, IRPF y deducciones aplicables en España.' },
+    { id: 'inversion', label: 'Inversión y Ahorro', description: 'Estrategias de inversión, fondos indexados y gestión del capital.' },
+  ];
+
+  return categories.map((cat) => ({
+    params: { category: cat.id },
+    props: { catInfo: cat },
+  }));
+}
+
+const { category } = Astro.params;
+const { catInfo } = Astro.props;
+
+// Obtener todos los contenidos de la colección
+const allPosts = await getCollection('blog');
+
+// Filtrar por la categoría actual y clasificar por tipo
+const categoryPosts = allPosts.filter((post) => post.data.category === category);
+
+const articles = categoryPosts.filter((post) => post.data.type === 'article');
+const calculators = categoryPosts.filter((post) => post.data.type === 'calculator');
+const faqs = categoryPosts.filter((post) => post.data.type === 'faq');
 ---
 
-<header style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 50; font-family: 'Inter', system-ui, sans-serif;">
-    <!-- Fila superior -->
-    <div style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; height: 5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f1f5f9;">
-        <a href="/" style="display: flex; align-items: center; text-decoration: none;">
-            <img src="/logo.jpg" alt={SITE_TITLE} style="height: 45px; width: auto;" />
-        </a>
-        <div style="font-size: 0.875rem; color: #475569; font-weight: 500;">
-            Portal Profesional
-        </div>
-    </div>
+<main class="max-w-6xl mx-auto px-4 py-10 font-sans">
+  
+  <!-- Encabezado de la Categoría -->
+  <header class="mb-12 text-center md:text-left border-b border-slate-200 pb-6">
+    <h1 class="text-4xl font-extrabold text-slate-900 mb-2">{catInfo.label}</h1>
+    <p class="text-lg text-slate-600">{catInfo.description}</p>
+  </header>
 
-    <!-- Barra de navegación principal -->
-    <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0;">
-        <nav style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 2rem; height: 3rem; font-size: 0.875rem; font-weight: 600; color: #334155; overflow-x: auto; whitespace: nowrap;">
-            <a href="/" style={`color: ${pathname === '/' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Inicio
+  <!-- Grilla principal de 2 Bloques (Artículos y Calculadoras) -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    
+    <!-- BLOQUE 1: ARTÍCULOS Y ANÁLISIS -->
+    <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3 mb-6 border-b border-slate-100 pb-3">
+        <span class="text-2xl">📄</span>
+        <h2 class="text-2xl font-bold text-slate-800">Artículos y Análisis</h2>
+      </div>
+
+      {articles.length > 0 ? (
+        <ul class="space-y-4">
+          {articles.map((post) => (
+            <li class="border-b border-slate-100 last:border-0 pb-3 last:pb-0">
+              <a href={`/blog/${post.slug}/`} class="group block">
+                <h3 class="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                  {post.data.title}
+                </h3>
+                <p class="text-sm text-slate-500 line-clamp-2 mt-1">
+                  {post.data.description}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="text-slate-400 italic">No hay artículos publicados en esta categoría todavía.</p>
+      )}
+    </section>
+
+    <!-- BLOQUE 2: CALCULADORAS -->
+    <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+      <div class="flex items-center gap-3 mb-6 border-b border-slate-100 pb-3">
+        <span class="text-2xl">🔢</span>
+        <h2 class="text-2xl font-bold text-slate-800">Calculadoras de {catInfo.label}</h2>
+      </div>
+
+      {calculators.length > 0 ? (
+        <ul class="space-y-4">
+          {calculators.map((calc) => (
+            <li class="border-b border-slate-100 last:border-0 pb-3 last:pb-0">
+              <a href={`/blog/${calc.slug}/`} class="group block bg-slate-50 p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                <h3 class="text-lg font-semibold text-blue-900 group-hover:text-blue-600 flex items-center justify-between">
+                  {calc.data.title}
+                  <span class="text-sm bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Herramienta</span>
+                </h3>
+                <p class="text-sm text-slate-600 mt-1">
+                  {calc.data.description}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="text-slate-400 italic">Próximamente calculadoras interactivas para esta sección.</p>
+      )}
+    </section>
+
+  </div>
+
+  <!-- BLOQUE SECUNDARIO: PREGUNTAS FRECUENTES (Si existen en esta categoría) -->
+  {faqs.length > 0 && (
+    <section class="mt-12 bg-slate-50 p-8 rounded-2xl border border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+        <span>❓</span> Preguntas Frecuentes
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {faqs.map((faq) => (
+          <div class="bg-white p-4 rounded-xl shadow-xs border border-slate-200">
+            <a href={`/blog/${faq.slug}/`} class="font-semibold text-slate-900 hover:text-blue-600 block mb-1">
+              {faq.data.title}
             </a>
-            <a href="/blog/vivienda" style={`color: ${pathname.includes('/blog/vivienda') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/vivienda') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Vivienda
-            </a>
-            <a href="/blog/fiscalidad" style={`color: ${pathname.includes('/blog/fiscalidad') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/fiscalidad') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Fiscalidad
-            </a>
-            <a href="/blog/inversion" style={`color: ${pathname.includes('/blog/inversion') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/blog/inversion') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Inversión
-            </a>
-            <a href="/calculadora" style={`color: ${pathname.includes('/calculadora') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.includes('/calculadora') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Calculadoras
-            </a>
-            <a href="/blog" style={`color: ${pathname === '/blog' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/blog' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Todos los Artículos
-            </a>
-        </nav>
-    </div>
-</header>
+            <p class="text-sm text-slate-600">{faq.data.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+</main>
