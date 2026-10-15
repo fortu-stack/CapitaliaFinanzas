@@ -30,9 +30,9 @@ Esa ecuación depende de una condición que rara vez se enuncia: que la diferenc
 
 Observamos tres movimientos simultáneos que han estrechado ese diferencial:
 
-1. **Las rentas se han disparado:** Según *idealista*, el alquiler subió más de un 10% interanual durante buena parte de 2025 y en agosto de 2026 se sitúa en 15,1 €/m², un 5,8% más que hace un año. *Fotocasa* registra un 3% interanual en el tercer trimestre, con 14,10 €/m². Los portales usan metodologías distintas, pero coinciden en que el ritmo se modera sobre una base ya muy alta.
-2. **La oferta se ha distorsionado:** El *Banco de España* estima un déficit acumulado de unas 750.000 viviendas y señala entre sus causas el auge del alquiler de temporada. El *Observatorio del Alquiler* prevé que la oferta de larga duración caiga un 2,1% en 2026, hasta unas 669.500 viviendas. Esta distorsión de oferta empuja las rentas al alza.
-3. **Los precios de compra suben, pero la financiación aguanta:** El *INE* sitúa la subida de la vivienda libre en un 12,2% interanual en el segundo trimestre de 2026, y el *Colegio de Registradores* marca un máximo histórico de 2.487 €/m². Sin embargo, el tipo medio de las nuevas hipotecas es del 2,96% según el INE, con un 61,7% de las operaciones a tipo fijo.
+1. **Las rentas se han disparado:** Según los informes de precios de [*idealista*](https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/), el alquiler subió más de un 10% interanual durante buena parte de 2025 y en agosto de 2026 se sitúa en 15,1 €/m², un 5,8% más que hace un año. *Fotocasa* registra un 3% interanual en el tercer trimestre, con 14,10 €/m². Los portales usan metodologías distintas, pero coinciden en que el ritmo se modera sobre una base ya muy alta.
+2. **La oferta se ha distorsionado:** El [*Banco de España*](https://www.bde.es/bde/es/secciones/informes/) estima un déficit acumulado de unas 750.000 viviendas y señala entre sus causas el auge del alquiler de temporada. El [*Observatorio del Alquiler*](https://observatoriodelalquiler.org/estudios) prevé que la oferta de larga duración caiga un 2,1% en 2026, hasta unas 669.500 viviendas. Esta distorsión de oferta empuja las rentas al alza.
+3. **Los precios de compra suben, pero la financiación aguanta:** El [*INE* (Índice de Precios de Vivienda)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736151411&menu=resultados&idp=1254735976596) sitúa la subida de la vivienda libre en un 12,2% interanual en el segundo trimestre de 2026, y el [*Colegio de Registradores*](https://www.registradores.org/actualidad/notas-de-prensa/inmobiliario) marca un máximo histórico de 2.487 €/m². Sin embargo, el tipo medio de las nuevas hipotecas es del 2,96% según la [Estadística de Hipotecas del INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736170236&menu=resultados&idp=1254735576757), con un 61,7% de las operaciones a tipo fijo.
 
 > **Resultado:** La inflación residencial (el encarecimiento de la vivienda por encima del IPC) afecta a ambos lados, pero el comprador con hipoteca fija se protege de la indexación de la renta; el inquilino, no.
 
@@ -126,7 +126,7 @@ El comprador perdería patrimonio en términos nominales, y en ese escenario el 
 
 ### Sobre el Autor y Revisión Editorial (E-E-A-T)
 **Equipo de Análisis Financiero de Capitalia Finanzas**  
-Este análisis ha sido elaborado y auditado por el comité editorial de *Capitalia Finanzas*. Nuestras comparativas cuantitativas utilizan series de datos macroeconómicos actualizados del Banco de España, el Instituto Nacional de Estadística (INE), el Colegio de Registradores y los principales portales del sector inmobiliario.
+Este análisis ha sido elaborado y auditado por el comité editorial de *Capitalia Finanzas*. Nuestras comparativas cuantitativas utilizan series de datos macroeconómicos actualizados del [Banco de España](https://www.bde.es/bde/es/secciones/informes/), el [Instituto Nacional de Estadística (INE)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736151411&menu=resultados&idp=1254735976596), el [Colegio de Registradores](https://www.registradores.org/actualidad/notas-de-prensa/inmobiliario) y los principales portales del sector.
 
 ---
 
