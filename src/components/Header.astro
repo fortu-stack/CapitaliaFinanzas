@@ -15,18 +15,46 @@ const pathname = Astro.url.pathname;
         </div>
     </div>
 
-    <!-- Barra de navegación principal con solo 3 opciones -->
+    <!-- Barra de navegación principal con Desplegables -->
     <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0;">
         <nav style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 2.5rem; height: 3rem; font-size: 0.875rem; font-weight: 600; color: #334155;">
+            
+            <!-- Enlace Inicio -->
             <a href="/" style={`color: ${pathname === '/' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
                 Inicio
             </a>
-            <a href="/blog" style={`color: ${pathname.startsWith('/blog') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/blog') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Artículos
-            </a>
-            <a href="/calculadora" style={`color: ${pathname.startsWith('/calculadora') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/calculadora') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Calculadoras
-            </a>
+
+            <!-- Desplegable: Artículos -->
+            <div class="dropdown-container" style="position: relative; height: 100%; display: flex; align-items: center;">
+                <a href="/blog" style={`color: ${pathname.startsWith('/blog') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/blog') && pathname === '/blog' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none; gap: 0.25rem;`}>
+                    Artículos <span style="font-size: 0.75rem;">▼</span>
+                </a>
+                <div class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); min-width: 220px; padding: 0.5rem 0; display: none; z-index: 100;">
+                    <a href="/blog/vivienda" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">🏠 Vivienda y Alquiler</a>
+                    <a href="/blog/fiscalidad" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">⚖️ Fiscalidad e Impuestos</a>
+                    <a href="/blog/inversion" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">📈 Inversión y Ahorro</a>
+                </div>
+            </div>
+
+            <!-- Desplegable: Calculadoras -->
+            <div class="dropdown-container" style="position: relative; height: 100%; display: flex; align-items: center;">
+                <a href="/calculadora" style={`color: ${pathname.startsWith('/calculadora') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/calculadora') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none; gap: 0.25rem;`}>
+                    Calculadoras <span style="font-size: 0.75rem;">▼</span>
+                </a>
+                <div class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); min-width: 220px; padding: 0.5rem 0; display: none; z-index: 100;">
+                    <a href="/blog/vivienda" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">🏠 Calculadoras de Vivienda</a>
+                    <a href="/blog/fiscalidad" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">⚖️ Calculadoras Fiscales</a>
+                    <a href="/blog/inversion" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">📈 Calculadoras de Inversión</a>
+                </div>
+            </div>
+
         </nav>
     </div>
 </header>
+
+<style>
+    /* Hace que el menú se despliegue automáticamente al pasar el ratón */
+    .dropdown-container:hover .dropdown-menu {
+        display: block !important;
+    }
+</style>
