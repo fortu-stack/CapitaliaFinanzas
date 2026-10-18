@@ -1,107 +1,40 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import BlogCard from '../components/BlogCard.astro';
-import ToolCard from '../components/ToolCard.astro';
-import { getCollection } from 'astro:content';
+import Layout from "../../layouts/Layout.astro";
+import BlogCard from "../../components/BlogCard.astro";
+import { getCollection } from "astro:content";
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection("blog");
 
-// Filtrar artículos y ordenar por fecha más reciente
+// Filtrar artículos que sean de tipo 'article' o que no tengan tipo especificado, ordenados por fecha
 const articles = allPosts
-  .filter(post => post.data.type === 'article' || !post.data.type)
+  .filter((post) => post.data.type === "article" || !post.data.type)
   .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
-
-// Herramientas / Calculadoras
-const calculators = allPosts.filter(post => post.data.type === 'calculator');
-
-const featuredPost = articles[0]; // El artículo más reciente como Hero principal
-const recentArticles = articles.slice(1, 4); // Los siguientes 3 artículos
 ---
 
-<Layout title="Capitalia Finanzas | Análisis Económico e Inversión Independiente">
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
-    
-    <!-- 1. HERO / ARTÍCULO DESTACADO DE PORTADA -->
-    {featuredPost && (
-      <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900 rounded-2xl overflow-hidden p-6 sm:p-10 text-white shadow-2xl border border-slate-800">
-        <div class="lg:col-span-7 space-y-4">
-          <span class="px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-bold tracking-wider uppercase rounded-md border border-amber-500/30">
-            {featuredPost.data.category || 'Destacado'}
-          </span>
-          <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight hover:text-amber-400 transition-colors">
-            <a href={`/blog/${featuredPost.slug}`}>
-              {featuredPost.data.title}
-            </a>
-          </h1>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed line-clamp-3">
-            {featuredPost.data.description}
-          </p>
-          <div class="pt-4 flex items-center justify-between text-xs text-slate-400">
-            <span>{featuredPost.data.pubDate}</span>
-            <a href={`/blog/${featuredPost.slug}`} class="font-bold text-amber-400 hover:underline">
-              Leer análisis completo →
-            </a>
-          </div>
-        </div>
-        {featuredPost.data.heroImage && (
-          <div class="lg:col-span-5 aspect-video rounded-xl overflow-hidden">
-            <img src={featuredPost.data.heroImage} alt={featuredPost.data.title} class="w-full h-full object-cover" />
-          </div>
-        )}
-      </section>
-    )}
+<Layout title="Artículos y Análisis | Capitalia Finanzas">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
+    <header class="border-b border-slate-200 dark:border-slate-800 pb-8">
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
+        Análisis y Archivo Económico
+      </h1>
+      <p class="text-slate-600 dark:text-slate-400 text-base mt-2">
+        Todos nuestros informes, análisis de fiscalidad, pensiones y estrategia de inversión independiente.
+      </p>
+    </header>
 
-    <!-- 2. PARRILLA DE ÚLTIMOS ARTÍCULOS -->
-    <section>
-      <div class="flex items-center justify-between mb-8 pb-3 border-b border-slate-200 dark:border-slate-800">
-        <h2 class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-          Últimos Análisis
-        </h2>
-        <a href="/blog" class="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline">Ver todos los artículos →</a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {recentArticles.map(post => (
-          <BlogCard 
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
+      {
+        articles.map((post) => (
+          <BlogCard
             title={post.data.title}
             description={post.data.description}
             pubDate={post.data.pubDate}
-            category={post.data.category || 'General'}
+            category={post.data.category || "General"}
             url={`/blog/${post.slug}`}
             heroImage={post.data.heroImage}
           />
-        ))}
-      </div>
+        ))
+      }
     </section>
-
-    <!-- 3. SECCIÓN HERRAMIENTAS Y CALCULADORAS -->
-    <section class="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
-      <div class="mb-8">
-        <h2 class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-          Herramientas y Calculadoras Financieras
-        </h2>
-        <p class="text-slate-500 text-sm mt-1">Calcula tu jubilación, retenciones e impacto fiscal en tiempo real.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ToolCard 
-          title="Calculadora de Pensión Real" 
-          description="Simula tu pensión estimada según las proyecciones demográficas y la inflación acumulada."
-          icon="📊"
-          url="/herramientas/calculadora-pensiones"
-        />
-        <ToolCard 
-          title="Simulador de Interés Compuesto" 
-          description="Descubre cuánto valdrá tu ahorro mensual invirtiendo a largo plazo."
-          icon="📈"
-          url="/herramientas/interes-compuesto"
-        />
-        <ToolCard 
-          title="Calculadora del Impacto del MEI" 
-          description="Calcula cuánto estás aportando mes a mes por el Mecanismo de Equidad Intergeneracional."
-          icon="🧮"
-          url="/herramientas/calculadora-mei"
-        />
-      </div>
-    </section>
-
   </main>
 </Layout>
