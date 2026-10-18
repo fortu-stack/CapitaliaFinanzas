@@ -2,7 +2,6 @@
 title: 'La pirámide invertida: por qué los parches no cierran la brecha de las pensiones'
 description: 'Análisis demográfico y financiero sobre la sostenibilidad del sistema público de reparto, el impacto del MEI y la urgencia de la planificación privada.'
 pubDate: 'Oct 18 2026'
-heroImage: '/blog-placeholder-1.jpg'
 category: 'fiscalidad'
 type: 'article'
 ---
