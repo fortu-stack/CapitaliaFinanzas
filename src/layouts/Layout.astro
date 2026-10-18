@@ -22,11 +22,11 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Tailwind CSS CDN para renderizado inmediato -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <!-- Carga forzada de Tailwind via CDN con directiva is:inline de Astro -->
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+    <script is:inline>
       tailwind.config = {
-        darkMode: 'media',
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -41,20 +41,38 @@ const {
         }
       }
     </script>
+
+    <!-- Estilos base de reserva para garantizar visualización profesional -->
+    <style is:global>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
-  <body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
+  <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
     
     <!-- HEADER / NAVEGACIÓN -->
-    <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <a href="/" class="flex items-center gap-2 group">
           <span class="text-2xl">📈</span>
-          <span class="font-black text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors">
+          <span class="font-black text-xl tracking-tight text-white group-hover:text-amber-500 transition-colors">
             CAPITALIA<span class="text-amber-500">.</span>
           </span>
         </a>
 
-        <nav class="flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+        <nav class="flex items-center gap-6 text-sm font-semibold text-slate-300">
           <a href="/" class="hover:text-amber-500 transition-colors">Inicio</a>
           <a href="/blog" class="hover:text-amber-500 transition-colors">Artículos</a>
           <a href="/#herramientas" class="hover:text-amber-500 transition-colors">Herramientas</a>
