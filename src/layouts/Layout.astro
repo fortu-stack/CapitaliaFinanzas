@@ -1,92 +1,88 @@
 ---
 interface Props {
-  title: string;
+  title?: string;
   description?: string;
 }
 
-const { title, description = "Capitalia Finanzas - Supervivencia y gestión financiera" } = Astro.props;
+const { 
+  title = "Capitalia Finanzas | Análisis Económico e Inversión Independiente", 
+  description = "Análisis económico riguroso, fiscalidad, pensiones y herramientas financieras independientes." 
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
-  </head>
-  <body style="background-color: #f8fafc; color: #1e293b; font-family: system-ui, sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh;">
-    
-    <!-- Contenido principal de la web -->
-    <slot />
 
-    <!-- Pie de página institucional / Enlaces corporativos -->
-    <footer style="margin-top: auto; padding: 1.5rem 2rem; border-top: 1px solid #e2e8f0; background-color: #ffffff; text-align: center; font-size: 0.875rem; color: #64748b;">
-      <div style="max-width: 70rem; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;">
-        <span>&copy; 2026 Capitalia Finanzas</span>
-        <a href="/sobre-mi" style="color: #2563eb; text-decoration: none; font-weight: 500;">Sobre mí</a>
-        <a href="/politica-editorial" style="color: #2563eb; text-decoration: none; font-weight: 500;">Política Editorial</a>
-        <a href="/privacidad" style="color: #2563eb; text-decoration: none; font-weight: 500;">Privacidad</a>
-        <a href="/cookies" style="color: #2563eb; text-decoration: none; font-weight: 500;">Cookies</a>
+    <!-- Tailwind CSS CDN para renderizado inmediato -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'media',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#fffbe1',
+                500: '#f59e0b',
+                600: '#d97706',
+                900: '#78350f',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
+    
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 group">
+          <span class="text-2xl">📈</span>
+          <span class="font-black text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-amber-500 transition-colors">
+            CAPITALIA<span class="text-amber-500">.</span>
+          </span>
+        </a>
+
+        <nav class="flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+          <a href="/" class="hover:text-amber-500 transition-colors">Inicio</a>
+          <a href="/blog" class="hover:text-amber-500 transition-colors">Artículos</a>
+          <a href="/#herramientas" class="hover:text-amber-500 transition-colors">Herramientas</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+    <div class="flex-1">
+      <slot />
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-12 mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📈</span>
+          <span class="font-bold text-white tracking-tight">CAPITALIA FINANZAS</span>
+        </div>
+        <p class="text-xs text-slate-500 text-center md:text-left">
+          © {new Date().getFullYear()} Capitalia Finanzas. Análisis independiente. No constituye asesoramiento financiero.
+        </p>
+        <div class="flex gap-4 text-xs font-medium">
+          <a href="/blog" class="hover:text-amber-400">Blog</a>
+          <a href="#" class="hover:text-amber-400">Aviso Legal</a>
+        </div>
       </div>
     </footer>
 
-    <!-- Banner de Cookies Estilo Institucional -->
-    <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background-color: #ffffff; color: #1e293b; padding: 1.5rem 2rem; z-index: 9999; box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.12); border-top: 1px solid #e2e8f0; flex-direction: row; justify-content: space-between; align-items: center; gap: 2rem; box-sizing: border-box;">
-      
-      <!-- Texto explicativo a la izquierda -->
-      <div style="max-width: 55rem;">
-        <h3 style="font-size: 1.1rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #0f172a;">Esta página web usa cookies</h3>
-        <p style="font-size: 0.875rem; line-height: 1.5; margin: 0; color: #475569;">
-          Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Tienes más detalles en nuestra 
-          <a href="/cookies" style="text-decoration: underline; color: #2563eb; font-weight: 500;">Política de Cookies</a> y la 
-          <a href="/privacidad" style="text-decoration: underline; color: #2563eb; font-weight: 500;">Política de Privacidad</a>.
-        </p>
-      </div>
-
-      <!-- Botones a la derecha -->
-      <div style="display: flex; flex-direction: column; gap: 0.5rem; min-width: 170px;">
-        <button id="accept-all-cookies" style="background-color: #000000; color: white; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: none; cursor: pointer; text-align: center;">
-          Permitir todas
-        </button>
-        <button id="customize-cookies" style="background-color: #ffffff; color: #000000; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: 1px solid #d1d5db; cursor: pointer; text-align: center;">
-          Personalizar &gt;
-        </button>
-        <button id="deny-cookies" style="background-color: #ffffff; color: #000000; padding: 0.6rem 1rem; border-radius: 0.375rem; font-weight: 600; font-size: 0.875rem; border: 1px solid #d1d5db; cursor: pointer; text-align: center;">
-          Denegar
-        </button>
-      </div>
-    </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const banner = document.getElementById('cookie-banner');
-        const acceptAllBtn = document.getElementById('accept-all-cookies');
-        const denyBtn = document.getElementById('deny-cookies');
-
-        // Mostrar el banner si no hay una elección guardada previa
-        if (!localStorage.getItem('capitalia_cookie_choice')) {
-          if (banner) {
-            banner.style.display = 'flex';
-          }
-        }
-
-        // Botón Permitir todas
-        acceptAllBtn?.addEventListener('click', () => {
-          localStorage.setItem('capitalia_cookie_choice', 'all');
-          if (banner) {
-            banner.style.display = 'none';
-          }
-        });
-
-        // Botón Denegar
-        denyBtn?.addEventListener('click', () => {
-          localStorage.setItem('capitalia_cookie_choice', 'denied');
-          if (banner) {
-            banner.style.display = 'none';
-          }
-        });
-      });
-    </script>
   </body>
 </html>
