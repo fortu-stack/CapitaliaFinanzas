@@ -17,6 +17,8 @@ Según el INE, el IPC subió un 4,9% interanual en septiembre de 2026. Con esa i
 
 La buena noticia es que el entorno de tipos permite limitar ese daño. El BCE ha subido los tipos este año, el Euríbor a 12 meses ronda el 3,1% y los productos de ahorro seguro pagan más que hace un año. Es el momento de revisar dónde está tu dinero de reserva.
 
+💡 **Te puede interesar:** Si quieres saber más sobre el impacto de la subida de precios en tus ahorros, lee nuestro artículo sobre [Rentabilidad real vs. Rentabilidad nominal: cómo descontar la inflación](/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta).
+
 ---
 
 ## ¿Cuánto dinero debe tener el colchón de emergencia?
@@ -25,9 +27,9 @@ La regla estándar es disponer de **entre 3 y 6 meses de tus gastos fijos indisp
 
 Un ejemplo sencillo: con unos gastos esenciales de 1.200 € al mes, el objetivo estaría entre 3.600 € y 7.200 €.
 
-Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses. Puedes consultar nuestra [guía definitiva para organizar tus finanzas personales](/blog/guia-definitiva-para-organizar-tus-finanzas-personales) para aplicar esta regla paso a paso.
+Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses.
 
-Importa también no pasarse. Cada euro que superas el límite de seis meses sigue perdiendo poder adquisitivo sin una función clara. Si eliminas [los gastos hormiga que vacían tu cuenta](/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta), llegarás mucho antes al objetivo.
+📌 **Lectura recomendada:** Para aplicar este método y ordenar tus cuentas desde cero, revisa la [Guía definitiva para organizar tus finanzas personales](/blog/guia-definitiva-para-organizar-tus-finanzas-personales) y aprende a controlar [los gastos hormiga que vacían tu cuenta](/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta).
 
 ---
 
@@ -84,20 +86,6 @@ El inconveniente es la liquidez. Puedes venderlas antes del vencimiento en el me
 
 ---
 
-## Liquidez e inflación: ¿cuánto pierdes de verdad en 2026?
-
-Con el IPC en el 4,9%, ninguna de estas opciones gana hoy a la inflación. Lo comprobamos descontando la inflación y los impuestos:
-
-* **Cuenta corriente sin remunerar (0%):** Perderás un **−4,7% real** al año.
-* **Cuenta remunerada al 2,75% TAE:** Se queda en un **2,23% neto** (rentabilidad real: **−2,5%**).
-* **Letra del Tesoro a 12 meses (3,03%):** Se queda en un **2,45% neto** (rentabilidad real: **−2,3%**).
-
-Cada 10.000 € en una opción remunerada pierden unos 250 € de poder adquisitivo al año, frente a 467 € en la cuenta corriente. Es decir, **evitas alrededor de 210 € de erosión por cada 10.000 €**. Para profundizar en estos términos, revisa nuestro análisis sobre [rentabilidad real vs. rentabilidad nominal](/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta).
-
-La conclusión es práctica: el colchón de emergencia no está para ganar a la inflación, sino para estar disponible y perder lo mínimo. Es el precio de un seguro.
-
----
-
 ## Lo que NUNCA debes hacer con tu fondo de emergencia
 
 Hay inversiones perfectamente legítimas que no tienen cabida en este dinero. Su función es estar ahí cuando lo necesites, no crecer:
@@ -108,11 +96,19 @@ Hay inversiones perfectamente legítimas que no tienen cabida en este dinero. Su
 
 ---
 
-## El paso siguiente: qué hacer con el excedente
+## 🔗 Artículos relacionados y siguientes pasos
 
-Una vez cubierto y protegido el colchón, el ahorro adicional ya no necesita esa liquidez inmediata y puede destinarse a la inversión a largo plazo. 
+Una vez cubierto y protegido el colchón, el ahorro adicional ya no necesita esa liquidez inmediata y puede destinarse a la inversión a largo plazo o a la toma de decisiones financieras importantes:
 
-Si es tu caso, puedes revisar nuestra guía sobre [cómo empezar a invertir en fondos indexados desde cero en España](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso). Si todavía estás ordenando tus finanzas, consulta [los 5 errores financieros más comunes al cumplir 30 años](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos) o evalúa las alternativas entre [comprar vs. alquilar vivienda en España](/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito).
+* 📈 **Para dar el salto a la inversión:**  
+  [Guía paso a paso: Cómo empezar a invertir en fondos indexados desde cero en España](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso)
+
+* ⚠️ **Para evitar fallos en tu estrategia de ahorro:**  
+  [Los 5 errores financieros más comunes al cumplir 30 años y cómo evitarlos](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos)
+
+* 🏠 **Para analizar grandes decisiones patrimoniales:**  
+  [Comprar vs. Alquilar vivienda en España: los números reales más allá del mito](/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito)  
+  y nuestro análisis sobre [Por qué alquilar un piso en 2026 ha dejado de ser una decisión inteligente](/blog/por-que-alquilar-un-piso-en-2026-ha-dejado-de-ser-una-decision-inteligente).
 
 ---
 
