@@ -17,7 +17,9 @@ Según el INE, el IPC subió un 4,9% interanual en septiembre de 2026. Con esa i
 
 La buena noticia es que el entorno de tipos permite limitar ese daño. El BCE ha subido los tipos este año, el Euríbor a 12 meses ronda el 3,1% y los productos de ahorro seguro pagan más que hace un año. Es el momento de revisar dónde está tu dinero de reserva.
 
-💡 **Te puede interesar:** Si quieres saber más sobre el impacto de la subida de precios en tus ahorros, lee nuestro artículo sobre [Rentabilidad real vs. Rentabilidad nominal: cómo descontar la inflación](/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta).
+<div style="background-color: #f0f7ff; border-left: 4px solid #0066cc; padding: 12px; margin: 16px 0; border-radius: 4px;">
+💡 <strong>Te puede interesar:</strong> Si quieres saber más sobre el impacto de la subida de precios en tus ahorros, lee nuestro artículo sobre <a href="/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Rentabilidad real vs. Rentabilidad nominal: cómo descontar la inflación</a>.
+</div>
 
 ---
 
@@ -29,7 +31,9 @@ Un ejemplo sencillo: con unos gastos esenciales de 1.200 € al mes, el objetivo
 
 Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses.
 
-📌 **Lectura recomendada:** Para aplicar este método y ordenar tus cuentas desde cero, revisa la [Guía definitiva para organizar tus finanzas personales](/blog/guia-definitiva-para-organizar-tus-finanzas-personales) y aprende a controlar [los gastos hormiga que vacían tu cuenta](/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta).
+<div style="background-color: #f0f7ff; border-left: 4px solid #0066cc; padding: 12px; margin: 16px 0; border-radius: 4px;">
+📌 <strong>Lectura recomendada:</strong> Para aplicar este método y ordenar tus cuentas desde cero, revisa la <a href="/blog/guia-definitiva-para-organizar-tus-finanzas-personales" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Guía definitiva para organizar tus finanzas personales</a> y aprende a controlar <a href="/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta" style="color: #0066cc; text-decoration: underline; font-weight: bold;">los gastos hormiga que vacían tu cuenta</a>.
+</div>
 
 ---
 
@@ -100,15 +104,21 @@ Hay inversiones perfectamente legítimas que no tienen cabida en este dinero. Su
 
 Una vez cubierto y protegido el colchón, el ahorro adicional ya no necesita esa liquidez inmediata y puede destinarse a la inversión a largo plazo o a la toma de decisiones financieras importantes:
 
-* 📈 **Para dar el salto a la inversión:**  
-  [Guía paso a paso: Cómo empezar a invertir en fondos indexados desde cero en España](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso)
-
-* ⚠️ **Para evitar fallos en tu estrategia de ahorro:**  
-  [Los 5 errores financieros más comunes al cumplir 30 años y cómo evitarlos](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos)
-
-* 🏠 **Para analizar grandes decisiones patrimoniales:**  
-  [Comprar vs. Alquilar vivienda en España: los números reales más allá del mito](/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito)  
-  y nuestro análisis sobre [Por qué alquilar un piso en 2026 ha dejado de ser una decisión inteligente](/blog/por-que-alquilar-un-piso-en-2026-ha-dejado-de-ser-una-decision-inteligente).
+<ul style="list-style-type: none; padding-left: 0;">
+  <li style="margin-bottom: 12px;">
+    📈 <strong>Para dar el salto a la inversión:</strong><br>
+    <a href="/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Guía paso a paso: Cómo empezar a invertir en fondos indexados desde cero en España</a>
+  </li>
+  <li style="margin-bottom: 12px;">
+    ⚠️ <strong>Para evitar fallos en tu estrategia de ahorro:</strong><br>
+    <a href="/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Los 5 errores financieros más comunes al cumplir 30 años y cómo evitarlos</a>
+  </li>
+  <li style="margin-bottom: 12px;">
+    🏠 <strong>Para analizar grandes decisiones patrimoniales:</strong><br>
+    <a href="/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Comprar vs. Alquilar vivienda en España: los números reales más allá del mito</a><br>
+    <a href="/blog/por-que-alquilar-un-piso-en-2026-ha-dejado-de-ser-una-decision-inteligente" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Por qué alquilar un piso en 2026 ha dejado de ser una decisión inteligente</a>
+  </li>
+</ul>
 
 ---
 
