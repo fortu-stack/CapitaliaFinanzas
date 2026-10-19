@@ -2,7 +2,7 @@
 title: "Dónde guardar el fondo de emergencia en 2026: Cuentas remuneradas vs. Fondos monetarios"
 description: "Analizamos cómo proteger tu colchón financiero contra la inflación sin asumir riesgos y manteniendo liquidez inmediata."
 pubDate: 2026-10-20
-category: "Finanzas Personales"
+category: "inversion"
 ---
 
 📋 **Resumen rápido:** Con el IPC en el 4,9% (INE, septiembre de 2026), el dinero en una cuenta corriente al 0% pierde unos 467 € de poder adquisitivo al año por cada 10.000 €. Para el colchón de emergencia, las tres opciones razonables son las cuentas remuneradas (liquidez inmediata y garantía del FGD hasta 100.000 €), los fondos monetarios (muy baja volatilidad y traspasos sin tributar) y las Letras del Tesoro a corto plazo (respaldo del Estado, algo menos de liquidez). Ninguna gana hoy a la inflación: su función es limitar la pérdida, no generar rentabilidad.
