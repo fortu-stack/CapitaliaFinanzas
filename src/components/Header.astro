@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog');
 
-// Función para clasificar artículos según palabras clave en el título
+// Función para clasificar artículos automáticamente
 function getCategory(title: string): string {
   const t = title.toLowerCase();
   if (t.includes('vivienda') || t.includes('alquilar') || t.includes('piso') || t.includes('inmobiliario') || t.includes('alquileres')) {
@@ -82,7 +82,7 @@ allPosts.forEach(post => {
                       {posts.map(post => (
                         <li>
                           <a 
-                            href={`/blog/${post.id}`} 
+                            href={`/blog/${post.slug}`} 
                             class="block text-xs text-slate-600 hover:text-blue-950 hover:bg-slate-50 px-2 py-1.5 rounded-lg transition-colors leading-snug"
                           >
                             {post.data.title}
@@ -98,7 +98,7 @@ allPosts.forEach(post => {
         </div>
       </div>
 
-      <a href="/calculadora" class="hover:text-amber-600 transition-colors">Calculadoras</a>
+      <a href="/calculadoras" class="hover:text-amber-600 transition-colors">Calculadoras</a>
     </nav>
 
     <!-- Botón derecho -->
