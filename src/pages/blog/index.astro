@@ -4,7 +4,6 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog');
 
-// Misma función de clasificación
 function getCategory(title: string): string {
   const t = title.toLowerCase();
   if (t.includes('vivienda') || t.includes('alquilar') || t.includes('piso') || t.includes('inmobiliario') || t.includes('alquileres')) {
@@ -59,7 +58,6 @@ allPosts.forEach(post => {
         posts.length > 0 && (
           <section class="border-b border-slate-200 pb-12 last:border-0">
             
-            <!-- Título de Categoría -->
             <div class="flex items-center gap-3 mb-6">
               <h2 class="text-2xl font-bold text-blue-950 tracking-tight">
                 {categoryName}
@@ -69,45 +67,47 @@ allPosts.forEach(post => {
               </span>
             </div>
 
-            <!-- Rejilla de Artículos de esta Categoría -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map((post) => (
-                <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden hover:shadow-md transition-all flex flex-col justify-between">
-                  <div class="p-6">
-                    <div class="flex items-center justify-between text-xs mb-3">
-                      <span class="font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">
-                        {categoryName}
-                      </span>
-                      <time class="text-slate-400 font-medium">
-                        {new Date(post.data.pubDate).toLocaleDateString('es-ES', {
-                          day: 'numeric',
-                          month: 'short',
-                          year: 'numeric'
-                        })}
-                      </time>
+              {posts.map((post) => {
+                const slugUrl = (post as any).slug || (post as any).id?.replace(/\.mdx?$/, '');
+                return (
+                  <article class="bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6">
+                      <div class="flex items-center justify-between text-xs mb-3">
+                        <span class="font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">
+                          {categoryName}
+                        </span>
+                        <time class="text-slate-400 font-medium">
+                          {new Date(post.data.pubDate).toLocaleDateString('es-ES', {
+                            day: 'numeric',
+                            month: 'short',
+                            year: 'numeric'
+                          })}
+                        </time>
+                      </div>
+
+                      <h3 class="text-lg font-bold text-slate-900 hover:text-blue-950 transition-colors line-clamp-2">
+                        <a href={`/blog/${slugUrl}`}>
+                          {post.data.title}
+                        </a>
+                      </h3>
+
+                      <p class="mt-2 text-slate-600 text-sm leading-relaxed line-clamp-3">
+                        {post.data.description}
+                      </p>
                     </div>
 
-                    <h3 class="text-lg font-bold text-slate-900 hover:text-blue-950 transition-colors line-clamp-2">
-                      <a href={`/blog/${post.slug}`}>
-                        {post.data.title}
+                    <div class="px-6 pb-6 pt-2">
+                      <a
+                        href={`/blog/${slugUrl}`}
+                        class="inline-flex items-center text-xs font-bold text-blue-950 hover:text-amber-600 transition-colors"
+                      >
+                        Leer artículo →
                       </a>
-                    </h3>
-
-                    <p class="mt-2 text-slate-600 text-sm leading-relaxed line-clamp-3">
-                      {post.data.description}
-                    </p>
-                  </div>
-
-                  <div class="px-6 pb-6 pt-2">
-                    <a
-                      href={`/blog/${post.slug}`}
-                      class="inline-flex items-center text-xs font-bold text-blue-950 hover:text-amber-600 transition-colors"
-                    >
-                      Leer artículo →
-                    </a>
-                  </div>
-                </article>
-              ))}
+                    </div>
+                  </article>
+                );
+              })}
             </div>
 
           </section>
