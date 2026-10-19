@@ -1,9 +1,6 @@
 ---
 import Header from '../components/Header.astro';
 
-// Intentamos importar estilos desde la ruta estándar de Astro
-import '../styles/global.css';
-
 interface Props {
   title?: string;
   description?: string;
@@ -24,6 +21,9 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- CARGA DIRECTA DE TAILWIND CSS PARA RESTAURAR EL DISEÑO AL INSTANTE -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col justify-between">
     
@@ -32,7 +32,7 @@ const {
       <slot />
     </div>
 
-    <!-- FOOTER LEGAL ACTUALIZADO -->
+    <!-- FOOTER LEGAL COMPLETO Y RECTIFICADO -->
     <footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-8 mt-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
         
@@ -47,7 +47,7 @@ const {
           </p>
         </div>
 
-        <!-- ENLACES LEGALES (ENRUTAMIENTO EXACTO DE TU PROYECTO) -->
+        <!-- ENLACES LEGALES (CON LAS RUTAS REALES DE TU PROYECTO) -->
         <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
           <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
           <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
