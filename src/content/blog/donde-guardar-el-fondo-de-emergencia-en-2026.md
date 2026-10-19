@@ -25,9 +25,9 @@ La regla estándar es disponer de **entre 3 y 6 meses de tus gastos fijos indisp
 
 Un ejemplo sencillo: con unos gastos esenciales de 1.200 € al mes, el objetivo estaría entre 3.600 € y 7.200 €.
 
-Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses.
+Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses. Puedes consultar nuestra [guía definitiva para organizar tus finanzas personales](/blog/guia-definitiva-para-organizar-tus-finanzas-personales) para aplicar esta regla paso a paso.
 
-Importa también no pasarse. Cada euro que superas el límite de seis meses sigue perdiendo poder adquisitivo sin una función clara.
+Importa también no pasarse. Cada euro que superas el límite de seis meses sigue perdiendo poder adquisitivo sin una función clara. Si eliminas [los gastos hormiga que vacían tu cuenta](/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta), llegarás mucho antes al objetivo.
 
 ---
 
@@ -92,7 +92,7 @@ Con el IPC en el 4,9%, ninguna de estas opciones gana hoy a la inflación. Lo co
 * **Cuenta remunerada al 2,75% TAE:** Se queda en un **2,23% neto** (rentabilidad real: **−2,5%**).
 * **Letra del Tesoro a 12 meses (3,03%):** Se queda en un **2,45% neto** (rentabilidad real: **−2,3%**).
 
-Cada 10.000 € en una opción remunerada pierden unos 250 € de poder adquisitivo al año, frente a 467 € en la cuenta corriente. Es decir, **evitas alrededor de 210 € de erosión por cada 10.000 €**.
+Cada 10.000 € en una opción remunerada pierden unos 250 € de poder adquisitivo al año, frente a 467 € en la cuenta corriente. Es decir, **evitas alrededor de 210 € de erosión por cada 10.000 €**. Para profundizar en estos términos, revisa nuestro análisis sobre [rentabilidad real vs. rentabilidad nominal](/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta).
 
 La conclusión es práctica: el colchón de emergencia no está para ganar a la inflación, sino para estar disponible y perder lo mínimo. Es el precio de un seguro.
 
@@ -112,7 +112,7 @@ Hay inversiones perfectamente legítimas que no tienen cabida en este dinero. Su
 
 Una vez cubierto y protegido el colchón, el ahorro adicional ya no necesita esa liquidez inmediata y puede destinarse a la inversión a largo plazo. 
 
-Si es tu caso, puedes revisar nuestra [guía para empezar a invertir en fondos indexados desde cero](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso). Si todavía estás ordenando tus finanzas, consulta los [5 errores financieros más comunes a los 30 años](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos) o proyecta tu ahorro con nuestra [calculadora de interés compuesto](/calculadoras).
+Si es tu caso, puedes revisar nuestra guía sobre [cómo empezar a invertir en fondos indexados desde cero en España](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso). Si todavía estás ordenando tus finanzas, consulta [los 5 errores financieros más comunes al cumplir 30 años](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos) o evalúa las alternativas entre [comprar vs. alquilar vivienda en España](/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito).
 
 ---
 
