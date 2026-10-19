@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
 	title?: string;
 	description?: string;
@@ -49,7 +51,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://capitali
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased">
-		<slot />
+		<Header />
+		<main class="flex-grow">
+			<slot />
+		</main>
 	</body>
 </html>
 
