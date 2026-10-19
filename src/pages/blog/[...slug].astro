@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-// Función para determinar la categoría si no la tiene en el frontmatter
 function getCategory(title: string): string {
   if (post.data.category) return post.data.category;
   const t = title.toLowerCase();
@@ -39,7 +38,7 @@ const categoryName = getCategory(post.data.title);
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     
     <!-- Cabecera del Artículo -->
-    <header class="mb-10 text-center border-b border-slate-200 pb-8">
+    <header class="mb-12 text-center border-b border-slate-200 pb-10">
       <div class="flex items-center justify-center gap-3 mb-4">
         <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md">
           {categoryName}
@@ -65,13 +64,13 @@ const categoryName = getCategory(post.data.title);
       )}
     </header>
 
-    <!-- Contenido del Artículo Maquetado -->
-    <div class="prose prose-slate lg:prose-lg mx-auto prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-700 prose-p:leading-relaxed prose-strong:text-slate-900 prose-a:text-blue-950 prose-a:font-semibold hover:prose-a:text-amber-600 prose-blockquote:border-l-amber-500 prose-blockquote:bg-amber-50/50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg">
+    <!-- Contenido del Artículo Estilizado -->
+    <div class="article-content max-w-3xl mx-auto text-slate-800 text-base sm:text-lg leading-relaxed">
       <Content />
     </div>
 
-    <!-- Pie del Artículo con retorno -->
-    <footer class="mt-16 pt-8 border-t border-slate-200 flex justify-between items-center">
+    <!-- Pie del Artículo -->
+    <footer class="mt-16 pt-8 border-t border-slate-200 flex justify-between items-center max-w-3xl mx-auto">
       <a href="/blog" class="inline-flex items-center gap-2 text-sm font-bold text-blue-950 hover:text-amber-600 transition-colors">
         ← Volver a todos los artículos
       </a>
@@ -79,3 +78,65 @@ const categoryName = getCategory(post.data.title);
 
   </article>
 </Layout>
+
+<style is:global>
+  /* Estilos para maquetar el texto del Markdown perfectamente */
+  .article-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4 {
+    color: #0f172a;
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .article-content h1 { font-size: 2rem; }
+  .article-content h2 { font-size: 1.65rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+  .article-content h3 { font-size: 1.35rem; }
+
+  .article-content strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  .article-content hr {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .article-content ul { list-style-type: disc; }
+  .article-content ol { list-style-type: decimal; }
+
+  .article-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+
+  .article-content blockquote {
+    border-left: 4px solid #f59e0b;
+    background-color: #fffbeb;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    font-style: italic;
+    color: #334155;
+  }
+</style>
