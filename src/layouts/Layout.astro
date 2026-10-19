@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -30,7 +31,6 @@ const {
       <slot />
     </div>
 
-    <!-- COMPONENTE FOOTER -->
     <Footer />
 
   </body>
