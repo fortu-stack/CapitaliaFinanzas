@@ -21,16 +21,17 @@ const { title, description = "Capitalia Finanzas - Análisis económico e invers
   </head>
   <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between antialiased">
     
-    <!-- HEADER ÚNICO -->
     <Header />
 
-    <!-- CONTENIDO DE LA PÁGINA -->
     <div class="flex-grow">
       <slot />
     </div>
 
-    <!-- FOOTER ÚNICO -->
     <Footer />
 
   </body>
 </html>
+
+<style is:global>
+  @import "tailwindcss";
+</style>
