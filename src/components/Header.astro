@@ -1,60 +1,101 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
 
-const pathname = Astro.url.pathname;
+const allPosts = await getCollection('blog');
+
+// Función automática para clasificar sin tocar el Frontmatter
+function getCategory(title: string): string {
+  const t = title.toLowerCase();
+  if (t.includes('vivienda') || t.includes('alquilar') || t.includes('piso') || t.includes('inmobiliario') || t.includes('alquileres')) {
+    return 'Vivienda e Inmobiliario';
+  }
+  if (t.includes('pirámide') || t.includes('pensiones') || t.includes('herencias') || t.includes('impuestos') || t.includes('renta') || t.includes('deducciones') || t.includes('fiscal') || t.includes('tributación')) {
+    return 'Fiscalidad y Pensiones';
+  }
+  if (t.includes('invertir') || t.includes('rentabilidad') || t.includes('fondos indexados') || t.includes('interés compuesto')) {
+    return 'Inversión y Patrimonio';
+  }
+  if (t.includes('mileurismo') || t.includes('carrera') || t.includes('estudiar')) {
+    return 'Empleo y Sociedad';
+  }
+  return 'Finanzas Personales';
+}
+
+// Agrupar artículos por categoría automáticamente
+const categoriesMap: Record<string, typeof allPosts> = {
+  'Vivienda e Inmobiliario': [],
+  'Finanzas Personales': [],
+  'Inversión y Patrimonio': [],
+  'Fiscalidad y Pensiones': [],
+  'Empleo y Sociedad': []
+};
+
+allPosts.forEach(post => {
+  const cat = getCategory(post.data.title);
+  if (categoriesMap[cat]) {
+    categoriesMap[cat].push(post);
+  } else {
+    categoriesMap['Finanzas Personales'].push(post);
+  }
+});
 ---
 
-<header style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 50; font-family: 'Inter', system-ui, sans-serif;">
-    <!-- Fila superior -->
-    <div style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; height: 5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f1f5f9;">
-        <a href="/" style="display: flex; align-items: center; text-decoration: none;">
-            <img src="/logo.jpg" alt={SITE_TITLE} style="height: 45px; width: auto;" />
-        </a>
-        <div style="font-size: 0.875rem; color: #475569; font-weight: 500;">
-            Portal Profesional
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2">
+      <span class="font-black text-xl tracking-wider text-slate-900 uppercase">CAPITALIA</span>
+      <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">FINANZAS</span>
+    </a>
+
+    <!-- Navegación principal -->
+    <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-700">
+      <a href="/" class="hover:text-amber-600 transition-colors">Inicio</a>
+      
+      <!-- Menú Desplegable de Artículos -->
+      <div class="relative group py-4">
+        <button class="flex items-center gap-1 hover:text-amber-600 transition-colors focus:outline-none">
+          Artículos
+          <svg class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+
+        <!-- Dropdown con Categorías y Artículos -->
+        <div class="absolute left-0 top-full w-96 bg-white rounded-2xl shadow-xl border border-slate-200 py-4 px-3 hidden group-hover:block transition-all max-h-[80vh] overflow-y-auto">
+          <div class="space-y-4">
+            {Object.entries(categoriesMap).map(([categoryName, posts]) => (
+              posts.length > 0 && (
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-amber-600 px-3 py-1 bg-amber-50 rounded-md mb-1">
+                    {categoryName}
+                  </h3>
+                  <ul class="space-y-1">
+                    {posts.map(post => (
+                      <li>
+                        <a href={`/blog/${post.slug}`} class="block text-xs text-slate-600 hover:text-blue-950 hover:bg-slate-50 px-3 py-1.5 rounded transition-colors line-clamp-1">
+                          {post.data.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            ))}
+          </div>
         </div>
+      </div>
+
+      <a href="/calculadoras" class="hover:text-amber-600 transition-colors">Calculadoras</a>
+    </nav>
+
+    <!-- Botón derecho -->
+    <div>
+      <a href="/portal-profesional" class="text-xs font-bold text-slate-600 hover:text-slate-900 transition-colors">
+        Portal Profesional
+      </a>
     </div>
 
-    <!-- Barra de navegación principal con Desplegables -->
-    <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0;">
-        <nav style="max-width: 72rem; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 2.5rem; height: 3rem; font-size: 0.875rem; font-weight: 600; color: #334155;">
-            
-            <!-- Enlace Inicio -->
-            <a href="/" style={`color: ${pathname === '/' ? '#2563eb' : 'inherit'}; border-bottom: ${pathname === '/' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none;`}>
-                Inicio
-            </a>
-
-            <!-- Desplegable: Artículos -->
-            <div class="dropdown-container" style="position: relative; height: 100%; display: flex; align-items: center;">
-                <a href="/blog" style={`color: ${pathname.startsWith('/blog') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/blog') && pathname === '/blog' ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none; gap: 0.25rem;`}>
-                    Artículos <span style="font-size: 0.75rem;">▼</span>
-                </a>
-                <div class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); min-width: 220px; padding: 0.5rem 0; display: none; z-index: 100;">
-                    <a href="/blog/vivienda" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">🏠 Vivienda y Alquiler</a>
-                    <a href="/blog/fiscalidad" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">⚖️ Fiscalidad e Impuestos</a>
-                    <a href="/blog/inversion" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">📈 Inversión y Ahorro</a>
-                </div>
-            </div>
-
-            <!-- Desplegable: Calculadoras -->
-            <div class="dropdown-container" style="position: relative; height: 100%; display: flex; align-items: center;">
-                <a href="/calculadora" style={`color: ${pathname.startsWith('/calculadora') ? '#2563eb' : 'inherit'}; border-bottom: ${pathname.startsWith('/calculadora') ? '2px solid #2563eb' : 'none'}; height: 100%; display: flex; align-items: center; text-decoration: none; gap: 0.25rem;`}>
-                    Calculadoras <span style="font-size: 0.75rem;">▼</span>
-                </a>
-                <div class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); min-width: 220px; padding: 0.5rem 0; display: none; z-index: 100;">
-                    <a href="/blog/vivienda" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">🏠 Calculadoras de Vivienda</a>
-                    <a href="/blog/fiscalidad" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">⚖️ Calculadoras Fiscales</a>
-                    <a href="/blog/inversion" style="display: block; padding: 0.65rem 1rem; color: #334155; text-decoration: none; font-weight: 500; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f1f5f9'; this.style.color='#2563eb'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#334155'">📈 Calculadoras de Inversión</a>
-                </div>
-            </div>
-
-        </nav>
-    </div>
+  </div>
 </header>
-
-<style>
-    /* Hace que el menú se despliegue automáticamente al pasar el ratón */
-    .dropdown-container:hover .dropdown-menu {
-        display: block !important;
-    }
-</style>
