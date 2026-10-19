@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
-import '../styles/global.css'; // <-- ¡Esta línea es la que carga todos los estilos y colores!
+
+// Intentamos importar estilos desde la ruta estándar de Astro
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -30,11 +32,11 @@ const {
       <slot />
     </div>
 
-    <!-- FOOTER LEGAL DEFINITIVO -->
+    <!-- FOOTER LEGAL ACTUALIZADO -->
     <footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-8 mt-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
         
-        <!-- BRANDING Y DISCLAIMER FINANCIERO LEGAL -->
+        <!-- BRANDING Y DISCLAIMER FINANCIERO -->
         <div class="flex flex-col gap-1 max-w-2xl text-center md:text-left">
           <span class="font-black text-white text-sm tracking-wider uppercase">CAPITALIA FINANZAS</span>
           <p class="text-slate-400 leading-relaxed">
@@ -45,7 +47,7 @@ const {
           </p>
         </div>
 
-        <!-- ENLACES LEGALES -->
+        <!-- ENLACES LEGALES (ENRUTAMIENTO EXACTO DE TU PROYECTO) -->
         <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
           <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
           <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
