@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title?: string;
@@ -29,32 +30,8 @@ const {
       <slot />
     </div>
 
-    <!-- FOOTER LEGAL CON ESTILOS TAILWIND -->
-    <footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-8 mt-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-        
-        <!-- BRANDING Y DISCLAIMER -->
-        <div class="flex flex-col gap-1 max-w-2xl text-center md:text-left">
-          <span class="font-black text-white text-sm tracking-wider uppercase">CAPITALIA FINANZAS</span>
-          <p class="text-slate-400 leading-relaxed">
-            © 2026 Capitalia Finanzas. Análisis económico, fiscal e inversión independiente.
-            <span class="block text-slate-500 text-[11px] mt-0.5">
-              <strong>Aviso legal:</strong> Contenido informativo y divulgativo. No constituye asesoramiento financiero.
-            </span>
-          </p>
-        </div>
-
-        <!-- ENLACES LEGALES COMPLETOS -->
-        <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
-          <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
-          <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
-          <a href="/privacidad" class="hover:text-amber-400 transition-colors">Política de Privacidad</a>
-          <a href="/cookies" class="hover:text-amber-400 transition-colors">Política de Cookies</a>
-          <a href="/politica-editorial" class="hover:text-amber-400 transition-colors">Política Editorial</a>
-        </div>
-
-      </div>
-    </footer>
+    <!-- COMPONENTE FOOTER -->
+    <Footer />
 
   </body>
 </html>
