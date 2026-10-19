@@ -1,20 +1,81 @@
 ---
-import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug || post.id.replace(/\.(md|mdx)$/, '') },
+    props: { post },
+  }));
 }
-type Props = CollectionEntry<'blog'>;
 
-const post = Astro.props;
+const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Función para determinar la categoría si no la tiene en el frontmatter
+function getCategory(title: string): string {
+  if (post.data.category) return post.data.category;
+  const t = title.toLowerCase();
+  if (t.includes('vivienda') || t.includes('alquilar') || t.includes('piso') || t.includes('inmobiliario') || t.includes('alquileres')) {
+    return 'Vivienda e Inmobiliario';
+  }
+  if (t.includes('pirámide') || t.includes('pensiones') || t.includes('herencias') || t.includes('impuestos') || t.includes('renta') || t.includes('deducciones') || t.includes('fiscal') || t.includes('tributación')) {
+    return 'Fiscalidad y Pensiones';
+  }
+  if (t.includes('invertir') || t.includes('rentabilidad') || t.includes('fondos indexados') || t.includes('interés compuesto')) {
+    return 'Inversión y Patrimonio';
+  }
+  if (t.includes('mileurismo') || t.includes('carrera') || t.includes('estudiar')) {
+    return 'Empleo y Sociedad';
+  }
+  return 'Finanzas Personales';
+}
+
+const categoryName = getCategory(post.data.title);
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<Layout title={`${post.data.title} | Capitalia Finanzas`} description={post.data.description}>
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Cabecera del Artículo -->
+    <header class="mb-10 text-center border-b border-slate-200 pb-8">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md">
+          {categoryName}
+        </span>
+        <span class="text-slate-300">•</span>
+        <time class="text-xs font-medium text-slate-500">
+          {new Date(post.data.pubDate).toLocaleDateString('es-ES', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          })}
+        </time>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-3xl mx-auto">
+        {post.data.title}
+      </h1>
+
+      {post.data.description && (
+        <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          {post.data.description}
+        </p>
+      )}
+    </header>
+
+    <!-- Contenido del Artículo Maquetado -->
+    <div class="prose prose-slate lg:prose-lg mx-auto prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-700 prose-p:leading-relaxed prose-strong:text-slate-900 prose-a:text-blue-950 prose-a:font-semibold hover:prose-a:text-amber-600 prose-blockquote:border-l-amber-500 prose-blockquote:bg-amber-50/50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg">
+      <Content />
+    </div>
+
+    <!-- Pie del Artículo con retorno -->
+    <footer class="mt-16 pt-8 border-t border-slate-200 flex justify-between items-center">
+      <a href="/blog" class="inline-flex items-center gap-2 text-sm font-bold text-blue-950 hover:text-amber-600 transition-colors">
+        ← Volver a todos los artículos
+      </a>
+    </footer>
+
+  </article>
+</Layout>
