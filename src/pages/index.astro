@@ -67,7 +67,7 @@ const recentArticles = articles.length > 3 ? articles.slice(3, 6) : articles.sli
         
         {top3Articles.map((post, index) => (
           <div 
-            class={`hero-slide transition-opacity duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${index === 0 ? 'block opacity-100' : 'hidden opacity-0'}`} 
+            class={index === 0 ? "hero-slide transition-opacity duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center block opacity-100" : "hero-slide transition-opacity duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hidden opacity-0"} 
             data-slide-index={index}
           >
             <div class="lg:col-span-7 space-y-4">
@@ -97,14 +97,14 @@ const recentArticles = articles.length > 3 ? articles.slice(3, 6) : articles.sli
           </div>
         ))}
 
-        <!-- BOTONES E INDICADORES DEL SLIDER (CAMBIO MANUAL Y AUTO) -->
+        <!-- BOTONES E INDICADORES DEL SLIDER -->
         <div class="flex items-center justify-between pt-6 border-t border-blue-900/60 mt-4 z-10">
           <div class="flex items-center gap-2">
             {top3Articles.map((_, index) => (
               <button 
-                class={`slider-dot w-3 h-3 rounded-full transition-all duration-300 ${index === 0 ? 'bg-amber-400 w-8' : 'bg-slate-700 hover:bg-slate-500'}`}
+                class={index === 0 ? "slider-dot w-8 h-3 rounded-full transition-all duration-300 bg-amber-400" : "slider-dot w-3 h-3 rounded-full transition-all duration-300 bg-slate-700 hover:bg-slate-500"}
                 data-dot-index={index}
-                aria-label={`Ir al artículo ${index + 1}`}
+                aria-label="Cambiar artículo"
               ></button>
             ))}
           </div>
@@ -159,4 +159,127 @@ const recentArticles = articles.length > 3 ? articles.slice(3, 6) : articles.sli
           url="/herramientas/calculadora-pensiones"
         />
         <ToolCard 
-          title="Simulador de Interés
+          title="Simulador de Interés Compuesto" 
+          description="Descubre cuánto valdrá tu ahorro mensual invirtiendo a largo plazo."
+          icon="📈"
+          url="/herramientas/interes-compuesto"
+        />
+        <ToolCard 
+          title="Calculadora del Impacto del MEI" 
+          description="Calcula cuánto estás aportando mes a mes por el Mecanismo de Equidad Intergeneracional."
+          icon="🧮"
+          url="/herramientas/calculadora-mei"
+        />
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LÓGICA JAVASCRIPT IS:INLINE PARA EVITAR ERRORES DE COMPILACIÓN -->
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function() {
+      var slides = document.querySelectorAll('.hero-slide');
+      var dots = document.querySelectorAll('.slider-dot');
+      var prevBtn = document.getElementById('prevSlide');
+      var nextBtn = document.getElementById('nextSlide');
+      var sliderContainer = document.getElementById('hero-slider');
+
+      if (!slides.length) return;
+
+      var currentIndex = 0;
+      var intervalId = null;
+
+      function showSlide(index) {
+        for (var i = 0; i < slides.length; i++) {
+          if (i === index) {
+            slides[i].classList.remove('hidden', 'opacity-0');
+            slides[i].classList.add('block', 'opacity-100');
+          } else {
+            slides[i].classList.remove('block', 'opacity-100');
+            slides[i].classList.add('hidden', 'opacity-0');
+          }
+        }
+
+        for (var j = 0; j < dots.length; j++) {
+          if (j === index) {
+            dots[j].classList.add('bg-amber-400', 'w-8');
+            dots[j].classList.remove('bg-slate-700', 'w-3');
+          } else {
+            dots[j].classList.remove('bg-amber-400', 'w-8');
+            dots[j].classList.add('bg-slate-700', 'w-3');
+          }
+        }
+
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        var nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+      }
+
+      function prevSlide() {
+        var prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+      }
+
+      function startAutoPlay() {
+        if (!intervalId) {
+          intervalId = setInterval(nextSlide, 5000);
+        }
+      }
+
+      function stopAutoPlay() {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          nextSlide();
+          stopAutoPlay();
+          startAutoPlay();
+        });
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          prevSlide();
+          stopAutoPlay();
+          startAutoPlay();
+        });
+      }
+
+      for (var k = 0; k < dots.length; k++) {
+        (function(idx) {
+          dots[idx].addEventListener('click', function() {
+            showSlide(idx);
+            stopAutoPlay();
+            startAutoPlay();
+          });
+        })(k);
+      }
+
+      if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+        sliderContainer.addEventListener('mouseleave', startAutoPlay);
+      }
+
+      startAutoPlay();
+    });
+  </script>
+
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 25s linear infinite;
+    }
+  </style>
+</Layout>
