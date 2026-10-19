@@ -82,7 +82,7 @@ allPosts.forEach(post => {
                       {posts.map(post => (
                         <li>
                           <a 
-                            href={`/blog/${post.slug}`} 
+                            href={`/blog/${post.id}`} 
                             class="block text-xs text-slate-600 hover:text-blue-950 hover:bg-slate-50 px-2 py-1.5 rounded-lg transition-colors leading-snug"
                           >
                             {post.data.title}
@@ -98,7 +98,7 @@ allPosts.forEach(post => {
         </div>
       </div>
 
-      <a href="/calculadoras" class="hover:text-amber-600 transition-colors">Calculadoras</a>
+      <a href="/calculadora" class="hover:text-amber-600 transition-colors">Calculadoras</a>
     </nav>
 
     <!-- Botón derecho -->
