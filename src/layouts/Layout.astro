@@ -1,37 +1,60 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
 interface Props {
-  title: string;
-  description?: string;
+	title?: string;
+	description?: string;
+	image?: string;
 }
 
-const { title, description = "Capitalia Finanzas - Análisis económico e inversión independiente." } = Astro.props;
+const { 
+	title = "Capitalia Finanzas - Educación y Análisis Financiero", 
+	description = "Información, análisis y guías sobre finanzas personales, inversión, vivienda y fiscalidad en España.",
+	image = "/logo.jpg"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://capitaliafinanzas.com");
 ---
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </head>
-  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between antialiased">
-    
-    <Header />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Favicon en formato PNG -->
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
 
-    <div class="flex-grow">
-      <slot />
-    </div>
+		<!-- SEO Metatags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
 
-    <Footer />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(image, Astro.url)} />
 
-  </body>
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+		<!-- Generator -->
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased">
+		<slot />
+	</body>
 </html>
 
 <style is:global>
-  @import "tailwindcss";
+	html {
+		scroll-behavior: smooth;
+	}
 </style>
