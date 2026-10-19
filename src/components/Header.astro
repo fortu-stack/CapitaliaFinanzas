@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog');
 
-// Función para clasificar artículos automáticamente
 function getCategory(title: string): string {
   const t = title.toLowerCase();
   if (t.includes('vivienda') || t.includes('alquilar') || t.includes('piso') || t.includes('inmobiliario') || t.includes('alquileres')) {
@@ -66,29 +65,30 @@ allPosts.forEach(post => {
           <ul class="space-y-1">
             {Object.entries(categoriesMap).map(([categoryName, posts]) => (
               <li class="relative group/sub px-2">
-                <!-- Nombre de Categoría -->
                 <div class="flex items-center justify-between w-full px-3 py-2 text-xs font-bold text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl cursor-pointer transition-colors">
                   <span>{categoryName}</span>
                   <span class="text-[10px] text-slate-400 font-normal">({posts.length}) ›</span>
                 </div>
 
-                <!-- Submenú con los Artículos de la Categoría (Nivel 2) -->
                 {posts.length > 0 && (
                   <div class="absolute left-full top-0 ml-1 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-3 hidden group-hover/sub:block transition-all max-h-96 overflow-y-auto">
                     <div class="text-[10px] font-extrabold text-amber-600 uppercase tracking-wider mb-2 px-2 pb-1 border-b border-slate-100">
                       {categoryName}
                     </div>
                     <ul class="space-y-1">
-                      {posts.map(post => (
-                        <li>
-                          <a 
-                            href={`/blog/${post.slug}`} 
-                            class="block text-xs text-slate-600 hover:text-blue-950 hover:bg-slate-50 px-2 py-1.5 rounded-lg transition-colors leading-snug"
-                          >
-                            {post.data.title}
-                          </a>
-                        </li>
-                      ))}
+                      {posts.map(post => {
+                        const slugUrl = (post as any).slug || (post as any).id?.replace(/\.mdx?$/, '');
+                        return (
+                          <li>
+                            <a 
+                              href={`/blog/${slugUrl}`} 
+                              class="block text-xs text-slate-600 hover:text-blue-950 hover:bg-slate-50 px-2 py-1.5 rounded-lg transition-colors leading-snug"
+                            >
+                              {post.data.title}
+                            </a>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 )}
