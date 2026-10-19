@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import '../styles/global.css'; // <-- ¡Esta línea es la que carga todos los estilos y colores!
 
 interface Props {
   title?: string;
@@ -44,7 +45,7 @@ const {
           </p>
         </div>
 
-        <!-- ENLACES LEGALES (RUTAS DE TU PROYECTO) -->
+        <!-- ENLACES LEGALES -->
         <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
           <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
           <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
