@@ -17,7 +17,7 @@ Según el INE, el IPC subió un 4,9% interanual en septiembre de 2026. Con esa i
 
 La buena noticia es que el entorno de tipos permite limitar ese daño. El BCE ha subido los tipos este año, el Euríbor a 12 meses ronda el 3,1% y los productos de ahorro seguro pagan más que hace un año. Es el momento de revisar dónde está tu dinero de reserva.
 
-💡 **Te puede interesar:** Si quieres saber más sobre el impacto de la subida de precios en tus ahorros, lee nuestro artículo sobre <a href="../rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta">Rentabilidad real vs. Rentabilidad nominal: cómo descontar la inflación</a>.
+💡 **Te puede interesar:** Si quieres saber más sobre el impacto de la subida de precios en tus ahorros, lee nuestro artículo sobre [Rentabilidad real vs. Rentabilidad nominal: cómo descontar la inflación](/blog/rentabilidad-real-vs-rentabilidad-nominal-como-descontar-la-inflacion-y-no-perder-dinero-sin-darte-cuenta).
 
 ---
 
@@ -29,7 +29,7 @@ Un ejemplo sencillo: con unos gastos esenciales de 1.200 € al mes, el objetivo
 
 Aquí conecta con la **regla del 50/30/20**: el 20% destinado a ahorro debería alimentar primero este colchón. Con unos ingresos netos de 2.000 € al mes, ese 20% son 400 €, así que alcanzarías el objetivo en entre 9 y 18 meses.
 
-📌 **Lectura recomendada:** Para aplicar este método y ordenar tus cuentas desde cero, revisa la <a href="../guia-definitiva-para-organizar-tus-finanzas-personales">Guía definitiva para organizar tus finanzas personales</a> y aprende a controlar <a href="../que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta">los gastos hormiga que vacían tu cuenta</a>.
+📌 **Lectura recomendada:** Para aplicar este método y ordenar tus cuentas desde cero, revisa la [Guía definitiva para organizar tus finanzas personales](/blog/guia-definitiva-para-organizar-tus-finanzas-personales) y aprende a controlar [los gastos hormiga que vacían tu cuenta](/blog/que-son-los-gastos-hormiga-y-como-estan-vaciando-tu-cuenta-sin-que-te-des-cuenta).
 
 ---
 
@@ -101,13 +101,14 @@ Hay inversiones perfectamente legítimas que no tienen cabida en este dinero. Su
 Una vez cubierto y protegido el colchón, el ahorro adicional ya no necesita esa liquidez inmediata y puede destinarse a la inversión a largo plazo o a la toma de decisiones financieras importantes:
 
 * 📈 **Para dar el salto a la inversión:**  
-  <a href="../como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso">Guía paso a paso: Cómo empezar a invertir en fondos indexados desde cero en España</a>
+  [Guía paso a paso: Cómo empezar a invertir en fondos indexados desde cero en España](/blog/como-empezar-a-invertir-en-fondos-indexados-desde-cero-en-espana-guia-paso-a-paso)
 
 * ⚠️ **Para evitar fallos en tu estrategia de ahorro:**  
-  <a href="../los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos">Los 5 errores financieros más comunes al cumplir 30 años y cómo evitarlos</a>
+  [Los 5 errores financieros más comunes al cumplir 30 años y cómo evitarlos](/blog/los-5-errores-financieros-mas-comunes-al-cumplir-30-anos-y-como-evitarlos)
 
 * 🏠 **Para analizar grandes decisiones patrimoniales:**  
-  <a href="../comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito">Comprar vs. Alquilar vivienda en España: los números reales más allá del mito</a> y nuestro análisis sobre <a href="../por-que-alquilar-un-piso-en-2026-ha-dejado-de-ser-una-decision-inteligente">Por qué alquilar un piso en 2026 ha dejado de ser una decisión inteligente</a>.
+  [Comprar vs. Alquilar vivienda en España: los números reales más allá del mito](/blog/comprar-vs-alquilar-vivienda-en-espana-los-numeros-reales-mas-alla-del-mito)  
+  y nuestro análisis sobre [Por qué alquilar un piso en 2026 ha dejado de ser una decisión inteligente](/blog/por-que-alquilar-un-piso-en-2026-ha-dejado-de-ser-una-decision-inteligente).
 
 ---
 
