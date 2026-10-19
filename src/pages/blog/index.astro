@@ -88,7 +88,7 @@ allPosts.forEach(post => {
                     </div>
 
                     <h3 class="text-lg font-bold text-slate-900 hover:text-blue-950 transition-colors line-clamp-2">
-                      <a href={`/blog/${post.slug}`}>
+                      <a href={`/blog/${post.id}`}>
                         {post.data.title}
                       </a>
                     </h3>
@@ -100,7 +100,7 @@ allPosts.forEach(post => {
 
                   <div class="px-6 pb-6 pt-2">
                     <a
-                      href={`/blog/${post.slug}`}
+                      href={`/blog/${post.id}`}
                       class="inline-flex items-center text-xs font-bold text-blue-950 hover:text-amber-600 transition-colors"
                     >
                       Leer artículo →
