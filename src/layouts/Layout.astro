@@ -1,12 +1,14 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
   title?: string;
   description?: string;
 }
 
 const { 
-  title = "Capitalia Finanzas | Análisis Económico e Inversión Independiente", 
-  description = "Análisis económico riguroso, fiscalidad, pensiones y herramientas financieras independientes." 
+  title = "Capitalia Finanzas | Análisis Económico e Inversión Independiente",
+  description = "Análisis financiero independiente, guías de inversión, fiscalidad y herramientas para optimizar tu patrimonio." 
 } = Astro.props;
 ---
 
@@ -14,89 +16,43 @@ const {
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- SEO Meta Tags -->
     <title>{title}</title>
-    <meta name="description" content={description} />
-
-    <!-- Carga de Tailwind via CDN -->
-    <script is:inline src="https://cdn.tailwindcss.com"></script>
-    <script is:inline>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: '#fffbe1',
-                500: '#f59e0b',
-                600: '#d97706',
-                900: '#78350f',
-              }
-            }
-          }
-        }
-      }
-    </script>
-
-    <style is:global>
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        background-color: #ffffff;
-        color: #0f172a;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
-  <body class="bg-white text-slate-900 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
+  <body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col justify-between">
     
-    <!-- HEADER / NAVEGACIÓN -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2 group">
-          <span class="text-2xl">📈</span>
-          <span class="font-black text-xl tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors">
-            CAPITALIA<span class="text-amber-600">.</span>
-          </span>
-        </a>
-
-        <nav class="flex items-center gap-6 text-sm font-semibold text-slate-700">
-          <a href="/" class="hover:text-amber-600 transition-colors">Inicio</a>
-          <a href="/blog" class="hover:text-amber-600 transition-colors">Artículos</a>
-          <a href="/#herramientas" class="hover:text-amber-600 transition-colors">Herramientas</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
-    <div class="flex-1">
+    <div>
+      <Header />
       <slot />
     </div>
 
-    <!-- FOOTER EN AZUL MARINO OSCURO -->
-    <footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-12 mt-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex items-center gap-2">
-          <span class="text-xl">📈</span>
-          <span class="font-bold text-white tracking-tight">CAPITALIA FINANZAS</span>
+    <!-- FOOTER LEGAL DEFINITIVO -->
+    <footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-8 mt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
+        
+        <!-- BRANDING Y DISCLAIMER FINANCIERO LEGAL -->
+        <div class="flex flex-col gap-1 max-w-2xl text-center md:text-left">
+          <span class="font-black text-white text-sm tracking-wider uppercase">CAPITALIA FINANZAS</span>
+          <p class="text-slate-400 leading-relaxed">
+            © 2026 Capitalia Finanzas. Análisis económico, fiscal e inversión independiente.
+            <span class="block text-slate-500 text-[11px] mt-0.5">
+              <strong>Aviso legal:</strong> El contenido de esta web tiene carácter exclusivamente informativo y divulgativo. No constituye asesoramiento financiero, fiscal ni recomendación explícita de inversión.
+            </span>
+          </p>
         </div>
-        <p class="text-xs text-slate-400 text-center md:text-left">
-          © {new Date().getFullYear()} Capitalia Finanzas. Análisis independiente. No constituye asesoramiento financiero.
-        </p>
-        <div class="flex gap-4 text-xs font-medium">
-          <a href="/blog" class="hover:text-amber-400">Blog</a>
-          <a href="#" class="hover:text-amber-400">Aviso Legal</a>
+
+        <!-- ENLACES LEGALES (RUTAS DE TU PROYECTO) -->
+        <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
+          <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
+          <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
+          <a href="/privacidad" class="hover:text-amber-400 transition-colors">Política de Privacidad</a>
+          <a href="/cookies" class="hover:text-amber-400 transition-colors">Política de Cookies</a>
+          <a href="/politica-editorial" class="hover:text-amber-400 transition-colors">Política Editorial</a>
         </div>
+
       </div>
     </footer>
 
