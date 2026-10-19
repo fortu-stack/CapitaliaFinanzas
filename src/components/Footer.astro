@@ -1,28 +1,39 @@
 ---
 ---
 
-<footer class="bg-blue-950 text-slate-300 border-t border-blue-900 py-8 mt-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-    
-    <!-- BRANDING Y DISCLAIMER FINANCIERO -->
-    <div class="flex flex-col gap-1 max-w-2xl text-center md:text-left">
-      <span class="font-black text-white text-sm tracking-wider uppercase">CAPITALIA FINANZAS</span>
-      <p class="text-slate-400 leading-relaxed">
-        © 2026 Capitalia Finanzas. Análisis económico, fiscal e inversión independiente.
-        <span class="block text-slate-500 text-[11px] mt-0.5">
-          <strong>Aviso legal:</strong> El contenido de esta web tiene carácter exclusivamente informativo y divulgativo. No constituye asesoramiento financiero.
-        </span>
-      </p>
-    </div>
+<footer class="bg-blue-950 text-white mt-20 border-t border-blue-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      
+      <!-- Marca y Aviso -->
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+          <span class="font-black text-lg tracking-wider text-white uppercase">CAPITALIA</span>
+          <span class="text-[10px] font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">FINANZAS</span>
+        </div>
+        <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+          © {new Date().getFullYear()} Capitalia Finanzas. Análisis económico, fiscal e inversión independiente.
+          <br />
+          <strong class="text-slate-300">Aviso legal:</strong> El contenido de esta web tiene carácter exclusivamente informativo y divulgativo. No constituye asesoramiento financiero.
+        </p>
+      </div>
 
-    <!-- ENLACES LEGALES COMPLETOS -->
-    <div class="flex items-center gap-4 font-medium text-slate-400 flex-wrap justify-center md:justify-end">
-      <a href="/blog" class="hover:text-amber-400 transition-colors">Blog</a>
-      <a href="/aviso-legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a>
-      <a href="/privacidad" class="hover:text-amber-400 transition-colors">Política de Privacidad</a>
-      <a href="/cookies" class="hover:text-amber-400 transition-colors">Política de Cookies</a>
-      <a href="/politica-editorial" class="hover:text-amber-400 transition-colors">Política Editorial</a>
-    </div>
+      <!-- Enlaces del Pie de Página (Corregidos con las rutas exactas de tu proyecto) -->
+      <nav class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-slate-300">
+        <a href="/blog" class="hover:text-amber-400 transition-colors">
+          Blog
+        </a>
+        <a href="/politica-privacidad" class="hover:text-amber-400 transition-colors">
+          Aviso Legal y Privacidad
+        </a>
+        <a href="/politica-cookies" class="hover:text-amber-400 transition-colors">
+          Política de Cookies
+        </a>
+        <a href="/politica-editorial" class="hover:text-amber-400 transition-colors">
+          Política Editorial
+        </a>
+      </nav>
 
+    </div>
   </div>
 </footer>
