@@ -1,6 +1,6 @@
 ---
-title: "Topar los alquileres no crea pisos: el efecto bumerán de intervenir los precios"
-description: "Analizamos con datos del Banco de España y Fedea el impacto real de los topes al alquiler: moderación de precios frente a la caída de oferta y el colapso del acceso."
+title: "Topar Alquileres en España: El Efecto Bumerán Explicado"
+description: "¿Por qué limitar el precio del alquiler no crea más viviendas? Analizamos las consecuencias reales para propietarios e inquilinos en el mercado actual."
 pubDate: "Oct 09 2026"
 ---
 
@@ -35,7 +35,7 @@ El efecto final recae sobre quien menos margen tiene: el joven que busca su prim
 Si el diagnóstico es de escasez, la respuesta estructural pasa por tres palancas fundamentales:
 
 1. **Descentralización económica:** Mientras el empleo cualificado siga concentrado en media docena de áreas metropolitanas, la presión sobre sus viviendas seguirá creciendo. Repartir mejor la actividad económica por el territorio alivia la demanda en las grandes ciudades de forma orgánica, conectando directamente con nuestra tesis sobre la **España vaciada**.
-2. **Agilizar trámites administrativos:** Reducir plazos de planeamiento y licencias, dar seguridad jurídica a quien promueve y alquila, y facilitar la incorporación de trabajadores al sector de la construcción (cuya VPO cayó cerca de un 23% en 2025).
+​2. **Agilizar trámites administrativos:** Reducir plazos de planeamiento y licencias, dar seguridad jurídica a quien promueve y alquila, y facilitar la incorporación de trabajadores al sector de la construcción (cuya VPO cayó cerca de un 23% en 2025).
 3. **Liberar suelo donde de verdad hay demanda:** Hacer que el suelo urbanizable llegue al mercado en las provincias con mayor déficit, superando los cuellos de botella de licencias y capacidad constructiva.
 
 ---
@@ -101,9 +101,9 @@ El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre
 
 Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
 
-* 📊 **Fuentes consultadas:** Datos oficiales del Banco de España, Fedea, Observatorio del Alquiler y la Cátedra UNESCO de Vivienda de la URV.
-* 🔄 **Última revisión:** Octubre de 2026.
-* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+- 📊 **Fuentes consultadas:** Datos oficiales del Banco de España, Fedea, Observatorio del Alquiler y la Cátedra UNESCO de Vivienda de la URV.
+- 🔄 **Última revisión:** Octubre de 2026.
+- ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
 
 ---
 
