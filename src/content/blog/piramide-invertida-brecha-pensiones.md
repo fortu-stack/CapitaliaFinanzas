@@ -1,6 +1,6 @@
 ---
-title: 'La pirámide invertida: por qué los parches no cierran la brecha de las pensiones'
-description: 'Análisis demográfico y financiero sobre la sostenibilidad del sistema público de reparto, el impacto del MEI y la urgencia de la planificación privada.'
+title: "Brecha de Pensiones en España: ¿Colapsará la Pirámide?"
+description: "Descubre cómo te afecta la pirámide invertida de población en España y las claves para proteger tus ahorros antes de que sea tarde. ¡Analizamos los datos!"
 pubDate: 'Oct 18 2026'
 category: 'fiscalidad'
 type: 'article'
@@ -29,7 +29,7 @@ La ratio actual no es mala por razones coyunturales: España superó los 22,3 mi
 Observamos tres fuerzas que actúan a la vez:
 
 1. **La natalidad se hunde:** Según el INE, el número medio de hijos por mujer fue de 1,10 en 2024, el nivel más bajo de su serie (1975). Se registraron 318.005 nacimientos, y el saldo vegetativo fue negativo por octavo año consecutivo (−116.056 personas).
-2. **La esperanza de vida sube:** Alcanzó los 84,01 años al nacer. Quien llega a los 65 tiene por delante, de media, casi 22 años más. Es una excelente noticia social, pero un reto de equilibrio para el sistema.
+​2. **La esperanza de vida sube:** Alcanzó los 84,01 años al nacer. Quien llega a los 65 tiene por delante, de media, casi 22 años más. Es una excelente noticia social, pero un reto de equilibrio para el sistema.
 3. **La generación del *baby boom* se jubila:** Los nacidos entre 1958 y 1978 entran en la edad de retiro durante las próximas dos décadas. La AIReF estima que habrá en torno a 16,7 millones de pensionistas hacia 2050, y que casi uno de cada tres españoles (29%) será pensionista en 2056.
 
 | Indicador | Dato |
@@ -49,10 +49,10 @@ Incluso las dos proyecciones oficiales difieren: el Ministerio de Seguridad Soci
 
 Frente a ese escenario, las medidas adoptadas se pueden resumir así:
 
-* **MEI (Mecanismo de Equidad Intergeneracional):** Una cotización adicional que en 2026 se sitúa en el 0,9% de la base (0,75% empresa y 0,15% trabajador), con previsión de subir al 1,2% en 2029. Entre enero y agosto de 2026 recaudó 4.075 millones de euros para el Fondo de Reserva.
-* **Bases máximas y cotización de solidaridad:** La base máxima se revaloriza cada año con el IPC más 1,2 puntos hasta 2050, y los salarios que la superan pagan una cuota de solidaridad adicional.
-* **Retraso de la edad de jubilación:** En 2026 es de 66 años y 10 meses (o 65 con 38 años y 3 meses cotizados), y pasará a 67 años en 2027.
-* **Transferencias del Estado:** Hasta agosto de 2026 sumaron 40.186 millones de euros, un 9,8% más que el año anterior.
+- **MEI (Mecanismo de Equidad Intergeneracional):** Una cotización adicional que en 2026 se sitúa en el 0,9% de la base (0,75% empresa y 0,15% trabajador), con previsión de subir al 1,2% en 2029. Entre enero y agosto de 2026 recaudó 4.075 millones de euros para el Fondo de Reserva.
+- **Bases máximas y cotización de solidaridad:** La base máxima se revaloriza cada año con el IPC más 1,2 puntos hasta 2050, y los salarios que la superan pagan una cuota de solidaridad adicional.
+- **Retraso de la edad de jubilación:** En 2026 es de 66 años y 10 meses (o 65 con 38 años y 3 meses cotizados), y pasará a 67 años en 2027.
+- **Transferencias del Estado:** Hasta agosto de 2026 sumaron 40.186 millones de euros, un 9,8% más que el año anterior.
 
 La crítica más extendida es de proporciones: el MEI recauda en torno a 6.000 millones de euros al año, mientras que el aumento del gasto se mide en decenas de miles de millones. Subir cotizaciones ayuda, pero encarece el coste laboral y no ataja la raíz del problema: la demografía.
 
@@ -64,10 +64,10 @@ Con un salario bruto de 30.000 €, el MEI cuesta al trabajador unos 45 € al a
 
 Un análisis honesto debe recoger los argumentos de la otra parte:
 
-* **Pico y moderación:** El Gobierno sostiene que el gasto llegará a su máximo hacia 2049 y comenzará a moderarse.
-* **La demografía no es destino:** Variables como el empleo, los salarios, la productividad y la inmigración (donde los nacimientos de madres extranjeras suponen ya el 33,3%) pueden alterar los modelos.
-* **Comparativa europea:** Otros países soportan un gasto en pensiones superior sobre el PIB sin colapsar.
-* **Desigualdad del ahorro privado:** Las rentas bajas tienen poco margen de ahorro, por lo que el sistema público sigue siendo el pilar de protección indispensable.
+- **Pico y moderación:** El Gobierno sostiene que el gasto llegará a su máximo hacia 2049 y comenzará a moderarse.
+- **La demografía no es destino:** Variables como el empleo, los salarios, la productividad y la inmigración (donde los nacimientos de madres extranjeras suponen ya el 33,3%) pueden alterar los modelos.
+- **Comparativa europea:** Otros países soportan un gasto en pensiones superior sobre el PIB sin colapsar.
+- **Desigualdad del ahorro privado:** Las rentas bajas tienen poco margen de ahorro, por lo que el sistema público sigue siendo el pilar de protección indispensable.
 
 ---
 
@@ -75,7 +75,7 @@ Un análisis honesto debe recoger los argumentos de la otra parte:
 
 Para quien tiene hoy 30 años, la jubilación llegará en torno a 2060. Lo que está por ver es quién pagará la factura final: ¿más cotizaciones, más impuestos, una edad de retiro más alta o ajustes en la revalorización?
 
-Por eso nuestra conclusión es práctica: **la pensión pública es una base, pero conviene no convertirla en la única fuente de ingresos.** El ahorro privado e independiente complementa al sistema.
+Por eso nuestra conclusión es práctica: **la pensión pública es una base, pero conviene no convertirla en la única fuente de ingresos.** El ahorro privado e independentista complementa al sistema.
 
 ### Un ejemplo orientativo
 Aportar **200 € al mes durante 35 años** con una rentabilidad media del 7% nominal genera unos 360.000 € nominales. Con una inflación del 3% anual, equivalen a unos 128.000 € de poder adquisitivo actual; aplicando la regla del 4% de retirada anual, obtendrías unos **427 € mensuales adicionales** de por vida.
@@ -85,7 +85,7 @@ Aportar **200 € al mes durante 35 años** con una rentabilidad media del 7% no
 ### Por dónde empezar
 
 1. **Cubre primero el colchón:** Construye tu fondo de emergencia antes de invertir a largo plazo.
-2. **Evita errores básicos:** Prioriza la constancia sobre el *timing* del mercado.
+​2. **Evita errores básicos:** Prioriza la constancia sobre el *timing* del mercado.
 3. **Automatiza y diversifica:** Una cartera sencilla de fondos indexados con aportaciones mensuales es ideal para aprovechar el interés compuesto.
 4. **Evalúa vehículos fiscales:** Analiza los planes de pensiones y sus límites de deducción en el IRPF.
 
