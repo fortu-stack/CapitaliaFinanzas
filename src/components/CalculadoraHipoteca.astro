@@ -1,0 +1,80 @@
+---
+// Componente de Calculadora de Hipoteca
+---
+
+<div class="calculator-box" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin: 24px 0; font-family: system-ui, -apple-system, sans-serif;">
+  <h2 style="margin-top: 0; font-size: 1.5rem; color: #0f172a;">📊 Simula tu Hipoteca</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 20px;">
+    <div>
+      <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 6px; color: #334155;">Importe del préstamo (€)</label>
+      <input type="number" id="hipo-monto" value="180000" step="5000" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem;">
+    </div>
+    
+    <div>
+      <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 6px; color: #334155;">Plazo (años)</label>
+      <input type="number" id="hipo-plazo" value="25" min="5" max="40" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem;">
+    </div>
+    
+    <div>
+      <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 6px; color: #334155;">Tipo de Interés Anual (%)</label>
+      <input type="number" id="hipo-interes" value="2.75" step="0.05" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem;">
+    </div>
+  </div>
+
+  <div style="background: #1e293b; color: white; padding: 20px; border-radius: 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; text-align: center;">
+    <div>
+      <span style="font-size: 0.85rem; color: #94a3b8; display: block;">Cuota Mensual</span>
+      <strong id="res-cuota" style="font-size: 1.6rem; color: #38bdf8;">0 €</strong>
+    </div>
+    <div>
+      <span style="font-size: 0.85rem; color: #94a3b8; display: block;">Total Intereses</span>
+      <strong id="res-intereses" style="font-size: 1.4rem; color: #f43f5e;">0 €</strong>
+    </div>
+    <div>
+      <span style="font-size: 0.85rem; color: #94a3b8; display: block;">Pago Total Devuelto</span>
+      <strong id="res-total" style="font-size: 1.4rem; color: #f8fafc;">0 €</strong>
+    </div>
+  </div>
+</div>
+
+<script>
+  function calcularHipoteca() {
+    const montoInput = document.getElementById('hipo-monto') as HTMLInputElement;
+    const plazoInput = document.getElementById('hipo-plazo') as HTMLInputElement;
+    const interesInput = document.getElementById('hipo-interes') as HTMLInputElement;
+
+    if (!montoInput || !plazoInput || !interesInput) return;
+
+    const P = parseFloat(montoInput.value) || 0;
+    const años = parseFloat(plazoInput.value) || 0;
+    const rAnual = parseFloat(interesInput.value) || 0;
+
+    if (P <= 0 || años <= 0 || rAnual <= 0) return;
+
+    const n = años * 12;
+    const i = (rAnual / 100) / 12;
+
+    const cuota = (P * i * Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
+    const totalPagado = cuota * n;
+    const totalIntereses = totalPagado - P;
+
+    const elCuota = document.getElementById('res-cuota');
+    const elIntereses = document.getElementById('res-intereses');
+    const elTotal = document.getElementById('res-total');
+
+    if (elCuota) elCuota.innerText = cuota.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+    if (elIntereses) elIntereses.innerText = totalIntereses.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+    if (elTotal) elTotal.innerText = totalPagado.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+  }
+
+  document.querySelectorAll('#hipo-monto, #hipo-plazo, #hipo-interes').forEach(input => {
+    input.addEventListener('input', calcularHipoteca);
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', calcularHipoteca);
+  } else {
+    calcularHipoteca();
+  }
+</script>
