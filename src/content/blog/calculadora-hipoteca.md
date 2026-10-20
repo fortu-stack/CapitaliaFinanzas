@@ -2,7 +2,7 @@
 title: "Calculadora de Hipoteca: Simula tu Cuota Mensual y Gastos"
 description: "Calcula gratis tu cuota mensual de hipoteca a tipo fijo o variable. Descubre cuánto pagarás de intereses y los gastos de compraventa en España."
 pubDate: "Oct 21 2026"
-category: "herramientas"
+category: "vivienda"
 type: "article"
 ---
 
