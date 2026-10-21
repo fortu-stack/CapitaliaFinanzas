@@ -18,10 +18,10 @@ Cada ciclo electoral trae las mismas dos batallas fiscales: si hay que bonificar
 La tarifa del IRPF está construida por tramos: cuanto más ganas, mayor es el porcentaje que tributa cada euro adicional. Si esos tramos, los mínimos personales y las reducciones no se actualizan con la inflación, ocurre algo contraintuitivo: tu sueldo sube para mantener su poder de compra, pero una parte de ese aumento pasa a un tramo superior y tributa a un tipo mayor. Pagas más impuestos sin ganar más en términos reales. Eso es la progresividad en frío (en inglés, *fiscal drag* o *bracket creep*), y lo que la corrige es la **deflactación**: actualizar la tarifa con la inflación.
 
 ### Un ejemplo sencillo
-Imagina un salario bruto de 30.000 € con un tipo medio del 18% y un tipo marginal del 30% (cifras ilustrativas y simplificadas). Con una inflación del 3%, el sueldo sube a 30.900 € para conservar su valor. 
+Imagina un salario bruto de 30.000 € con un tipo medio del 18% y un tipo marginal del 30% (cifras ilustrativas y simplificadas). Con una inflación del 3%, el sueldo sube a 30.900 € para conservar su valor. 
 
 - Antes pagabas unos 5.400 € de IRPF y quedaban 24.600 € netos.
-- Ahora pagas 5.400 € más el 30% de los 900 € adicionales (270 €), es decir, 5.670 €, y te quedan 25.230 €. 
+- Ahora pagas 5.400 € más el 30% de los 900 € adicionales (270 €), es decir, 5.670 €, y te quedan 25.230 €. 
 
 Tu sueldo neto ha subido un 2,56%, pero los precios han subido un 3%: **has perdido cerca de un 0,4% de poder adquisitivo** (unos 100 € al año) sin que nadie haya tocado un solo tipo impositivo.
 
@@ -40,7 +40,7 @@ La progresividad en frío tiene un gemelo que afecta directamente a quien ahorra
 El Impuesto sobre Sucesiones y Donaciones está cedido a las comunidades autónomas, y de ahí nacen las enormes diferencias. En las comunidades sin tarifa propia se aplica la escala estatal, progresiva, que va del 7,65% al 34%. Pero muchas comunidades han aprobado bonificaciones del 99% para cónyuge, hijos y padres: Madrid, Andalucía, Murcia, Canarias, La Rioja o Baleares, entre otras, según las guías fiscales de 2026. En el extremo opuesto, Cataluña mantiene bonificaciones más limitadas y Asturias aplica una tarifa propia que, según esas mismas guías, puede alcanzar el 36,5% sin bonificación general.
 
 ### La crítica de la doble imposición
-El argumento de quienes quieren rebajar o eliminar el impuesto es que grava ahorro que ya tributó: el patrimonio que se hereda se formó con rentas sobre las que se pagó IRPF, y su titular quizá haya pagado también por la vivienda (ITP o IVA, e IBI cada año) o por la riqueza. Para una familia de clase media, cuyo patrimonio suele concentrarse en la vivienda habitual y algunos ahorros, el impuesto puede ser una carga relevante en las comunidades que no bonifican, aunque exista una reducción estatal del 95% sobre la vivienda habitual con un límite por heredero. 
+El argumento de quienes quieren rebajar o eliminar el impuesto es que grava ahorro que ya tributó: el patrimonio que se hereda se formó con rentas sobre las que se pagó IRPF, y su titular quizá haya pagado también por la vivienda (ITP o IVA, e IBI cada año) o por la riqueza. Para una familia de clase media, cuyo patrimonio suele concentrarse en la vivienda habitual y algunos ahorros, el impuesto puede ser una carga relevante en las comunidades que no bonifican, aunque exista una reducción estatal del 95% sobre la vivienda habitual con un límite por heredero. 
 
 A su juicio, la flexibilidad la tienen los patrimonios grandes: cuentan con más herramientas de planificación (reducciones por empresa familiar, estructuras sucesorias, o la posibilidad de trasladar de forma efectiva la residencia a una comunidad más favorable), algo que una familia con casa, trabajo y arraigo no puede hacer con facilidad.
 
@@ -98,21 +98,21 @@ En términos generales, la del lugar de residencia habitual del fallecido, con m
 
 <!-- 1. FIN DEL ARTÍCULO (Caja Interactiva) -->
 <div class="calculator-box">
-  <h3>Calcula tu tramo real de IRPF</h3>
-  <p>Descubre cuánto de tu sueldo se va realmente en impuestos y cómo te afecta la inflación.</p>
-  <a href="/calculadora">&rarr; Usar la Calculadora de IRPF</a>
+  <h3>Calcula tu tramo real de IRPF</h3>
+  <p>Descubre cuánto de tu sueldo se va realmente en impuestos y cómo te afecta la inflación.</p>
+  <a href="/calculadora">&rarr; Usar la Calculadora de IRPF</a>
 </div>
 
 ---
 
 <!-- 2. BLOQUE DE ENLAZADO INTERNO -->
 <section class="related-posts">
-  <h3>Sigue leyendo sobre economía y fiscalidad</h3>
-  <ul>
-    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir precios</a></li>
-    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
-    <li><a href="/blog/crisis-vivienda-espana-raiz-espana-vaciada">&rarr; Por qué la crisis de la vivienda no se soluciona en las ciudades</a></li>
-  </ul>
+  <h3>Sigue leyendo sobre economía y fiscalidad</h3>
+  <ul>
+    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir precios</a></li>
+    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
+    <li><a href="/blog/crisis-vivienda-espana-raiz-espana-vaciada">&rarr; Por qué la crisis de la vivienda no se soluciona en las ciudades</a></li>
+  </ul>
 </section>
 
 ---
@@ -124,9 +124,9 @@ En términos generales, la del lugar de residencia habitual del fallecido, con m
 
 Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
 
-- 📊 **Fuentes consultadas:** Datos oficiales de la Agencia Tributaria (AEAT), Registro de Economistas Asesores Fiscales (REAF), Autoridad Independiente de Responsabilidad Fiscal (AIReF) y Banco de España.
-- 🔄 **Última revisión:** Octubre de 2026.
-- ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+* 📊 **Fuentes consultadas:** Datos oficiales de la Agencia Tributaria (AEAT), Registro de Economistas Asesores Fiscales (REAF), Autoridad Independiente de Responsabilidad Fiscal (AIReF) y Banco de España.
+* 🔄 **Última revisión:** Octubre de 2026.
+* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
 
 ---
 
