@@ -1,7 +1,8 @@
 ---
-title: "Los 5 errores financieros más comunes al cumplir 30 años (y cómo evitarlos)"
-description: "Descubre los errores financieros más habituales al llegar a los 30 años y cómo corregirlos a tiempo para proteger tu patrimonio con el interés compuesto."
+title: "¿No llegas a los 30 con ahorros? Los 5 errores financieros que destrozan tu sueldo (y cómo evitarlos)"
+description: "Descubre los errores financieros más habituales a los 30 años. Evita la trampa de la deuda y aprende a multiplicar tu patrimonio con el interés compuesto."
 pubDate: "Oct 01 2026"
+canonical: "https://capitaliafinanzas.com/blog/errores-financieros-30-anos"
 ---
 
 > 📋 **Resumen rápido:** Los errores más habituales al llegar a los 30 son mezclar el ahorro con el gasto corriente, subestimar los gastos hormiga y fantasma, no tener un fondo de emergencia, acumular deuda de consumo cara y posponer la inversión a largo plazo. Corregirlos ahora, con el tiempo todavía de tu lado, puede suponer una diferencia de decenas de miles de euros en tu patrimonio dentro de 20 o 30 años.
