@@ -1,9 +1,10 @@
 ---
-title: "Brecha de Pensiones en España: ¿Colapsará la Pirámide?"
+title: "La verdad sobre la brecha de pensiones en España: ¿qué pasará con tu jubilación?"
 description: "Descubre cómo te afecta la pirámide invertida de población en España y las claves para proteger tus ahorros antes de que sea tarde. ¡Analizamos los datos!"
 pubDate: 'Oct 18 2026'
 category: 'fiscalidad'
 type: 'article'
+canonical: "https://capitaliafinanzas.com/blog/piramide-invertida-brecha-pensiones/"
 ---
 
 > **📋 Resumen rápido:** El sistema español de pensiones es de reparto: las cotizaciones de hoy pagan las pensiones de hoy. Con unos 2,3 cotizantes por pensionista y una fecundidad de 1,10 hijos por mujer, la AIReF prevé que la ratio baje hasta 1,4 hacia 2050 y que el gasto llegue al 16,1% del PIB. El MEI, las bases máximas y el retraso de la edad de jubilación amortiguan el golpe, pero por sí solos no cierran la brecha. El sistema no va a desaparecer; lo incierto es quién pagará la factura y con qué reglas.
