@@ -2,7 +2,7 @@
 title: "¿No llegas a los 30 con ahorros? Los 5 errores financieros que destrozan tu sueldo (y cómo evitarlos)"
 description: "Descubre los errores financieros más habituales a los 30 años. Evita la trampa de la deuda y aprende a multiplicar tu patrimonio con el interés compuesto."
 pubDate: "Oct 01 2026"
-canonical: "https://capitaliafinanzas.com/blog/errores-financieros-30-anos"
+canonical: "https://capitaliafinanzas.com/blog/errores-financieros-30-anos/"
 ---
 
 > 📋 **Resumen rápido:** Los errores más habituales al llegar a los 30 son mezclar el ahorro con el gasto corriente, subestimar los gastos hormiga y fantasma, no tener un fondo de emergencia, acumular deuda de consumo cara y posponer la inversión a largo plazo. Corregirlos ahora, con el tiempo todavía de tu lado, puede suponer una diferencia de decenas de miles de euros en tu patrimonio dentro de 20 o 30 años.
@@ -27,7 +27,7 @@ Ninguno de estos gastos parece grave por separado, pero entre ambos pueden supon
 
 Es habitual llegar a los 30 sin haber afrontado nunca un imprevisto financiero serio, y eso genera una falsa sensación de seguridad. El problema aparece cuando ese imprevisto llega —una avería importante, una reducción de jornada, un gasto médico no cubierto— y la única opción disponible es tirar de tarjeta de crédito o de un préstamo rápido, con el coste en intereses que eso implica.
 
-Un fondo de emergencia bien dimensionado —entre tres y seis meses de gastos fijos imprescindibles si tienes un empleo estable, más si tus ingresos son variables o eres autónomo— es la diferencia entre afrontar un imprevisto con calma o entrar en una espiral de deuda cara. Este colchón debe mantenerse en productos de alta liquidez, como una cuenta remunerada, nunca en renta variable: con el Euríbor situándose en niveles superiores al 3%, muchas entidades ofrecen actualmente una rentabilidad razonable para este tipo de ahorro sin asumir ningún riesgo de mercado.
+Un fondo de emergencia bien dimensionado —entre tres y seis meses de gastos fijos indispensables si tienes un empleo estable, más si tus ingresos son variables o eres autónomo— es la diferencia entre afrontar un imprevisto con calma o entrar en una espiral de deuda cara. Este colchón debe mantenerse en productos de alta liquidez, como una cuenta remunerada, nunca en renta variable: con el Euríbor situándose en niveles superiores al 3%, muchas entidades ofrecen actualmente una rentabilidad razonable para este tipo de ahorro sin asumir ningún riesgo de mercado.
 
 ## Error 4: Acumular deuda de consumo sin calcular su coste real
 
