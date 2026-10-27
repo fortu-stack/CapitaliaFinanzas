@@ -14,7 +14,7 @@ Limitar el precio del alquiler es una de esas medidas que entienden todos a la p
 
 La crítica económica a los topes parte de un dato incómodo: el problema de fondo es de cantidad. El **Banco de España** estima que entre 2021 y 2025 se acumuló un déficit cercano a las **750.000 viviendas**, porque la creación de hogares supera de forma sostenida a la construcción: solo en el último año se formaron unos 240.000 hogares nuevos, mientras que se terminaron alrededor de 92.000 viviendas. Ese desfase no se corrige con una norma, porque construir lleva tiempo: según las estimaciones del sector, el ciclo completo desde que se identifica un suelo hasta que la vivienda llega al mercado puede rondar los cuatro años.
 
-Por eso los topes tienen un atractivo político evidente: su beneficio es visible e inmediato (el inquilino que ya tiene contrato paga menos), mientras que su coste es difuso y tardío (el piso que nunca llega a anunciarse, la promoción de alquiler que no se empieza). Lo primero se ve en la factura del mes siguiente; lo segundo no aparece en ninguna factura. Y esa asimetría es, precisamente, lo que hace necesario mirar los datos fríos, especialmente tras los recientes cambios legislativos introducidos en la [guía sobre los nuevos impuestos a la vivienda del Real Decreto-ley 29/2026](/blog/nuevos-impuestos-vivienda-real-decreto-2026), que alteran de nuevo las reglas del juego fiscal para propietarios y arrendatarios.
+Por eso los topes tienen un atractivo político evidente: su beneficio es visible e inmediato (el inquilino que ya tiene contrato paga menos), mientras que su coste es difuso y tardío (el piso que nunca llega a anunciarse, la promoción de alquiler que no se empieza). Lo primero se ve en la factura del mes siguiente; lo segundo no aparece en ninguna factura. Y esa asimetría es, precisamente, lo que hace necesario mirar los datos fríos, especialmente tras los recientes cambios legislativos introducidos en la <a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">guía sobre los nuevos impuestos a la vivienda del Real Decreto-ley 29/2026</a>, que alteran de nuevo las reglas del juego fiscal para propietarios y arrendatarios.
 
 ---
 
@@ -47,14 +47,14 @@ Si el diagnóstico es de escasez, la respuesta estructural pasa por tres palanca
 Un análisis honesto exige recoger el otro lado, que cuenta con argumentos sólidos:
 - **Los precios sí se han moderado:** Incluso Fedea reconoce esta moderación en las zonas reguladas, y para el inquilino que ya vive en esa zona, el alivio económico es real.
 - **Es difícil aislar el efecto único:** La oferta también ha caído fuera de las zonas reguladas por otros factores concurrentes (auge de compraventas, turismo, incertidumbre). Atribuir todo a la ley puede ser una simplificación.
-- **Son una medida de transformación:** Se defienden como un cortafuegos necesario mientras la oferta estructural tarda años en materializarse, acompañado de planes de vivienda pública.
+- **Son una medida de transición:** Se defienden como un cortafuegos necesario mientras la oferta estructural tarda años en materializarse, acompañado de planes de vivienda pública.
 - **El horizonte de evaluación es corto:** Con las primeras declaraciones desde 2024, dos años es un margen breve para juzgar el calado definitivo de una política que sigue debatida incluso en el marco de la futura ley europea de vivienda.
 
 ---
 
 ## Lo que significa este tope para tu bolsillo si buscas alquilar o comprar en 2026
 
-Si vas a alquilar en una zona con precios regulados, asume que la competencia será máxima: lleva la documentación preparada (nóminas, contrato) y valora municipios colindantes con mejor equilibrio de mercado. Y si te planteas dar el salto a la propiedad, nuestro análisis sobre [comprar vs. alquilar vivienda](/blog/comprar-vs-alquilar) te ayuda a poner los números reales sobre la mesa.
+Si vas a alquilar en una zona con precios regulados, asume que la competencia será máxima: lleva la documentación preparada (nóminas, contrato) y valora municipios colindantes con mejor equilibrio de mercado. Y si te planteas dar el salto a la propiedad, nuestro análisis sobre <a href="/blog/comprar-vs-alquilar" style="color: #2563eb; text-decoration: underline;">comprar vs. alquilar vivienda</a> te ayuda a poner los números reales sobre la mesa.
 
 ---
 
@@ -70,7 +70,7 @@ Repartir la escasez con medidas que actúan solo sobre el precio puede ofrecer u
 Es un ámbito territorial que una comunidad autónoma declara como tal, a petición de los ayuntamientos, cuando el gasto en vivienda supera el 30% de la renta media o los precios han crecido muy por encima del IPC. En ellas se aplican límites a los nuevos contratos.
 
 ### ¿Qué ha pasado realmente con la oferta de vivienda donde se han aplicado topes?
-Según Fedea, los precios se han moderado pero la oferta de anuncios ha caído de forma notable (un 22,2% en Barcelona y un 20,5% in Cataluña), aunque los defensores de la medida recuerdan que intervienen otros factores socioeconómicos simultáneos.
+Según Fedea, los precios se han moderado pero la oferta de anuncios ha caído de forma notable (un 22,2% en Barcelona y un 20,5% en Cataluña), aunque los defensores de la medida recuerdan que intervienen otros factores socioeconómicos simultáneos.
 
 ### ¿Cuántas viviendas faltan en España según el Banco de España?
 El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre 2021 y 2025, provocado porque la creación de hogares supera con holgura el volumen de obra nueva terminada.
@@ -79,7 +79,7 @@ El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre
 <div class="calculator-box">
   <h3>Calcula tu capacidad real de ahorro frente a la subida del alquiler</h3>
   <p>Descubre cuánto margen real te deja el mercado actual según tus ingresos y ajusta tus gastos con la regla de presupuesto personal.</p>
-  <a href="/blog/regla-50-30-20">Probar Regla 50/30/20 &rarr;</a>
+  <a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Probar Regla 50/30/20 &rarr;</a>
 </div>
 
 ---
@@ -88,12 +88,12 @@ El Banco de España estima un déficit acumulado de unas 750.000 viviendas entre
 <section class="related-posts">
   <h3>Guías prácticas de ahorro e inversión para tu bolsillo</h3>
   <ul>
-    <li><a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026">&rarr; Nuevos impuestos a la vivienda (RDL 29/2026): Claves, deducciones y cambios fiscales</a></li>
-    <li><a href="/blog/calculadora-hipoteca">&rarr; Calculadora de Hipoteca: Simula tu cuota mensual y ahorro de intereses</a></li>
-    <li><a href="/blog/regla-50-30-20">&rarr; La regla 50/30/20 adaptada a tu nómina: Cómo repartir tu dinero sin ahogarte</a></li>
-    <li><a href="/blog/fondos-indexados">&rarr; Guía para empezar a invertir en Fondos Indexados y proteger tu dinero de la inflación</a></li>
-    <li><a href="/blog/comprar-vs-alquilar">&rarr; Comprar vs. alquilar vivienda en España: Los números reales explicados</a></li>
-    <li><a href="/blog/crisis-vivienda-espana-raiz-espana-vaciada">&rarr; Por qué la crisis de la vivienda no se soluciona en las grandes ciudades</a></li>
+    <li><a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">&rarr; Nuevos impuestos a la vivienda (RDL 29/2026): Claves, deducciones y cambios fiscales</a></li>
+    <li><a href="/blog/calculadora-hipoteca" style="color: #2563eb; text-decoration: underline;">&rarr; Calculadora de Hipoteca: Simula tu cuota mensual y ahorro de intereses</a></li>
+    <li><a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline;">&rarr; La regla 50/30/20 adaptada a tu nómina: Cómo repartir tu dinero sin ahogarte</a></li>
+    <li><a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline;">&rarr; Guía para empezar a invertir en Fondos Indexados y proteger tu dinero de la inflación</a></li>
+    <li><a href="/blog/comprar-vs-alquilar" style="color: #2563eb; text-decoration: underline;">&rarr; Comprar vs. alquilar vivienda en España: Los números reales explicados</a></li>
+    <li><a href="/blog/crisis-vivienda-espana-raiz-espana-vaciada" style="color: #2563eb; text-decoration: underline;">&rarr; Por qué la crisis de la vivienda no se soluciona en las grandes ciudades</a></li>
   </ul>
 </section>
 
