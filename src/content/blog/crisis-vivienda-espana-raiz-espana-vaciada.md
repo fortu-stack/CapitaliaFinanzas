@@ -18,7 +18,7 @@ Esa distribución desequilibrada tiene un motor muy identificable: el ciclo del 
 
 Frente a este diagnóstico, buena parte de las medidas que se aplican en la práctica actúan exclusivamente sobre el síntoma visible —precios altos en las ciudades— sin tocar la causa estructural que los genera. Los topes y límites a la actualización del alquiler en las llamadas zonas tensionadas, introducidos por la Ley de Vivienda de 2023, pueden aliviar puntualmente la factura mensual de un inquilino concreto, pero no reducen ni un metro cuadrado la demanda que sigue llegando a esas mismas ciudades año tras año. Si la oferta disponible sigue siendo insuficiente para la demanda concentrada en esas zonas, limitar el precio no elimina la escasez, solo cambia cómo se reparte. 
 
-Algo parecido ocurre con el recargo del Impuesto sobre Bienes Inmuebles (IBI) a las viviendas vacías, otra medida incluida en esa misma ley: penalizar fiscalmente una vivienda cerrada en un pueblo de Castilla-La Mancha no hace que esa vivienda se vuelva habitable para alguien que necesita trabajar en Madrid. El problema no es que esas casas estén vacías por capricho de sus propietarios; están vacías porque no hay empleo, colegio, hospital ni oferta cultural suficiente alrededor como para que alguien quiera vivir en ellas. Mientras la causa de fondo —la concentración geográfica del empleo— permanezca intacta, cualquier parche aplicado exclusivamente sobre el precio en las grandes ciudades tendrá un efecto limitado y temporal.
+Algo parecido ocurre con el recargo del Impuesto sobre Bienes Inmuebles (IBI) a las viviendas vacías, otra medida incluida en esa misma ley: penalizar fiscalmente una vivienda cerrada en un pueblo de Castilla-La Mancha no hace que esa vivienda se vuelva habitable para alguien que necesita trabajar en Madrid. El problema no es que esas casas estén vacías por capricho de sus propietarios; están vacías porque no hay empleo, colegio, hospital ni oferta cultural suficiente alrededor como para que alguien quiera vivir en ellas. Mientras la causa de fondo —la concentración geográfica del empleo— permanezca intacta, cualquier parche aplicado exclusivamente sobre el precio en las grandes ciudades tendrá un efecto limitado y temporal, tal y como analizamos en detalle en nuestro análisis sobre <a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran" style="color: #2563eb; text-decoration: underline;">por qué topar los alquileres no crea pisos</a>.
 
 ## La solución de "dos pájaros de un tiro": repoblar para destensionar
 
@@ -27,11 +27,11 @@ Si el problema real es la concentración excesiva de población y empleo en medi
 - **Descentralización económica real:** Incentivos fiscales efectivos —no simbólicos— para que empresas y autónomos trasladen o inicien actividad en el mundo rural: reducciones sustanciales en el Impuesto de Sociedades o en las cotizaciones sociales durante los primeros años de actividad en municipios en riesgo de despoblación.
 - **Inversión masiva en conectividad:** La fibra óptica de alta velocidad y un transporte de media distancia razonable no son un lujo accesorio, sino la condición mínima para que el teletrabajo y la vida profesional moderna sean viables fuera de las grandes capitales. Sin esa infraestructura, ningún incentivo fiscal logrará que una empresa de servicios digitales se plantee instalarse en un pueblo de 2.000 habitantes.
 
-El efecto, si se ejecuta con suficiente ambición, sería doble: cada familia o empresa que se asiente en el territorio despoblado reduce, en la misma proporción, la presión demográfica y de precios sobre las grandes ciudades, sin necesidad de imponer ningún tope artificial. Es una solución orgánica a un problema que, hoy, se sigue intentando resolver de forma artificial.
+El efecto, si se ejecuta con suficiente ambición, sería doble: cada familia o empresa que se asiente en el territorio despoblado reduce, en la misma proporción, la presión demográfica y de precios sobre las grandes ciudades, sin necesidad de imponer ningún tope artificial. Es una solución orgánica a un problema que, hoy, se sigue intentando resolver de forma artificial. Además, si estás sopesando dar el salto residencial, puedes ver los números reales de <a href="/blog/comprar-vs-alquilar" style="color: #2563eb; text-decoration: underline;">comprar frente a alquilar vivienda en España</a> antes de decidirte.
 
 ## Conclusión
 
-Mirar exclusivamente hacia las grandes ciudades y seguir parcheando sus precios no va a resolver la crisis de la vivienda en España, porque esa crisis nunca ha sido, en el fondo, un problema de escasez de ladrillo. Es un problema de geografía económica: demasiada gente compitiendo por el mismo puñado de metros cuadrados, mientras millones de viviendas perfectamente habitables permanecen vacías a pocas horas de distancia, simplemente porque allí no hay trabajo. Hasta que no se aborde esa raíz con políticas de descentralización económica reales, seguiremos discutiendo sobre los síntomas de una enfermedad que nunca llegamos a tratar.
+Mirar exclusivamente hacia las grandes ciudades y seguir parcheando sus precios no va a resolver la crisis de la vivienda en España, porque esa crisis nunca ha sido, en el fondo, un problema de escasez de ladrillo. Es un problema de geografía económica: demasiada gente compitiendo por el mismo puñado de metros cuadrados, mientras millones de viviendas perfectamente habitables permanecen vacías a pocas horas de distancia, simplemente porque allí no hay trabajo. Hasta que no se aborde esa raíz con políticas de descentralización económica reales, seguiremos discutiendo sobre los síntomas de una enfermedad que nunca llegamos a tratar, complementándolo con las últimas novedades normativas del <a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Real Decreto-ley sobre vivienda</a>.
 
 ---
 
@@ -50,7 +50,7 @@ Pueden aliviar a corto plazo la cuota de inquilinos concretos en zonas tensionad
 <div class="calculator-box">
   <h3>Evalúa tu escenario inmobiliario</h3>
   <p>Compara los números reales de comprar frente a alquilar antes de tomar una decisión.</p>
-  <a href="/calculadora">Ir a la Calculadora &rarr;</a>
+  <a href="/calculadora" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Ir a la Calculadora &rarr;</a>
 </div>
 
 ---
@@ -59,9 +59,10 @@ Pueden aliviar a corto plazo la cuota de inquilinos concretos en zonas tensionad
 <section class="related-posts">
   <h3>Sigue leyendo sobre finanzas y vivienda</h3>
   <ul>
-    <li><a href="/blog/comprar-vs-alquilar">&rarr; Comprar vs. alquilar vivienda en España: los números reales</a></li>
-    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir los precios</a></li>
-    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
+    <li><a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">&rarr; Nuevos impuestos a la vivienda (RDL 29/2026): Claves y cambios fiscales</a></li>
+    <li><a href="/blog/comprar-vs-alquilar" style="color: #2563eb; text-decoration: underline;">&rarr; Comprar vs. alquilar vivienda en España: los números reales</a></li>
+    <li><a href="/blog/topar-alquileres-no-crea-pisos-efecto-bumeran" style="color: #2563eb; text-decoration: underline;">&rarr; Topar los alquileres no crea pisos: el efecto bumerán de intervenir los precios</a></li>
+    <li><a href="/blog/trampa-mileurismo-ilustrado-estabilidad-30" style="color: #2563eb; text-decoration: underline;">&rarr; La trampa del mileurismo ilustrado: por qué estudiar ya no compra la estabilidad</a></li>
   </ul>
 </section>
 
@@ -74,9 +75,9 @@ Pueden aliviar a corto plazo la cuota de inquilinos concretos en zonas tensionad
 
 Este contenido ha sido redactado por el equipo de análisis de **Capitalia Finanzas**, especializado en el impacto de la fiscalidad y la macroeconomía en la clase media y el pequeño ahorrador en España.
 
-* 📊 **Fuentes consultadas:** Datos oficiales del Instituto Nacional de Estadística (INE), Ministerio de Vivienda y Agenda Urbana y Banco de España.
-* 🔄 **Última revisión:** Octubre de 2026.
-* ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
+- 📊 **Fuentes consultadas:** Datos oficiales del Instituto Nacional de Estadística (INE), Ministerio de Vivienda y Agenda Urbana y Banco de España.
+- 🔄 **Última revisión:** Octubre de 2026.
+- ⚖️ **Transparencia:** Sin patrocinios bancarios ni posiciones partidistas. Análisis 100% independiente.
 
 ---
 
