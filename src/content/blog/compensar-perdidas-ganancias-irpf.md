@@ -10,8 +10,8 @@ Si este año has vendido acciones, participaciones de fondos o criptomonedas con
 
 Hacienda no trata todo tu ahorro como un único bloque. Dentro de la base imponible del ahorro existen dos categorías separadas, y entender esta separación es el punto de partida de todo lo demás:
 
-* **Rendimientos del capital mobiliario (RCM):** dividendos, intereses de cuentas remuneradas, cupones de renta fija.
-* **Ganancias y pérdidas patrimoniales (GyP):** el resultado de vender acciones, participaciones de fondos (fuera del régimen de traspasos, que difiere la tributación hasta el reembolso final), inmuebles o criptomonedas.
+- **Rendimientos del capital mobiliario (RCM):** dividendos, intereses de <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline;">cuentas remuneradas e instrumentos de ahorro</a>, cupones de renta fija.
+- **Ganancias y pérdidas patrimoniales (GyP):** el resultado de vender acciones, participaciones de <a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline;">fondos indexados y de inversión</a> (fuera del régimen de traspasos, que difiere la tributación hasta el reembolso final), inmuebles o criptomonedas.
 
 Cada categoría se compensa primero internamente: todas las ganancias y pérdidas de GyP se suman entre sí, y todos los rendimientos positivos y negativos de RCM se suman entre sí, cada uno por su lado. Solo si, después de esa compensación interna, uno de los dos "cajones" sigue en negativo, se permite cruzar el resultado hacia el otro cajón, aunque con un límite importante: un **máximo del 25%** del saldo positivo del cajón receptor. Este límite lleva vigente desde 2018 y es precisamente el punto que más confunde a los inversores que dan por hecho que pueden compensar sin tope.
 
@@ -19,10 +19,10 @@ Cada categoría se compensa primero internamente: todas las ganancias y pérdida
 
 Imagina que en el ejercicio has tenido:
 
-* Ganancia por venta de acciones: 3.000 €
-* Pérdida por venta de un fondo de inversión: −4.500 €
-* Dividendos cobrados: 800 €
-* Intereses de una cuenta remunerada: 200 €
+- Ganancia por venta de acciones: 3.000 €
+- Pérdida por venta de un fondo de inversión: −4.500 €
+- Dividendos cobrados: 800 €
+- Intereses de una cuenta remunerada: 200 €
 
 Primero se compensa cada cajón por separado: el saldo de GyP es 3.000 − 4.500 = −1.500 €; el saldo de RCM es 800 + 200 = +1.000 €. Como el saldo de GyP es negativo, puede compensarse con el saldo positivo de RCM, pero solo hasta el 25% de esos 1.000 €, es decir, **250 €**. El resultado final: tributas por 750 € de RCM (1.000 − 250) en la base del ahorro, y te quedan 1.250 € de pérdida patrimonial sin compensar, que no se pierden: pasan al siguiente apartado.
 
@@ -34,14 +34,14 @@ Un matiz importante: la compensación con pérdidas de ejercicios anteriores no 
 
 ## La "regla de los dos meses": el veto que más sorpresas genera
 
-Aquí está la trampa en la que caen incluso inversores experimentados. Hacienda no permite materializar una pérdida fiscal de forma artificial: si vendes un valor con pérdidas solo para "generar" una minusvalía compensable, pero mantienes intacta tu posición real en ese activo, la ley considera que esa pérdida no es económicamente real todavía.
+Aquí está la trampa en la que caen incluso inversores experimentados. Hacienda no permite materializar una pérdida fiscal de forma artificial: si vendes un valor con pérdidas solo para "generar" una minusvalía compensable, pero mantienes intacta tu posición real en ese activo, la ley considera que esa pérdida no es económicamente real todavía (recordando siempre la importancia de valorar tus rendimientos netos considerando la <a href="/blog/rentabilidad-real-vs-nominal" style="color: #2563eb; text-decoration: underline;">diferencia entre rentabilidad real y nominal</a>).
 
 En concreto, el artículo 33.5 de la Ley del IRPF establece que no podrás computar como pérdida patrimonial la venta de acciones, ETFs o participaciones de fondos si adquieres valores homogéneos (el mismo activo, identificado por el mismo ISIN) **dentro de los dos meses anteriores o posteriores** a esa venta. La pérdida no se pierde para siempre, pero queda "congelada": solo podrás computarla fiscalmente cuando finalmente vendas esos nuevos valores adquiridos, sin recomprar de nuevo dentro del plazo.
 
 Dos matices que muy pocos artículos explican bien:
 
-* **La regla se aplica por ISIN, no por "producto genérico":** Puedes vender un fondo indexado al MSCI World de una gestora con pérdidas y comprar de inmediato un fondo indexado al MSCI World de otra gestora distinta (ISIN diferente) sin activar el veto, siempre que no sean considerados valores sustancialmente idénticos.
-* **Las criptomonedas ocupan una zona gris:** Según el criterio de la Dirección General de Tributos, las monedas virtuales se califican como bienes inmateriales y no como "valores negociados", por lo que, en sentido estricto, la regla de los dos meses (pensada para valores) no les resultaría de aplicación directa. Parte de la doctrina considera, sin embargo, que sí podría aplicarse una regla equivalente más amplia, con un plazo de un año, prevista con carácter general para otros elementos patrimoniales. Ante esta falta de norma específica y la inseguridad jurídica que genera, la recomendación prudente es tratar cualquier recompra de la misma criptomoneda con el mismo criterio conservador que una acción, evitando recomprar en un plazo corto si quieres asegurar la compensación de la pérdida.
+- **La regla se aplica por ISIN, no por "producto genérico":** Puedes vender un fondo indexado al MSCI World de una gestora con pérdidas y comprar de inmediato un fondo indexado al MSCI World de otra gestora distinta (ISIN diferente) sin activar el veto, siempre que no sean considerados valores sustancialmente idénticos.
+- **Las criptomonedas ocupan una zona gris:** Según el criterio de la Dirección General de Tributos, las monedas virtuales se califican como bienes inmateriales y no como "valores negociados", por lo que, en sentido estricto, la regla de los dos meses (pensada para valores) no les resultaría de aplicación directa. Parte de la doctrina considera, sin embargo, que sí podría aplicarse una regla equivalente más amplia, con un plazo de un año, prevista con carácter general para otros elementos patrimoniales. Ante esta falta de norma específica y la inseguridad jurídica que genera, la recomendación prudente es tratar cualquier recompra de la misma criptomoneda con el mismo criterio conservador que una acción, evitando recomprar en un plazo corto si quieres asegurar la compensación de la pérdida.
 
 ### Qué hacer con esta información antes de que acabe el año
 
