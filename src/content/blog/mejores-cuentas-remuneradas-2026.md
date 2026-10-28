@@ -3,7 +3,7 @@ title: "Dónde sacar hasta un 3,5% por tu dinero sin riesgo: Cuentas Remuneradas
 description: "Tienes 10.000 € en el banco al 0% y la inflación se come tus ahorros. Descubre qué cuentas remuneradas pagan hoy hasta un 3,5% neto tras impuestos."
 pubDate: "Oct 28 2026"
 canonical: "https://capitaliafinanzas.com/blog/mejores-cuentas-remuneradas-2026/"
-category: ahorro
+category: inversion
 type: article
 ---
 
