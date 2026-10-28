@@ -48,7 +48,7 @@ Es la pregunta que más se busca, y la respuesta es distinta de la que verás en
 
 Esa cifra procede, probablemente, de la mezcla de otros umbrales. Hay límites reales en otros ámbitos, como los pagos en efectivo con empresarios o profesionales, restringidos a 1.000 €, o los de las plataformas de venta entre particulares, que informan a Hacienda de quienes superan las 30 operaciones o los 2.000 € de ingresos al año por la normativa europea DAC7.
 
-Lo que determina si debes declarar no es el medio de pago, sino de dónde viene el dinero. Un ingreso sujeto a impuestos lo está igual si llega por Bizum, por transferencia o en efectivo.
+Lo que determina si debes declarar no es el medio de pago, sino de dónde viene el dinero. Un ingreso sujeto a impuestos lo está igual si llega por Bizum, por transferencia o en efectivo. Si parte de ese dinero lo destinas al ahorro, recuerda que conviene moverlo a opciones eficientes (puedes consultar nuestra comparativa sobre <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline;">cuentas remuneradas para maximizar tus ahorros este año</a> o revisar cómo estructurar tu capital a largo plazo en nuestra guía de <a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline;">fondos indexados</a>).
 
 ---
 
@@ -91,11 +91,11 @@ Una ayuda de importe relevante para la entrada de un piso es una donación. Se d
 
 Aquí sí hay un cambio real. Los bancos envían a la Agencia Tributaria, cada mes y sin importe mínimo, la facturación acumulada de cada empresario o profesional por Bizum y tarjeta. Hacienda recibe un dato agregado y puede cruzarlo con tus declaraciones del modelo 303 de IVA y de los pagos fraccionados de IRPF.
 
-Si el banco comunica, por ejemplo, 12.000 € de cobros en un trimestre y tú declaras 7.000 € de ventas, es probable que recibas un requerimiento para explicar la diferencia. Es un ejemplo ilustrativo, pero refleja el tipo de descuadres que ya se están viendo.
+Si el banco comunica, por ejemplo, 12.000 € de cobros en un trimestre y tú declaras 7.000 € de ventas, es probable que recibas un requerimiento para explicar la diferencia. Es un ejemplo ilustrativo, pero refleja el tipo de descuadres que ya se están viendo (teniendo en cuenta además el efecto de la inflación real que analizamos en nuestra guía sobre <a href="/blog/rentabilidad-real-vs-nominal" style="color: #2563eb; text-decoration: underline;">rentabilidad real frente a nominal</a>).
 
 ### Los 3 errores que cometen muchos autónomos sin saberlo
 1. **Cobrar trabajo en el Bizum personal sin facturar:** Que el ingreso sea por Bizum no lo exime de factura ni de impuestos, y mezclar dinero personal y profesional complica justificarlo.
-2. **No conciliar los cobros:** Compara cada mes lo cobrado por Bizum y tarjeta con lo que declaras.
+​2. **No conciliar los cobros:** Compara cada mes lo cobrado por Bizum y tarjeta con lo que declaras.
 3. **Olvidar incluir esos ingresos en IVA e IRPF:** Un cobro no registrado es el origen típico de los descuadres.
 
 ---
@@ -103,7 +103,7 @@ Si el banco comunica, por ejemplo, 12.000 € de cobros en un trimestre y tú de
 ## Auditoría exprés: cómo blindarte en 10 minutos
 
 1. **Revisa tus Bizum recibidos de los últimos tres meses y clasifícalos:** gastos compartidos, trabajo, ventas, alquiler o regalos.
-2. **Pon un concepto claro en cada Bizum:** como *"Cena 12/10"* o *"Factura 2026-034"*. Si Hacienda pregunta, un concepto claro ahorra explicaciones.
+​2. **Pon un concepto claro en cada Bizum:** como *"Cena 12/10"* o *"Factura 2026-034"*. Si Hacienda pregunta, un concepto claro ahorra explicaciones.
 3. **Separa lo personal de lo profesional:** Si cobras por trabajo, emite factura, usa una cuenta distinta y concilia cada mes.
 4. **Guarda justificantes durante cuatro años:** el plazo general de prescripción.
 
@@ -124,9 +124,9 @@ No: es una devolución, no una renta. Lo prudente es conservar la prueba del pr�
 
 ### 📚 Artículos recomendados de Capitalia Finanzas
 
-* ⚖️ **Compensación fiscal:** [Cómo compensar pérdidas y ganancias en el IRPF](/blog/compensar-perdidas-ganancias-irpf)
-* 📊 **Presupuesto fácil:** [Guía para aplicar la regla 50/30/20](/blog/regla-50-30-20)
-* 🏘️ **Decisión de vivienda:** [Comprar vs Alquilar en España: números reales](/blog/comprar-vs-alquilar)
+- ⚖️ **Compensación fiscal:** [Cómo compensar pérdidas y ganancias en el IRPF](/blog/compensar-perdidas-ganancias-irpf)
+- 📊 **Presupuesto fácil:** [Guía para aplicar la regla 50/30/20](/blog/regla-50-30-20)
+- 🏘️ **Decisión de vivienda:** [Comprar vs Alquilar en España: números reales](/blog/comprar-vs-alquilar)
 
 ---
 
