@@ -1,12 +1,13 @@
 ---
-title: "¿Cuánto Dinero Puedes Tener y Mover en el Banco Sin Multa de Hacienda en 2026?"
+title: "¿A Partir de Cuánto Dinero en the Banco Te Investiga Hacienda en 2026?"
 description: "Tus padres te transfieren 15.000 € para la entrada de un piso. ¿Salta alguna alarma en Hacienda? Los límites reales de 2026 y los mitos que conviene ignorar."
+pubDate: 2026-10-29
 canonical: "https://capitaliafinanzas.com/blog/cuanto-dinero-puedes-tener-mover-banco-hacienda-2026/"
-category: fiscalidad
-type: article
+category: "fiscalidad"
+type: "article"
 ---
 
-# ¿Cuánto Dinero Puedes Tener y Mover en el Banco Sin Multa de Hacienda en 2026?
+# ¿A Partir de Cuánto Dinero en el Banco Te Investiga Hacienda en 2026?
 
 Separamos los límites reales de los mitos: qué avisa tu banco a la Agencia Tributaria, qué no, y cuándo una transferencia a un familiar se convierte en un problema.
 
