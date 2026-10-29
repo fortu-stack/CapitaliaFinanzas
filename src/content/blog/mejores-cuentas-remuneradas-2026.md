@@ -1,142 +1,144 @@
 ---
-title: "Dónde sacar hasta un 3,5% por tu dinero sin riesgo: Cuentas Remuneradas 2026"
-description: "Tienes 10.000 € en el banco al 0% y la inflación se come tus ahorros. Descubre qué cuentas remuneradas pagan hoy hasta un 3,5% neto tras impuestos."
+title: "Mejores Cuentas Remuneradas 2026: Dónde Sacar Hasta un 3,5% Sin Riesgo"
+description: "¿Tienes 10.000 € en el banco al 0%? La inflación se los está comiendo. Compara las mejores cuentas remuneradas de 2026 con IBAN español y descubre cuánto te queda neto tras impuestos."
 pubDate: "Oct 28 2026"
 canonical: "https://capitaliafinanzas.com/blog/mejores-cuentas-remuneradas-2026/"
 category: inversion
 type: article
 ---
 
-# Dónde sacar hasta un 3,5% por tu dinero sin riesgo: Cuentas Remuneradas 2026
+# Dónde sacar hasta un 3,5% por tu dinero sin riesgo: Mejores Cuentas Remuneradas 2026
 
 Comparamos las mejores cuentas remuneradas en 2026 con datos actualizados, calculamos cuánto te queda neto tras el 19% de IRPF y aclaramos qué ha cambiado con el IBAN español y el Modelo 720.
 
 > ⚡ **Resumen express:**
-> - **Banco tradicional al 0%:** Con el IPC elevado, 10.000 € parados pierden unos 467 € de poder adquisitivo al año.
-> - **Lo que pagan hoy:** Entre el 2% y el 3,5% TAE, según la entidad. Los porcentajes más altos son promocionales y para nuevos clientes.
-> - **Neto, no bruto:** El 3,04% TAE de una cuenta se queda en un 2,46% neto tras la retención del 19%.
-> - **IBAN español vs. extranjero:** Trade Republic y Revolut ya operan con IBAN español y retención automática, eliminando la burocracia habitual.
-> - **Seguridad:** El FGD cubre hasta 100.000 € por titular y entidad.
+> - **El peligro de tener el dinero parado al 0%:** Con el IPC actual, 10.000 € en un banco tradicional pierden más de 450 € de poder adquisitivo al año.
+> - **Rentabilidad en 2026:** Entre el 2% y el 3,5% TAE según la entidad. Las tasas más altas corresponden a promociones de bienvenida.
+> - **Neto vs. Bruto:** Un 3,04% TAE se traduce en un **2,46% neto real** tras la retención fiscal del 19%.
+> - **Comodidad sin burocracia:** Plataformas como Trade Republic y Revolut ya integran IBAN español y retención automática.
+> - **Seguridad garantizada:** Cobertura de hasta 100.000 € por titular y entidad mediante el Fondo de Garantía de Depósitos (FGD).
 
 *🤝 **Transparencia:** Algunos enlaces de este artículo son de afiliación. Si abres una cuenta desde ellos, Capitalia puede recibir una comisión sin coste para ti. Hemos ordenado las opciones por la rentabilidad publicada, no por la comisión.*
 
 ---
 
-Los grandes bancos siguen pagando muy poco por los ahorros, mientras el IPC avanza y el BCE ha modificado los tipos hasta el 2,5%. En medio, las entidades digitales y medianas compiten por captar tu dinero con ofertas que cambian cada pocas semanas.
+Los grandes bancos tradicionales siguen sin retribuir el ahorro, mientras la liquidez disponible pierde valor día a día. Frente a esto, las entidades digitales compiten agresivamente por captar depósitos ofreciendo liquidez inmediata e intereses abonados mes a mes.
 
-La solución inmediata existe y no exige asumir riesgo de bolsa: una cuenta remunerada, con liquidez disponible y un interés que se abona mes a mes. Lo que sí exige es leer la letra pequeña: promociones temporales, límites de saldo y condiciones de vinculación.
+Sin embargo, para elegir la mejor opción no solo hay que mirar la cifra del titular: es imprescindible revisar los límites de saldo, los plazos promocionales y los requisitos de vinculación.
 
 ---
 
-## ¿Qué es una cuenta remunerada y por qué tu banco tradicional te está haciendo perder dinero?
+## ¿Qué es una cuenta remunerada y por qué tu banco tradicional te hace perder dinero?
 
-Una cuenta remunerada es una cuenta de ahorro con disponibilidad inmediata que paga un interés por el saldo. A diferencia de un depósito a plazo, puedes retirar tu dinero cuando quieras. Es la opción habitual para el colchón de emergencia, que explicamos en nuestra guía sobre <a href="/blog/fondo-de-emergencia" style="color: #2563eb; text-decoration: underline;">dónde guardar el fondo de emergencia</a>.
+Una cuenta remunerada es un producto bancario de ahorro con **disponibilidad 100% inmediata** que te paga un interés diario o mensual por el dinero depositado. A diferencia de un depósito a plazo fijo, puedes retirar tus fondos en cualquier momento sin penalizaciones ni comisiones de cancelación.
 
-Según el INE, el IPC se sitúa en cotas elevadas. Con una cuenta corriente al 0%, 10.000 € pierden unos 467 € de poder adquisitivo en un solo año, un coste silencioso que no aparece en ningún extracto bancario. Esa brecha es el espacio que aprovechan las cuentas remuneradas.
+Es la herramienta perfecta para alojar tu colchón de seguridad. Si aún no tienes uno, consulta nuestra guía sobre <a href="/blog/fondo-de-emergencia" style="color: #2563eb; text-decoration: underline; font-weight: 600;">dónde guardar el fondo de emergencia</a>.
+
+Tener 10.000 € en una cuenta corriente al 0% implica regalarle dinero a la inflación. Trasladar esos fondos a una cuenta remunerada es el primer paso antes de dar el salto a la inversión en bolsa o a nuestra <a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline; font-weight: 600;">guía para invertir en fondos indexados</a>.
 
 ---
 
 ## Comparativa directa: las mejores cuentas remuneradas de 2026
 
-*Nota: Comprueba el TAE y los requisitos vigentes antes de contratar, ya que las ofertas cambian con frecuencia.*
+*Nota: Las condiciones y promociones bancarias varían con frecuencia. Verifica las cifras vigentes antes de la contratación.*
 
-| Entidad | Rentabilidad (TAE) | Límite remunerado | IBAN (país) | Retención automática | Acción |
+| Entidad | Rentabilidad (TAE) | Límite remunerado | IBAN | Retención IRPF | Enlace Oficial |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Revolut** | 3,51% (promo 4 meses); dps. hasta 2,27% | Hasta 25.000 € en promo | España (Sucursal) | Sí (19%) | <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Ver oferta Revolut &rarr;</a> |
-| **Trade Republic** | 3,04% nuevos clientes; 2,53% resto | Según oferta | España (Sucursal) | Sí (19%) | <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Ver oferta Trade Republic &rarr;</a> |
-| **Bankinter** | 3,00% nuevos clientes (Cuenta Digital) | Hasta 100.000 € | España | Sí (19%) | — |
-| **Sabadell** | ≈ 2,00% (Cuenta Online) | Hasta 50.000 € | España | Sí (19%) | <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Abrir cuenta Sabadell &rarr;</a> |
-| **MyInvestor** | Hasta 2,00% (con inversión recurrente) | Consultar cond. | España | Sí (19%) | <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Ver oferta MyInvestor &rarr;</a> |
+| **Revolut** | **3,51%** (promo 4m) | Hasta 25.000 € | España | Sí (19%) | <a href="https://capitaliafinanzas.com/out/revolut" target="_blank" rel="nofollow noopener" style="background-color: #2563eb; color: #ffffff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block;">Abrir Cuenta &rarr;</a> |
+| **Trade Republic** | **3,04%** (nuevos) | Según oferta | España | Sí (19%) | <a href="https://capitaliafinanzas.com/out/trade-republic" target="_blank" rel="nofollow noopener" style="background-color: #2563eb; color: #ffffff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block;">Ver Oferta &rarr;</a> |
+| **Bankinter** | **3,00%** (Cuenta Digital) | Hasta 100.000 € | España | Sí (19%) | — |
+| **Sabadell** | **2,00%** (Cuenta Online) | Hasta 50.000 € | España | Sí (19%) | <a href="https://capitaliafinanzas.com/out/sabadell" target="_blank" rel="nofollow noopener" style="background-color: #2563eb; color: #ffffff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block;">Abrir Sabadell &rarr;</a> |
+| **MyInvestor** | **2,00%** (con inversión) | Consultar cond. | España | Sí (19%) | <a href="https://capitaliafinanzas.com/out/myinvestor" target="_blank" rel="nofollow noopener" style="background-color: #2563eb; color: #ffffff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block;">Ver MyInvestor &rarr;</a> |
 
 ---
 
-### IBAN español: Sabadell y MyInvestor (comodidad fiscal y retención automática)
-La **Cuenta Online de Sabadell** ofrece un rendimiento en torno al 2% TAE con un tope de 50.000 € de saldo remunerado. Es una entidad española con FGD español y retención automática del 19%.
+### IBAN español: Sabadell y MyInvestor (comodidad y simplicidad fiscal)
+La **Cuenta Online de Sabadell** ofrece una rentabilidad del 2% TAE hasta un máximo de 50.000 €. Es una opción muy sólida para quienes buscan la tranquilidad de una gran entidad tradicional española con FGD nacional, sin comisiones de mantenimiento ni necesidad de obligarse a permanencias complejas.
 
-**MyInvestor** remunera hasta un 2% TAE en su cuenta para quienes mantienen inversión recurrente. Sus depósitos a plazo sí ofrecen tipos más elevados, pero conviene no confundirlos con la cuenta, que es la que otorga liquidez inmediata. En ambos casos, tu declaración de la Renta se simplifica: la entidad retiene e informa directamente a la Agencia Tributaria.
-
----
-
-### Trade Republic y Revolut: máximo rendimiento, pero con condiciones
-Trade Republic y Revolut encabezan la tabla de rentabilidad, aunque con matices:
-- **Trade Republic:** Paga un 3,04% TAE a nuevos clientes en su promoción vigente.
-- **Revolut:** Ofrece un 3,51% TAE promocional para nuevos usuarios durante cuatro meses (hasta 25.000 €), requiriendo al menos tres pagos con tarjeta cada 30 días.
-
-*Un matiz importante sobre Revolut:* Sus Fondos Flexibles (fondos monetarios) no son lo mismo que su cuenta remunerada. No son depósitos, no tienen la misma retención y no están cubiertos por el Fondo de Garantía de Depósitos.
+**MyInvestor** exige mantener una aportación o inversión recurrente (en carteras indexadas o fondos propios) para alcanzar el 2% TAE en su cuenta corriente. Aunque comercializan depósitos a un tipo de interés superior, estos inmovilizan el capital, a diferencia de la cuenta remunerada que mantiene liquidez total. En ambas entidades, la Agencia Tributaria recibe la información de tus rendimientos de forma automática.
 
 ---
 
-## El cálculo que casi nadie hace: rentabilidad bruta vs. rentabilidad neta (IRPF al 19%)
+### Trade Republic y Revolut: la máxima rentabilidad del mercado
+Ambas fintechs lideran la tabla de intereses en España, aunque conviene revisar sus condiciones particulares al detalle:
+- **Trade Republic:** Paga un 3,04% TAE de forma mensual a nuevos usuarios sobre el saldo no invertido, sin comisiones de custodia de efectivo.
+- **Revolut:** Ofrece un 3,51% TAE durante los 4 primeros meses (hasta un límite de 25.000 €), exigiendo como requisito operativo realizar al menos 3 compras mensuales con su tarjeta asociada.
 
-El TAE anunciado es siempre bruto. Los intereses tributan como rendimientos del capital mobiliario en la base del ahorro del IRPF (19% hasta 6.000 € de ingresos del ahorro).
+*Ojo con los Fondos Flexibles de Revolut:* No deben confundirse con la cuenta remunerada tradicional. Los Fondos Flexibles invierten en fondos monetarios (mercado del dinero); por tanto, no cuentan con la protección directa del Fondo de Garantía de Depósitos clásico ni con la misma retención automática idéntica a un depósito bancario.
 
-Veamos el impacto real sobre **10.000 €** durante un año:
+---
 
-| Opción | TAE | Interés bruto | Retención 19% | Neto al año | Neto % |
+## El cálculo que casi nadie hace: Rentabilidad Bruta vs. Neta (IRPF al 19%)
+
+Los intereses generados por cualquier cuenta remunerada tributan en la base del ahorro del IRPF como rendimiento del capital mobiliario (se aplica una retención del 19% para los primeros 6.000 € de ganancia).
+
+A continuación se muestra el **rendimiento real limpio** obtenido al depositar **10.000 € durante 12 meses**:
+
+| Entidad / Opción | TAE Bruto | Interés Bruto | Retención (19%) | **Ganancia Neta** | Rendimiento Neto Real |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Trade Republic (nuevos)** | 3,04% | 304,00 € | 57,76 € | **246,24 €** | 2,46% |
-| **Bankinter (nuevos)** | 3,00% | 300,00 € | 57,00 € | **243,00 €** | 2,43% |
-| **Revolut (promo 4m + base)** | ≈ 2,68% | 268,30 € | 50,98 € | **217,32 €** | 2,17% |
-| **Trade Republic (resto)** | 2,53% | 253,00 € | 48,07 € | **204,93 €** | 2,05% |
+| **Trade Republic (Nuevos)** | 3,04% | 304,00 € | 57,76 € | **246,24 €** | 2,46% |
+| **Bankinter (Cuenta Digital)** | 3,00% | 300,00 € | 57,00 € | **243,00 €** | 2,43% |
+| **Revolut (Promoción combinada)** | ≈ 2,68% | 268,30 € | 50,98 € | **217,32 €** | 2,17% |
+| **Trade Republic (Existentes)** | 2,53% | 253,00 € | 48,07 € | **204,93 €** | 2,05% |
 | **Sabadell / MyInvestor** | 2,00% | 200,00 € | 38,00 € | **162,00 €** | 1,62% |
 
-La mejor opción deja unos **246 € netos**, frente a los 162 € de una cuenta al 2% (84 € de diferencia por cada 10.000 €). Para entender cómo afecta la inflación a estas ganancias, consulta nuestra guía sobre <a href="/blog/rentabilidad-real-vs-nominal" style="color: #2563eb; text-decoration: underline;">rentabilidad real vs. nominal</a>.
+Elegir la mejor opción frente a una cuenta estándar representa **más de 84 € de diferencia neta al año por cada 10.000 €**. Para analizar el impacto del poder adquisitivo a largo plazo frente a la subida de precios, revisa nuestra explicación sobre <a href="/blog/rentabilidad-real-vs-nominal" style="color: #2563eb; text-decoration: underline; font-weight: 600;">rentabilidad real vs. nominal</a>.
 
-Además, el panorama legislativo incluye cambios como el Real Decreto-ley 29/2026, que analizamos detalladamente en nuestro artículo sobre la <a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">guía sobre los nuevos impuestos a la vivienda del Real Decreto-ley 29/2026</a>.
-
----
-
-## IBAN español vs. IBAN extranjero: ¿compensa la burocracia?
-
-Tanto **Trade Republic** como **Revolut** operan actualmente en España con IBAN español mediante sucursal registrada. Aplican la retención del 19% y comunican los datos directamente a la AEAT, por lo que la burocracia de declarar manualmente o la incertidumbre sobre el Modelo 720 ha desaparecido en estos casos.
-
-### ¿Qué ocurre con un IBAN extranjero puro?
-Si utilizas una entidad sin sucursal ni IBAN español:
-1. Debes incluir los intereses manualmente en la Renta.
-2. Debes presentar el **Modelo 720** entre el 1 de enero y el 31 de marzo si el saldo conjunto en el extranjero supera los 50.000 €.
-
-Si realizas operaciones con acciones o fondos en estas plataformas, recuerda consultar nuestra guía sobre cómo <a href="/blog/compensar-perdidas-ganancias-irpf" style="color: #2563eb; text-decoration: underline;">compensar pérdidas y ganancias en el IRPF</a>.
+Si además estás planificando una compra inmobiliaria con ese capital acumulado, puedes calcular tus cuotas futuras en nuestra <a href="/blog/calculadora-hipoteca" style="color: #2563eb; text-decoration: underline; font-weight: 600;">calculadora de hipoteca interactiva</a>.
 
 ---
 
-## Seguridad de tus ahorros: ¿cómo funciona el Fondo de Garantía de Depósitos (FGD)?
+## IBAN español vs. IBAN extranjero: ¿sigue habiendo papeleo?
 
-El Fondo de Garantía de Depósitos es lo que convierte a las cuentas remuneradas en un producto de bajo riesgo:
-- **Cobertura:** Hasta 100.000 € por titular y por entidad.
-- **Plazo de pago:** La normativa europea fija un máximo de 7 días hábiles en caso de insolvencia.
-- **Entidades españolas:** Sabadell, Bankinter y MyInvestor están adscritas al FGD español.
-- **Sucursales europeas:** Trade Republic (Alemania) y Revolut (Lituania) responden ante los fondos de garantía de sus países de origen, manteniéndose el límite de 100.000 €.
+Actualmente, **Trade Republic y Revolut operan con IBAN español** mediante sucursales bancarias registradas en España. Esto supone una ventaja determinante frente a años anteriores:
+1. Aplican la retención del 19% directamente sobre tus intereses mes a mes.
+2. Comunican tus ingresos a la Agencia Tributaria (aparecen reflejados automáticamente en tu borrador de la Renta).
+3. **No requieren presentar el Modelo 720** al no considerarse cuentas situadas en el extranjero bajo jurisdicción ajena.
+
+Si operas con acciones, ETFs o criptomonedas de forma cruzada en estas plataformas, consulta nuestra guía técnica sobre cómo <a href="/blog/compensar-perdidas-ganancias-irpf" style="color: #2563eb; text-decoration: underline; font-weight: 600;">compensar pérdidas y ganancias en el IRPF</a> para optimizar tu factura fiscal global.
 
 ---
 
-## Preguntas frecuentes sobre cuentas remuneradas
+## Seguridad de tus ahorros: ¿Cómo funciona el Fondo de Garantía de Depósitos (FGD)?
 
-### ¿Cuál es la mejor cuenta remunerada ahora mismo?
-Depende de tu saldo y de si buscas una promoción inicial de corto plazo (3% - 3,5%) o una opción más estable a largo plazo (2%).
+Las cuentas remuneradas ofrecen la máxima seguridad para el capital a corto plazo gracias al respaldo institucional europeo:
+- **Límite protegido:** Hasta 100.000 € por titular y por entidad bancaria.
+- **Respuesta ante quiebra:** Plazo máximo legal de devolución de 7 días hábiles fijado por normativa comunitaria.
+- **Entidades nacionales (FGD España):** Sabadell, Bankinter y MyInvestor.
+- **Sucursales comunitarias:** Trade Republic (FGD de Alemania) y Revolut (FGD de Lituania). Ambas cumplen estrictamente la directiva europea con idéntica cobertura de 100.000 €.
 
-### ¿Hay que declarar los intereses recibidos?
-Sí. Tributan como rendimientos del capital mobiliario. Si la entidad opera con IBAN español, la retención se efectúa de forma automática.
+---
 
-### ¿Es seguro mantener el dinero en estas plataformas?
-Los depósitos en cuentas remuneradas están cubiertos hasta 100.000 € por el FGD correspondiente. Los productos de inversión o fondos monetarios no cuentan con esta cobertura de depósito.
+## Preguntas Frecuentes (FAQ)
 
-<!-- BLOQUE DIFERENCIAL: Caja Interactiva -->
-<div class="calculator-box">
-  <h3>Organiza tu presupuesto antes de rentabilizar tus ahorros</h3>
-  <p>Descubre cuánto destinar al fondo de emergencia y cuánto a inversión según tus ingresos.</p>
-  <a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Probar Regla 50/30/20 &rarr;</a>
+### ¿Cuál es la mejor cuenta remunerada de 2026?
+Si buscas el máximo rendimiento a corto plazo, **Revolut** y **Trade Republic** ofrecen los tipos de interés promocionales más elevados (3,04% - 3,51%). Si prefieres estabilidad a largo plazo sin requisitos operativos, **Sabadell** y **Bankinter** ofrecen excelentes alternativas sin comisiones.
+
+### ¿Tengo que declarar los intereses en la Renta?
+Sí, tributan como rendimientos del capital mobiliario en la base del ahorro al 19%. Si la entidad utiliza IBAN español, la retención se deduce de forma automática y los datos figuran directamente en tu borrador fiscal.
+
+### ¿Puedo perder dinero en una cuenta remunerada?
+No. El capital depositado en una cuenta remunerada no oscila en los mercados financieros. Tu saldo principal está garantizado hasta 100.000 € por el Fondo de Garantía de Depósitos correspondiente.
+
+---
+
+<!-- CAJA DE HERRAMIENTA INTERACTIVA / CTA -->
+<div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 24px 0;">
+  <h3 style="margin-top: 0; color: #1e293b;">¿Sabes cuánto dinero destinar a tu cuenta remunerada?</h3>
+  <p style="color: #475569; margin-bottom: 16px;">Aplica el método de distribución de ingresos para no dejar dinero parado ni descuidar tus inversiones a largo plazo.</p>
+  <a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Calcular mi presupuesto con la Regla 50/30/20 &rarr;</a>
 </div>
 
 ---
 
-<!-- BLOQUE DE ENLAZADO INTERNO OPTIMIZADO -->
-<section class="related-posts">
-  <h3>Guías recomendadas de ahorro e inversión</h3>
-  <ul>
-    <li><a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline; font-weight: 600;">&rarr; Nuevos impuestos a la vivienda (RDL 29/2026): Claves y cambios fiscales</a></li>
-    <li><a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline;">&rarr; La regla 50/30/20 adaptada a tu nómina: Cómo repartir tu dinero</a></li>
-    <li><a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline;">&rarr; Guía para empezar a invertir en Fondos Indexados</a></li>
-    <li><a href="/blog/calculadora-hipoteca" style="color: #2563eb; text-decoration: underline;">&rarr; Calculadora de Hipoteca: Simula tu cuota mensual</a></li>
+<!-- RED DE ENLAZADO INTERNO OPTIMIZADA -->
+<section style="background-color: #ffffff; border-left: 4px solid #2563eb; padding: 16px; margin: 24px 0;">
+  <h3 style="margin-top: 0; color: #1e293b;">Guías recomendadas para rentabilizar tu dinero</h3>
+  <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+    <li style="margin-bottom: 8px;"><a href="/blog/fondos-indexados" style="color: #2563eb; text-decoration: underline; font-weight: 600;">&rarr; Guía para empezar a invertir en Fondos Indexados</a></li>
+    <li style="margin-bottom: 8px;"><a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline;">&rarr; La regla 50/30/20 adaptada a tu nómina: Cómo repartir tu dinero</a></li>
+    <li style="margin-bottom: 8px;"><a href="/blog/calculadora-hipoteca" style="color: #2563eb; text-decoration: underline;">&rarr; Calculadora de Hipoteca: Simula tu cuota mensual</a></li>
+    <li><a href="/blog/nuevos-impuestos-vivienda-real-decreto-2026" style="color: #2563eb; text-decoration: underline;">&rarr; Nuevos impuestos a la vivienda (RDL 29/2026): Claves fiscales</a></li>
   </ul>
 </section>
 
