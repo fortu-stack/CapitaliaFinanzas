@@ -3,6 +3,13 @@
 /* Ajustes globales de maquetación */
 :root {
   color-scheme: light;
+  
+  /* Paleta de alto contraste WCAG Compliant */
+  --color-text-main: #0f172a;      /* text-slate-900 (Texto principal) */
+  --color-text-muted: #334155;     /* text-slate-700 (Sustituye grises claros para metadatos/fechas) */
+  --color-bg-base: #f8fafc;        /* bg-slate-50 */
+  --color-primary: #1e3e62;        /* Azul corporativo de alto contraste */
+  --color-accent: #b45309;         /* Tono dorado/ámbar oscuro visible sobre fondo claro */
 }
 
 html {
@@ -11,8 +18,8 @@ html {
 }
 
 body {
-  background-color: #f8fafc; /* bg-slate-50 */
-  color: #0f172a;            /* text-slate-900 */
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,4 +28,28 @@ body {
 /* Transiciones suaves globales */
 a, button {
   transition: all 0.2s ease-in-out;
+}
+
+/* Forzar contraste accesible en textos secundarios, fechas y metadatos */
+p, span, time, small {
+  color: var(--color-text-main);
+}
+
+.text-muted, 
+.text-secondary,
+[class*="text-slate-400"], 
+[class*="text-slate-500"],
+[class*="text-gray-400"],
+[class*="text-gray-500"] {
+  color: var(--color-text-muted) !important; /* Garantiza ratio de contraste > 4.5:1 */
+}
+
+/* Enlaces con contraste y estado activo visible */
+a {
+  color: #1d4ed8; /* Azul accesible */
+  text-decoration-color: rgba(29, 78, 216, 0.4);
+}
+
+a:hover {
+  color: #0f172a;
 }
