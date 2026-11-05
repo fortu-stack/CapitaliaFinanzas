@@ -108,7 +108,7 @@ Después de leer tanto sobre alertas, es fácil quedarse con la idea contraria: 
 
 Según el INE, el IPC subió un 4,9% interanual en septiembre de 2026. Con una cuenta al 0%, 10.000 € pierden unos 467 € de poder adquisitivo en un año. Ninguna alerta de Hacienda cuesta tanto como la inflación silenciosa.
 
-Mover tu dinero a un producto remunerado, con retención automática y trazabilidad, no solo es legal: deja un rastro claro de dónde está y de dónde viene. Si tienes dudas, estas guías te ayudan a dar el paso:
+Mover tu dinero a un producto remunerado o reorganizar tus finanzas a través de una **[cuenta bancaria sin comisiones en 2026](/blog/cuentas-sin-comisiones-2026/)**, con retención automática y trazabilidad, no solo es legal: deja un rastro claro de dónde está y de dónde viene. Si tienes dudas, estas guías te ayudan a dar el paso:
 - <a href="/blog/mejores-cuentas-remuneradas-2026" style="color: #2563eb; text-decoration: underline;">Las mejores cuentas remuneradas de 2026</a>: comparativa con rentabilidad neta tras impuestos.
 - <a href="/blog/regla-50-30-20" style="color: #2563eb; text-decoration: underline;">Organizar tu presupuesto con la regla 50/30/20</a>: cuánto destinar a ahorro cada mes.
 - <a href="/blog/fondo-de-emergencia" style="color: #2563eb; text-decoration: underline;">Dónde guardar el fondo de emergencia en 2026</a>.
@@ -119,7 +119,7 @@ Mover tu dinero a un producto remunerado, con retención automática y trazabili
 ## Auditoría exprés: qué hacer si tienes un movimiento grande
 
 1. **Reúne la prueba del origen:** Contrato, escritura, nóminas, extractos o declaración de la Renta.
-2. **Formaliza lo que sea ayuda familiar:** Contrato y modelo 600 si es préstamo; modelo de Donaciones si es regalo, en 30 días hábiles.
+​2. **Formaliza lo que sea ayuda familiar:** Contrato y modelo 600 si es préstamo; modelo de Donaciones si es regalo, en 30 días hábiles.
 3. **No fragmentes ni escondas:** Una operación clara y documentada es más segura que varias pequeñas sin explicación.
 4. **Guarda los justificantes cuatro años**, el plazo general de prescripción.
 
