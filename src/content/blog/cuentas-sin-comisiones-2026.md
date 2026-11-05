@@ -3,7 +3,8 @@ title: "Cuentas bancarias sin comisiones en España 2026: Requisitos y mejores o
 description: "Requisitos de las cuentas sin comisiones en 2026, tipos, comisiones ocultas que vigilar y cuál elegir según tu perfil. ¿Estás pagando de más sin saberlo?"
 canonical: "https://capitaliafinanzas.com/blog/cuentas-sin-comisiones-2026/"
 author: "Alberto Fortunato Martín"
-category: ahorro
+pubDate: 2026-11-04
+category: inversion
 type: article
 ---
 
