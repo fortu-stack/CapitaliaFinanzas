@@ -2,6 +2,7 @@
 title: "Límites de Bizum y transferencias en España: ¿Cuándo avisa el banco a Hacienda?"
 description: "¿Un Bizum de 1.000 € avisa a Hacienda? Límites reales del banco, umbrales de aviso que sí existen en 2026 y mitos que conviene ignorar."
 canonical: "https://capitaliafinanzas.com/blog/limites-bizum-transferencias-hacienda/"
+pubDate: 2026-11-09
 author: "Alberto Fortunato Martín"
 category: fiscalidad
 type: article
@@ -72,7 +73,7 @@ Aquí está la clave: no existe una multa por superar un límite de Bizum o de t
 * **Pagos en efectivo prohibidos.** Superar 1.000 € con una empresa o profesional conlleva una multa del 25%.
 * **Ayudas familiares sin formalizar.** Transferir dinero a un familiar o pareja sin dejar claro si es donación o préstamo puede interpretarse como una donación encubierta.
 
-Por eso lo importante no es la cifra, sino el rastro: poder explicar de dónde sale cada ingreso. Si tienes dudas sobre una ayuda familiar, mira cómo formalizarla en nuestro análisis del castigo fiscal a los 30 al comprar piso.
+Por eso lo importante no es la cifra, sino el rastro: poder explicar de dónde sale cada ingreso. Si dudas sobre una ayuda familiar, mira cómo formalizarla en nuestro análisis del castigo fiscal a los 30 al comprar piso.
 
 ## Si necesitas enviar más de 1.000 €: ¿puedes dividir el pago?
 
