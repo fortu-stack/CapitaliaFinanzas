@@ -5,7 +5,7 @@ canonical: "https://capitaliafinanzas.com/blog/tarjetas-credito-vs-debito-2026/"
 pubDate: "2026-11-12"
 updatedDate: "2026-11-12"
 author: "Alberto Fortunato Martín"
-category: "ahorro"
+category: "inversion"
 type: "article"
 ---
 
