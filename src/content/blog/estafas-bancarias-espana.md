@@ -7,11 +7,11 @@ updatedDate: 2026-11-18
 author: "Alberto Fortunato Martín"
 image: "/images/estafas-bancarias-espana.webp"
 imageAlt: "Las 4 estafas bancarias y por Bizum más peligrosas en España 2026"
-category: "seguridad"
+category: "inversion"
 type: "article"
 ---
 
-Si te prometen dinero rápido y sin riesgo, te meten prisa para transferir o la empresa no figura en los registros de la CNMV o del Banco de España, **cierra la ventana ahora mismo**: estás ante una estafa al 100 %. 
+Si te prometen dinero rápido y sin riesgo, te meten prisa para transferir o la empresa no figura en los registros de la CNMV o del Banco de España, **cierra la ventana ahora mismo**: estás ante una estafa al 100 %.
 
 En 2026, cuatro engaños concentran la gran mayoría de los fraudes bancarios que dejan cuentas a cero en España: **falsos brókers con famosos creados con IA, SMS falsos colados en el hilo real de tu banco, el Bizum inverso y las ofertas trampa para ser "mula bancaria"**.
 
@@ -87,9 +87,9 @@ Además, cualquier ingreso injustificado activa las alertas bancarias y fiscales
 Antes de transferir un solo euro a cualquier plataforma de inversión o supuesto banco, haz esta comprobación gratuita:
 
 1. Apunta el nombre exacto de la empresa y su dirección web (sin pinchar en enlaces de anuncios).
-2. Entra directamente en el [buscador de entidades y advertencias de la CNMV](https://www.cnmv.es/portal/consultas/busqueda.aspx?id=12){:target="_blank" rel="noopener"}.
+2. Entra directamente en el [buscador de entidades y advertencias de la CNMV](https://www.cnmv.es/portal/consultas/busqueda.aspx?id=12).
 3. Comprueba si aparece como **entidad autorizada** para prestar servicios de inversión en España. Si no aparece, o figura en la **lista de entidades advertidas (chiringuitos financieros)**, no operes bajo ningún concepto.
-4. Si se presenta como banco o entidad de pago, verifica su licencia en el [Registro Oficial de Entidades del Banco de España](https://www.bde.es/wbe/es/entidades-profesionales/operativa-gestores/registros-entidades/){:target="_blank" rel="noopener"}.
+4. Si se presenta como banco o entidad de pago, verifica su licencia en el [Registro Oficial de Entidades del Banco de España](https://www.bde.es/wbe/es/entidades-profesionales/operativa-gestores/registros-entidades/).
 5. Ante cualquier duda, llama gratis al teléfono de atención al inversor de la CNMV: **900 535 015**.
 
 ---
@@ -100,7 +100,7 @@ Si acabas de darte cuenta del engaño, cada minuto cuenta para intentar bloquear
 
 1. **Llama al teléfono oficial de tu banco y bloquea todo:** Usa el número que viene detrás de tu tarjeta o dentro de tu app oficial (nunca el que venía en el SMS). Pide el bloqueo inmediato de tarjetas, banca digital y la orden de retrocesión o bloqueo de la transferencia.
 2. **Guarda todas las pruebas sin borrar nada:** Haz capturas de pantalla de los SMS, conversaciones de WhatsApp, perfil del comprador, dirección web falsa, justificantes de transferencia y números de teléfono.
-3. **Presenta denuncia y llama al 017:** Acude con todas las pruebas a una comisaría de la Policía Nacional o Guardia Civil para poner denuncia formal (imprescindible para reclamar al banco). Además, llama al **017**, la línea gratuita y confidencial de ayuda en ciberseguridad de [INCIBE](https://www.incibe.es/ciudadania/ayuda){:target="_blank" rel="noopener"}.
+3. **Presenta denuncia y llama al 017:** Acude con todas las pruebas a una comisaría de la Policía Nacional o Guardia Civil para poner denuncia formal (imprescindible para reclamar al banco). Además, llama al **017**, la línea gratuita y confidencial de ayuda en ciberseguridad de [INCIBE](https://www.incibe.es/ciudadania/ayuda).
 
 ### ¿Te devolverá el banco el dinero robado?
 
@@ -123,9 +123,9 @@ Para proteger tus ahorros, opera únicamente con entidades supervisadas en Europ
 
 > **🤝 Transparencia:** Solo mencionamos entidades supervisadas y registradas oficialmente en España. Algunos enlaces pueden ser de afiliación y generar una comisión para Capitalia Finanzas sin coste adicional para ti.
 
-* **Banco Sabadell:** Entidad bancaria española adherida al Fondo de Garantía de Depósitos de España. [Ver condiciones en Banco Sabadell →](https://www.bancsabadell.com/){:target="_blank" rel="noopener"}
-* **MyInvestor:** Neobanco español supervisado por el Banco de España y la CNMV, especializado en cuentas remuneradas y fondos indexados. [Ver oferta en MyInvestor →](https://myinvestor.es/){:target="_blank" rel="noopener"}
-* **Trade Republic:** Banco alemán supervisado por el BaFin y registrado en el Banco de España y la CNMV, con protección del FGD alemán hasta 100.000 €. [Ver condiciones en Trade Republic →](https://traderepublic.com/es-es){:target="_blank" rel="noopener"}
+* **Banco Sabadell:** Entidad bancaria española adherida al Fondo de Garantía de Depósitos de España. [Ver condiciones en Banco Sabadell →](https://www.bancsabadell.com/)
+* **MyInvestor:** Neobanco español supervisado por el Banco de España y la CNMV, especializado en cuentas remuneradas y fondos indexados. [Ver oferta en MyInvestor →](https://myinvestor.es/)
+* **Trade Republic:** Banco alemán supervisado por el BaFin y registrado en el Banco de España y la CNMV, con protección del FGD alemán hasta 100.000 €. [Ver condiciones en Trade Republic →](https://traderepublic.com/es-es)
 
 Si buscas rentabilidad sin asumir riesgos de bolsa, consulta nuestro ranking actualizado con las [mejores cuentas remuneradas de 2026](/blog/mejores-cuentas-remuneradas-2026/).
 
