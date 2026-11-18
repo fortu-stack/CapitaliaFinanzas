@@ -70,15 +70,11 @@ Para recibir dinero por Bizum **nunca tienes que aceptar ninguna notificación n
 
 * **Variante del envío "por error":** Si un desconocido te hace un Bizum y te pide que se lo devuelvas a otro número distinto porque "se ha equivocado", no lo hagas por tu cuenta. Puede ser dinero robado y te usarían de puente. Contacta con tu banco para que gestionen la retrocesión oficial.
 
-Si quieres conocer los topes diarios y qué movimientos vigila el fisco, consulta nuestra guía sobre los <a href="/blog/limites-bizum-transferencias-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">límites de Bizum y transferencias en 2026</a>.
-
 ### 4. Ofertas para ser "mula bancaria": ¿qué riesgo tienes?
 
 Recibes una oferta de trabajo sencilla desde casa como "gestor de pagos" o "asistente financiero". Tu única tarea consiste en recibir transferencias en tu cuenta bancaria personal y reenviarlas a otra cuenta (o convertirlas a criptomonedas), quedándote una comisión del 5 % al 10 %.
 
 Ese dinero procede de estafas a otras víctimas. Al prestar tu cuenta, te conviertes en **mula bancaria**: el banco te bloqueará la cuenta por prevención de blanqueo de capitales, la víctima te reclamará el importe íntegro y **puedes acabar imputado penalmente** por estafa o blanqueo de capitales por imprudencia grave.
-
-Además, cualquier ingreso injustificado activa las alertas bancarias y fiscales. Puedes ver cómo funcionan estos controles en nuestro análisis sobre <a href="/blog/cuanto-dinero-mover-banco-sin-que-hacienda-investigue/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">cuánto dinero puedes mover en el banco sin que Hacienda te investigue</a>.
 
 ---
 
@@ -89,7 +85,7 @@ Antes de transferir un solo euro a cualquier plataforma de inversión o supuesto
 1. Apunta el nombre exacto de la empresa y su dirección web (sin pinchar en enlaces de anuncios).
 2. Entra directamente en el <a href="https://www.cnmv.es/portal/consultas/busqueda.aspx?id=12" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">buscador de entidades y advertencias de la CNMV</a>.
 3. Comprueba si aparece como **entidad autorizada** para prestar servicios de inversión en España. Si no aparece, o figura en la **lista de entidades advertidas (chiringuitos financieros)**, no operes bajo ningún concepto.
-4. Si se presenta como banco o entidad de pago, verifica su licencia en el <a href="https://www.bde.es/wbe/es/entidades-profesionales/operativa-gestores/registros-entidades/" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Registro Oficial de Entidades del Banco de España</a>.
+4. Si se presenta como banco o entidad de pago, verifica su licencia en el portal oficial del <a href="https://www.bde.es/" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Banco de España</a>.
 5. Ante cualquier duda, llama gratis al teléfono de atención al inversor de la CNMV: **900 535 015**.
 
 ---
@@ -100,7 +96,7 @@ Si acabas de darte cuenta del engaño, cada minuto cuenta para intentar bloquear
 
 1. **Llama al teléfono oficial de tu banco y bloquea todo:** Usa el número que viene detrás de tu tarjeta o dentro de tu app oficial (nunca el que venía en el SMS). Pide el bloqueo inmediato de tarjetas, banca digital y la orden de retrocesión o bloqueo de la transferencia.
 2. **Guarda todas las pruebas sin borrar nada:** Haz capturas de pantalla de los SMS, conversaciones de WhatsApp, perfil del comprador, dirección web falsa, justificantes de transferencia y números de teléfono.
-3. **Presenta denuncia y llama al 017:** Acude con todas las pruebas a una comisaría de la Policía Nacional o Guardia Civil para poner denuncia formal (imprescindible para reclamar al banco). Además, llama al **017**, la línea gratuita y confidencial de ayuda en ciberseguridad de <a href="https://www.incibe.es/ciudadania/ayuda" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">INCIBE</a>.
+3. **Presenta denuncia y llama al 017:** Acude con todas las pruebas a una comisaría de la Policía Nacional o Guardia Civil para poner denuncia formal (imprescindible para reclamar al banco). Además, llama al **017**, la línea gratuita y confidencial de ayuda en ciberseguridad de <a href="https://www.incibe.es/" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">INCIBE</a>.
 
 ### ¿Te devolverá el banco el dinero robado?
 
@@ -127,8 +123,6 @@ Para proteger tus ahorros, opera únicamente con entidades supervisadas en Europ
 * **MyInvestor:** Neobanco español supervisado por el Banco de España y la CNMV, especializado en cuentas remuneradas y fondos indexados. <a href="https://myinvestor.es/" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Ver oferta en MyInvestor →</a>
 * **Trade Republic:** Banco alemán supervisado por el BaFin y registrado en el Banco de España y la CNMV, con protección del FGD alemán hasta 100.000 €. <a href="https://traderepublic.com/es-es" target="_blank" rel="noopener" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Ver condiciones en Trade Republic →</a>
 
-Si buscas rentabilidad sin asumir riesgos de bolsa, consulta nuestro ranking actualizado con las <a href="/blog/mejores-cuentas-remuneradas-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">mejores cuentas remuneradas de 2026</a>.
-
 ---
 
 ## Preguntas frecuentes sobre estafas bancarias
@@ -148,10 +142,8 @@ No. La CNMV supervisa los mercados y publica listas de advertencia, pero no tien
 ---
 
 > **📌 Guías relacionadas en Capitalia Finanzas:**
-> * <a href="/blog/limites-bizum-transferencias-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Límites de Bizum y transferencias en 2026: cuánto puedes enviar sin declarar</a>
-> * <a href="/blog/cuanto-dinero-mover-banco-sin-que-hacienda-investigue/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Cuánto dinero puedes mover en el banco sin que Hacienda te investigue</a>
 > * <a href="/blog/tarjetas-credito-vs-debito-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Tarjetas de crédito vs. débito en 2026: diferencias y cuál es más segura</a>
-> * <a href="/blog/mejores-cuentas-remuneradas-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Mejores cuentas remuneradas de 2026 en España</a>
+> * <a href="/blog/invertir-100-euros-al-mes-2026/" style="color: #1d4ed8; text-decoration: underline; font-weight: 500;">Cómo invertir 100 euros al mes en 2026 paso a paso</a>
 
 ---
 
