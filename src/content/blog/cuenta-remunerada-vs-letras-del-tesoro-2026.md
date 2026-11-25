@@ -3,7 +3,8 @@ title: "Cuenta remunerada vs Letras del Tesoro (2026): comparativa"
 description: "Comparamos rentabilidad neta tras IRPF, liquidez, plazos y seguridad entre cuentas remuneradas y Letras del Tesoro en España en 2026."
 canonical: "https://capitaliafinanzas.com/blog/cuenta-remunerada-vs-letras-del-tesoro-2026/"
 author: "Alberto Fortunato Martín"
-category: ahorro
+pubDate: 2026-11-25
+category: fiscalidad
 type: article
 ---
 
@@ -38,7 +39,7 @@ Dos matices de la rentabilidad. El tipo de una cuenta es variable: la entidad pu
 
 Las Letras se emiten en subastas mensuales del Tesoro Público: una para 6 y 12 meses y otra para 3 y 9 meses. Se venden al descuento: una Letra de 1.000 € a 12 meses con un 3,068 % se compra por unos 970 € y reembolsa 1.000 €.
 
-Hay tres vías: la web del Tesoro Público, el Banco de España de forma presencial y los bancos o brókers. En el Tesoro y en el Banco de España se opera con una Cuenta Directa, sin comisión de compra ni de custodia, y con una comisión del 0,15 % sobre el importe transferido a tu cuenta al vencimiento (mínimo 0,90 € y máximo 200 €), según la información del Banco de España. En un banco o bróker es habitual pagar comisiones adicionales, que pueden recortar mucho una rentabilidad ya moderada.
+Hay tres vías: la web del [Tesoro Público](https://www.tesoro.es/), el [Banco de España](https://www.bde.es/) de forma presencial y los bancos o brókers. En el Tesoro y en el Banco de España se opera con una Cuenta Directa, sin comisión de compra ni de custodia, y con una comisión del 0,15 % sobre el importe transferido a tu cuenta al vencimiento (mínimo 0,90 € y máximo 200 €), según la información del Banco de España. En un banco o bróker es habitual pagar comisiones adicionales, que pueden recortar mucho una rentabilidad ya moderada.
 
 ## ¿Cómo tributan en Hacienda las cuentas remuneradas y las Letras del Tesoro?
 
@@ -55,9 +56,9 @@ Veamos el resultado con 10.000 € durante 12 meses:
 | **Cuenta remunerada ≈ 3 % TAE** | 3,00 % | 300,00 € | 57,00 € | 243,00 € | 2,43 % |
 | **Cuenta remunerada ≈ 2 % TAE** | 2,00 % | 200,00 € | 38,00 € | 162,00 € | 1,62 % |
 
-La diferencia entre una Letra y una cuenta al 3 % es de solo unos 5 € al año por cada 10.000 €. La ventaja de la Letra es cierta y fija; la de la cuenta depende de que mantenga la promoción. Con la inflación en el 4,9 % en septiembre, ninguna gana al IPC, como explicamos en [rentabilidad real y nominal](/blog/rentabilidad-real-y-nominal/).
+La diferencia entre una Letra y una cuenta al 3 % es de solo unos 5 € al año por cada 10.000 €. La ventaja de la Letra es cierta y fija; la de la cuenta depende de que mantenga la promoción. Con la inflación en el 4,9 % en septiembre, ninguna gana al IPC en términos reales.
 
-Si tienes cuentas con IBAN extranjero, cambia quién declara; lo detallamos en [cuentas remuneradas y Hacienda en 2026](/blog/cuentas-remuneradas-hacienda-espana). Para consultar la normativa y los modelos, está la sede de la Agencia Tributaria.
+Si tienes cuentas con IBAN extranjero, cambia quién declara; lo detallamos en [cuentas remuneradas y Hacienda en España](/blog/cuentas-remuneradas-hacienda-espana). Para consultar la normativa y los modelos, está la sede de la [Agencia Tributaria](https://sede.agenciatributaria.gob.es/).
 
 ## ¿Qué pasa si necesitas retirar el dinero antes de tiempo?
 
